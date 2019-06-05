@@ -18,7 +18,7 @@ from collections import defaultdict
 # READ AND WRITE DATA
 # =========================================================================== #
 
-data_folder = "../0_data/1_raw_data"
+input_data_folder = "../0_data/1_raw_data"
 output_data_folder = "../0_data/2_processed_data/reviews_by_business_id/tmp"
 filename = "review.json"
 
@@ -31,7 +31,7 @@ data_dict = defaultdict(list)
 start = time.time()
 counter = 0
 
-with open(os.path.join(data_folder, filename), "r") as f:
+with open(os.path.join(input_data_folder, filename), "r") as f:
     for line in f:
         if counter >= starting_index and counter < ending_index:
             try:
