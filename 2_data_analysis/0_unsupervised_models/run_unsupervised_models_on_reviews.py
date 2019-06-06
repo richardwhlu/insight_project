@@ -11,11 +11,13 @@ import os
 import pandas as pd
 import string
 import sys
+import time
 
 from nltk.corpus import stopwords
 from nltk.stem.porter import *
 from nltk.tokenize import word_tokenize
-from sklearn.decomposition import NMF, LatentDirichletAllocation as LDA
+from sklearn.decomposition import (NMF,
+    LatentDirichletAllocation as LDA, TruncatedSVD as LSA)
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 # stopwords.words('english')
 
@@ -83,17 +85,35 @@ tf_feature_names = tf_vectorizer.get_feature_names()
 tfidf = tfidf_vectorizer.fit_transform(text)
 tfidf_feature_names = tfidf_vectorizer.get_feature_names()
 
+start1 = time.time()
 lda = LDA(n_components=num_topics,
           max_iter=5,
           learning_method="online",
           learning_offset=50,
           random_state=10191994).fit(tf)
+end1 = time.time()
+print("LDA: {}".format(end1 - start1))
 
+start2 = time.time()
 nmf = NMF(n_components=num_topics,
           random_state=10191994,
           alpha=.1,
           l1_ratio=.5,
           init="nndsvd").fit(tfidf)
+end2 = time.time()
+print("NMF: {}".format(end2 - start2))
+
+start3 = time.time()
+lsa_tf = LSA(n_components=num_topics,
+             random_state=10191994).fit(tf)
+end3 = time.time()
+print("LSA TF {}".format(end3 - start3))
+
+start4 = time.time()
+lsa_tfidf = LSA(n_components=num_topics,
+                random_state=10191994).fit(tfidf)
+end4 = time.time()
+print("LSA TF {}".format(end4 - start4))
 
 def display_topics(model, feature_names, num_top_words, model_string):
     """Display topics from the topic models
@@ -110,10 +130,14 @@ def display_topics(model, feature_names, num_top_words, model_string):
         print(" ".join([feature_names[i]
                        for i in topic.argsort()[:-num_top_words - 1:-1]]))
 
+    print("\n\n")
+
 
 # =========================================================================== #
 # PRESENT RESULTS
 # =========================================================================== #
 
-display_topics(nmf, tfidf_feature_names, 10, "NMF")
 display_topics(lda, tf_feature_names, 10, "LDA")
+display_topics(nmf, tfidf_feature_names, 10, "NMF")
+display_topics(lsa_tf, tf_feature_names, 10, "LSA_TF")
+display_topics(lsa_tfidf, tfidf_feature_names, 10, "LSA_TFIDF")
