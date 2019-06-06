@@ -5,7 +5,7 @@
 #   starting to build out pipeline
 #   this script creates random subsets of the reviews for feeding into
 #   unsupervised learning scripts
-# Runtime: 
+# Runtime: ~53s for random
 # =========================================================================== #
 
 import sys
