@@ -3,10 +3,12 @@
 # Author: Richard Lu
 # Description:
 #   clean the raw review text data and run unsupervised topic models
-# Runtime: 
+# Runtime: ~ 210s for 10000
 # =========================================================================== #
 
+import matplotlib.pyplot as plt
 import nltk
+import numpy as np
 import os
 import pandas as pd
 import string
@@ -29,6 +31,8 @@ data_folder = "../../0_data/3_robustness_check_data_for_unsupervised_models"
 
 data_filename = sys.argv[1]
 num_topics = int(sys.argv[2])
+# data_filename = "10191994_1000_influential.csv"
+# num_topics = 20
 try:
     num_words = int(sys.argv[3])
 except:
@@ -58,8 +62,51 @@ def process_reviews(text):
     cleaned_sentence = " ".join(tmp)
     return cleaned_sentence
 
-
+start0 = time.time()
 text = data["text"].apply(process_reviews)
+end0 = time.time()
+
+print(end0 - start0)
+
+# =========================================================================== #
+# GET MOST COMMON STEMS FOR GRAPHS
+# =========================================================================== #
+
+def get_most_common_words_across_sample_reviews(num_words, tmp_df):
+    """Get most common words in a set of reviews
+
+    Args:
+        num_words - int number of top words to get
+        tmp_df - review data to process
+
+    Returns:
+        most_common_words - top words with count
+    """
+    tf_vectorizer = CountVectorizer(max_df=0.95,
+                                    min_df=2,
+                                    max_features=1000)
+    tf = tf_vectorizer.fit(tmp_df)
+    tf2 = tf.transform(tmp_df)
+    term_sums = tf2.sum(axis=0)
+    words_freq = [(word, term_sums[0, index])
+                  for word, index in tf.vocabulary_.items()]
+    most_common_words = sorted(words_freq, key=lambda x: x[1], reverse=True
+        )[:num_words]
+    return most_common_words
+
+
+most_common_words_list = get_most_common_words_across_sample_reviews(20, text)
+
+words = [x[0] for x in most_common_words_list]
+freq = [x[1] for x in most_common_words_list]
+x_pos = np.arange(len(words)) 
+  
+plt.bar(x_pos, freq, align='center')
+plt.xticks(x_pos, words) 
+plt.ylabel('Frequency Count')
+plt.xticks(rotation=90)
+plt.savefig("../../3_reports/figures/{}_most_common_words".format(
+    data_filename.split(".csv")[0]))
 
 # =========================================================================== #
 # CREATE MODELS
@@ -124,13 +171,15 @@ def display_topics(model, feature_names, num_top_words, model_string):
         num_top_words - number of top words to display per topic
         model_string - name of model
     """
-    print("Model {}:".format(model_string))
-    for topic_index, topic in enumerate(model.components_):
-        print("Topic {}:".format(topic_index))
-        print(" ".join([feature_names[i]
+    with open("../../3_reports/0_unsupervised_models/{}.txt".format(
+        data_filename.split(".csv")[0]), "a") as f:
+        f.write("Model {}:\n".format(model_string))
+        for topic_index, topic in enumerate(model.components_):
+            f.write("Topic {}:".format(topic_index))
+            f.write(" ".join([feature_names[i]
                        for i in topic.argsort()[:-num_top_words - 1:-1]]))
 
-    print("\n\n")
+            f.write("\n\n")
 
 
 # =========================================================================== #
