@@ -38,6 +38,7 @@ user = pd.read_json(os.path.join(input_data_folder2,
 condition1 = business["is_open"]==1
 # 75% cutoff for review count is 25
 condition2 = business["review_count"]>=1000
+# may have to add a condition for category
 top_reviewed_businesses = business[condition1 & condition2]
 top_reviewed_business_ids = set(
     top_reviewed_businesses["business_id"].tolist())
