@@ -1,0 +1,928 @@
+Model LDA:
+Topic 0:breakfast lunch place thai get egg go nail authent great
+
+Topic 1:staff friendli recommend help great work alway highli care dr
+
+Topic 2:pizza order good chees taco sandwich place like get tast
+
+Topic 3:place love great time go amaz like best ve definit
+
+Topic 4:cake perfect sweet cream perfectli wow smoke cooki dark chees
+
+Topic 5:room locat stay one hotel walk park get lot area
+
+Topic 6:tri food place delici fresh good chicken burger order fri
+
+Topic 7:good like food realli nice place dish restaur pretti littl
+
+Topic 8:get would time go call one like back look day
+
+Topic 9:la buffet de crab le et rude disgust pour bad
+
+Topic 10:order us tabl ask came wait minut server time food
+
+Topic 11:drink great bar beer good place night music atmospher wine
+
+Topic 12:chang store wife box oil class tire rememb appl ramen
+
+Topic 13:coffe tea shop ice etc place pho cup fantast fast
+
+Topic 14:food servic great wait place custom time price good restaur
+
+Model NMF:
+Topic 0:place sushi go like tri eat get roll town re
+
+Topic 1:get would call go one work custom us ask need
+
+Topic 2:great servic price definit atmospher awesom thank back custom experi
+
+Topic 3:food servic restaur excel fast mexican wait server come delici
+
+Topic 4:pizza crust order deliveri slice thin top wing chees salad
+
+Topic 5:drink bar beer night bartend tabl us game fun seat
+
+Topic 6:good realli pretti nice price littl servic well portion like
+
+Topic 7:order tast tri delici flavor dish like menu salad sauc
+
+Topic 8:room hotel stay vega pool strip bed nice check casino
+
+Topic 9:staff friendli alway help clean super nice locat store well
+
+Topic 10:best amaz recommend highli ever ve definit hair job vega
+
+Topic 11:time first everi ve last come visit alway back definit
+
+Topic 12:burger fri chees bun juici potato onion order bacon pickl
+
+Topic 13:love alway kid dog favorit go everi absolut year spot
+
+Topic 14:chicken fri rice wing sauc curri order waffl salad crispi
+
+Model LSA_TF:
+Topic 0:place good get food time like go one would order
+
+Topic 1:get call would said told room time ask day go
+
+Topic 2:order food us ask wait tabl would came said server
+
+Topic 3:good like order realli sauc tast chees get pizza tri
+
+Topic 4:place order go get like wait come eat tri time
+
+Topic 5:place would food room good servic call told us said
+
+Topic 6:room one us hotel stay restaur like nice order love
+
+Topic 7:place time us good order would back came pizza first
+
+Topic 8:would great call like chicken tast tri sauc work look
+
+Topic 9:great get order pizza servic back car place us said
+
+Topic 10:servic order get time custom pizza place one room locat
+
+Topic 11:go one servic order good alway pizza custom best ve
+
+Topic 12:room would order food call also get chicken stay fri
+
+Topic 13:one get tabl would us restaur drink menu server best
+
+Topic 14:servic back chicken love us fri tri got come get
+
+Model LSA_TFIDF:
+Topic 0:food place good great time servic go get order like
+
+Topic 1:food good great chicken delici place fri love pizza restaur
+
+Topic 2:great love alway friendli servic staff recommend amaz place best
+
+Topic 3:food servic great us wait order custom server back minut
+
+Topic 4:pizza great order crust servic deliveri custom call slice salad
+
+Topic 5:good room nice bar pizza drink beer hotel realli night
+
+Topic 6:good price servic recommend work friendli realli car help burger
+
+Topic 7:place food alway go sushi love good get ve never
+
+Topic 8:burger great good love fri back go place got hair
+
+Topic 9:great get one store car servic ve chicken alway coffe
+
+Topic 10:love alway order chicken friendli staff fri store locat help
+
+Topic 11:time burger best ve alway good visit ever first fri
+
+Topic 12:burger place fri best ever room servic hotel one food
+
+Topic 13:love servic best good room chicken recommend ever hotel highli
+
+Topic 14:sushi us burger love restaur best roll tabl custom server
+
+Model LDA:
+Topic 0:fantast class drop morn attend welcom thank beauti great size
+
+Topic 1:employe refil unfortun outstand insur hope counter someon 15 fill
+
+Topic 2:burger de le bun et la pour plu servic juici
+
+Topic 3:steak cream tast ice perfect flavor cook mushroom fresh top
+
+Topic 4:recommend highli would help anyon friendli awesom place definit outstand
+
+Topic 5:chang oil tire truck took free manag left put car
+
+Topic 6:dish soup beef noodl pork rice spici chines restaur serv
+
+Topic 7:place good great realli beer like nice re go well
+
+Topic 8:get one us time would order could wait give peopl
+
+Topic 9:place brunch scottsdal breakfast town best busi like year restaur
+
+Topic 10:order sushi roll salmon fish fresh shrimp restaur chef piec
+
+Topic 11:mayb town wow today interest salsa case game train italian
+
+Topic 12:slow bowl worker ladi server north birthday might deliv pie
+
+Topic 13:sent work may 24 upon tuna choos etc waffl yummi
+
+Topic 14:downtown remind sale hear pickl plan beef blue tabl special
+
+Topic 15:best get one alway thai close shop area lot town
+
+Topic 16:main room around super notic night strip though rate casino
+
+Topic 17:place strip la us would oil vega top visit good
+
+Topic 18:pool entre vega amount waffl els chair sampl date market
+
+Topic 19:dip pictur mayb multipl charlott instead crust food find mention
+
+Topic 20:littl feel pricey cute whole japanes light without birthday place
+
+Topic 21:return issu problem purchas rent manag improv addit figur properti
+
+Topic 22:basic hand chef pretti employe mix avocado long find anywher
+
+Topic 23:crab seafood lobster bathroom includ quit impress delici nice rate
+
+Topic 24:red incred rock amaz great friendli realli would staff world
+
+Topic 25:terribl bill margarita frozen good two problem pizza get go
+
+Topic 26:trip dine chicken egg breakfast dip lunch tabl ever four
+
+Topic 27:cook serv prepar overal think area brand near air wine
+
+Topic 28:drink night music live loud friday ball awesom atmospher group
+
+Topic 29:hotel casino resort time nice floor conveni beauti decor lot
+
+Topic 30:dollar desert 11 along cost fan real around way nice
+
+Topic 31:oil work chang coupon 30 trip think made fine back
+
+Topic 32:near insid love warm friendli hang place kid dress sit
+
+Topic 33:friend look beauti peopl tasti lot small also like mani
+
+Topic 34:spa finish friendli spend often bathroom compar differ standard futur
+
+Topic 35:server restaur tabl food ask order kitchen came hostess one
+
+Topic 36:call told said would ask phone day receiv week later
+
+Topic 37:love amaz place best great come ve time alway one
+
+Topic 38:pizza wing order sauc crust good italian slice thin pie
+
+Topic 39:wow even readi seen seat back bother left car wash
+
+Topic 40:wait minut 30 hour 15 10 45 arriv 40 anoth
+
+Topic 41:door would right perfect meal given outsid front smoke chip
+
+Topic 42:new tri menu someth simpl cocktail plate find might uniqu
+
+Topic 43:vega visit la strip time definit next worth trip back
+
+Topic 44:guy good came mom one job behind 45 receiv peopl
+
+Topic 45:great food come price friend total servic spend cook time
+
+Topic 46:kid game play fun daughter watch movi son school tv
+
+Topic 47:work need time care profession dr offic would day thank
+
+Topic 48:us atmospher hang middl weird chef pasta return appear mediocr
+
+Topic 49:good food us servic realli came place time meal waitress
+
+Topic 50:option bowl item prepar black blue menu offer toronto tuna
+
+Topic 51:pool machin system suppos 40 pay kept nice servic check
+
+Topic 52:ever attent ve salon cream bed staff best well pleasant
+
+Topic 53:section stori absolut time seem fun love sinc play especi
+
+Topic 54:complaint juic bun even beyond twice sever chang gone sampl
+
+Topic 55:12 import blue spa avoid member beauti clear rush mine
+
+Topic 56:star dish come everyth worth back food recommend servic tell
+
+Topic 57:store help buy find look one shop like need product
+
+Topic 58:15 rich rib smoke thin compani ll commun futur month
+
+Topic 59:egg cake brunch glass bacon toast wrap fruit sunday heat
+
+Topic 60:employe ever massag extrem move spa ve best unit train
+
+Topic 61:dark season ever listen best includ cute dr go chop
+
+Topic 62:line up straight avoid sandwich bring like love way ye
+
+Topic 63:price portion tea nice small good size place chicken larg
+
+Topic 64:go get time like back never know first even place
+
+Topic 65:money spend question wast answer save wors spent sorri aw
+
+Topic 66:place good qualiti food get buffet go like ve want
+
+Topic 67:wine word atmospher go shrimp servic togeth much make food
+
+Topic 68:car pick wash home get airport flight clean member honest
+
+Topic 69:free fix charg water repair came effici come screen break
+
+Topic 70:ride sauc offer learn food none salsa veggi bill took
+
+Topic 71:combin ingredi realli amaz dessert thought drink chocol care choic
+
+Topic 72:person cook color group sound movi right chip tabl touch
+
+Topic 73:club toronto girl weird came desert vega milk come wall
+
+Topic 74:room stay hotel floor show park walk clean check casino
+
+Topic 75:coffe breakfast cooki cup pastri morn sausag roast milk doubl
+
+Topic 76:practic chines boyfriend origin fruit longer away elsewher bite charg
+
+Topic 77:sent everi except websit dress joint friend appoint avocado wait
+
+Topic 78:hot chocol tip mom pop convers ladi bad per tast
+
+Topic 79:taco chip mexican burrito bean salsa food authent fish pull
+
+Topic 80:fast guy real box cheap ramen sport fill good friendli
+
+Topic 81:hair cut look color salon style done skin job dri
+
+Topic 82:today month twice apart disgust comment insid fall mess drive
+
+Topic 83:year old ago found sad chair sever high dark rememb
+
+Topic 84:100 call anyon recommend part complet day answer compani need
+
+Topic 85:dip trip ate ever open best egg breakfast arriv delici
+
+Topic 86:server ok worst servic tabl one ask experi recommend send
+
+Topic 87:said opinion mushroom much quit listen everyth straight dri best
+
+Topic 88:bar locat bad bartend seat experi downtown nice outdoor review
+
+Topic 89:great food lunch servic sandwich delici dinner menu restaur atmospher
+
+Topic 90:open hour donut 24 work ok thank delici fan get
+
+Topic 91:brunch instal pass still valley coupl menu cours mac citi
+
+Topic 92:staff friendli happi alway excel food well great servic place
+
+Topic 93:chicken fri order good food like chees sauc tri salad
+
+Topic 94:dog card pay peopl get cash credit discount cashier fee
+
+Topic 95:got knowledg girl nice guy front conveni differ sale desk
+
+Topic 96:use set deliveri deliv neighborhood charlott learn usual etc move
+
+Topic 97:servic custom horribl worst longer poor avoid alway go place
+
+Topic 98:manag back review said go went told servic owner custom
+
+Topic 99:dessert expens min choos chose poor 20 begin kinda end
+
+Model NMF:
+Topic 0:yummi fee fix five fit fish first finish fine find
+
+Topic 1:call phone compani said fix told appoint answer hour would
+
+Topic 2:great servic thank job fun everyon game local fantast spot
+
+Topic 3:food servic qualiti better server chines buffet authent ok cold
+
+Topic 4:pizza crust slice deliveri thin top wing style pie sauc
+
+Topic 5:kid fun play game daughter lot littl famili park cool
+
+Topic 6:good pretti overal though littl servic big portion pricey wing
+
+Topic 7:yummi fee fix five fit fish first finish fine find
+
+Topic 8:yummi fee fix five fit fish first finish fine find
+
+Topic 9:friendli clean super quick everyon enjoy free easi fantast owner
+
+Topic 10:definit back would recommend return everyth worth stop spot quick
+
+Topic 11:time first everi last visit second next long went mani
+
+Topic 12:burger bun juici onion bacon cook potato pickl worth fri
+
+Topic 13:love absolut wonder especi spot everi fantast perfect favorit beauti
+
+Topic 14:sushi roll fish qualiti japanes rice tuna salmon happi chef
+
+Topic 15:room hotel stay pool bed strip floor casino desk clean
+
+Topic 16:yummi fee fix five fit fish first finish fine find
+
+Topic 17:place town better cheap run favorit around littl hang owner
+
+Topic 18:taco fish shrimp salsa street margarita favorit meat quick everyth
+
+Topic 19:mexican burrito salsa chip authent bean rice margarita green bowl
+
+Topic 20:excel fish town servic need qualiti job stop environ impress
+
+Topic 21:cut guy hair meat need woman style side worst skin
+
+Topic 22:hair salon color style job year appoint found done long
+
+Topic 23:car wash buy vehicl drive tire purchas oil bought guy
+
+Topic 24:alway favorit locat usual come consist someth find keep often
+
+Topic 25:go back ca wrong els to anywher year wo usual
+
+Topic 26:best ever town hand far part citi valley know worst
+
+Topic 27:store buy item product find select purchas sale sell cashier
+
+Topic 28:yummi fee fix five fit fish first finish fine find
+
+Topic 29:servic custom horribl terribl busi quick manag bad slow receiv
+
+Topic 30:yummi fee fix five fit fish first finish fine find
+
+Topic 31:order deliveri wrong readi took wing deliv came roll waitress
+
+Topic 32:price reason qualiti portion high fair decent size worth afford
+
+Topic 33:yummi fee fix five fit fish first finish fine find
+
+Topic 34:vega la strip buffet trip visit casino stop everi favorit
+
+Topic 35:breakfast egg toast pancak bacon brunch french waffl potato morn
+
+Topic 36:chicken rice wing waffl dri curri sauc crispi grill tender
+
+Topic 37:delici absolut everyth also favorit bread egg perfect everi ambianc
+
+Topic 38:nice clean decor patio outdoor littl locat area insid outsid
+
+Topic 39:amaz job thank beauti ca perfect absolut feel super everyth
+
+Topic 40:got came went away milk right tea back first husband
+
+Topic 41:sandwich bread soup tomato meat cooki avocado smoke half grill
+
+Topic 42:work profession guy job need done thank compani clean schedul
+
+Topic 43:tri must decid give someth differ thing everyth ca glad
+
+Topic 44:dog hot pet care play bring park pick chili kind
+
+Topic 45:drink bartend tea waitress server cocktail mix happi milk crowd
+
+Topic 46:get ca busi line done pay right crowd re long
+
+Topic 47:one favorit spot everi person differ two citi lot big
+
+Topic 48:beer select wine game list local patio cold favorit wing
+
+Topic 49:realli enjoy littl lot cool appreci re much good stuff
+
+Topic 50:soup noodl beef pho rice pork chines bowl spici ramen
+
+Topic 51:ice cream chocol tea cooki dessert cake sweet milk top
+
+Topic 52:nail salon job done mani color week last set appoint
+
+Topic 53:de la et plu ambianc pain mom hotel chocol group
+
+Topic 54:like feel felt seem thing smell someth treat famili know
+
+Topic 55:salad dress salmon soup grill tomato pasta green side potato
+
+Topic 56:come back ll keep soon super came first happi sure
+
+Topic 57:restaur decor chines chain owner favorit famili tabl dine dish
+
+Topic 58:look forward re beauti perfect photo find someth walk anyon
+
+Topic 59:le et pour de plu ambianc cocktail style sauc surpris
+
+Topic 60:well worth done prepar season everyth bit extrem pretti may
+
+Topic 61:menu item option brunch everyth dinner offer dessert varieti appet
+
+Topic 62:fri rice fish deep potato sweet pickl wing crispi juici
+
+Topic 63:awesom thank super guy view cool spot us girl also
+
+Topic 64:chees mac bread onion bacon grill bagel lobster tomato melt
+
+Topic 65:staff friendli wait locat wonder welcom accommod extrem attent member
+
+Topic 66:recommend highli would anyon profession job knowledg famili absolut outstand
+
+Topic 67:help need employe knowledg thank extrem question find us product
+
+Topic 68:coffe tea pastri cup milk cafe roast sweet bagel bean
+
+Topic 69:show see seat ticket venu seen music watch view light
+
+Topic 70:tast better noth frozen bland chocol dri bad ok even
+
+Topic 71:new favorit brand recent thank hous style old year someth
+
+Topic 72:experi wonder overal bad made dine enjoy knowledg review first
+
+Topic 73:peopl line mani group rude wait 10 lot club parti
+
+Topic 74:bar bartend game sit sport area seat sat watch play
+
+Topic 75:fresh hot ingredi everyth made fruit veggi top bread fish
+
+Topic 76:steak cook potato perfectli medium lobster rare rib meal side
+
+Topic 77:eat sit everi bite pasta yummi take meal dinner corn
+
+Topic 78:star give five rate reason would could review wish four
+
+Topic 79:massag spa relax feel deep hot hand experienc area profession
+
+Topic 80:day next week everi went receiv start later ago job
+
+Topic 81:us wait minut tabl server came seat hour ask took
+
+Topic 82:shop locat center mall custom area select brand town repair
+
+Topic 83:night late last saturday music dinner friday club fun date
+
+Topic 84:ve ever year seen re sinc eaten gotten twice quit
+
+Topic 85:fast servic effici deliveri tasti move quick chain joint right
+
+Topic 86:dr offic care doctor appoint patient pain feel treatment year
+
+Topic 87:flavor sampl favorit full spice combin lack lot let salt
+
+Topic 88:thai pad curri tea spici rice noodl dish spice tasti
+
+Topic 89:sauc dish meat meal side also sweet spici portion serv
+
+Topic 90:charg extra card pay credit fee free bill 00 paid
+
+Topic 91:make sure feel made comfort welcom home everyth thank everi
+
+Topic 92:friend famili group fun perfect came hang mine found recommend
+
+Topic 93:never disappoint bad anyth ever els worst terribl money seen
+
+Topic 94:would even could know locat say way ask see thing
+
+Topic 95:check in everyth decid hour free went regular websit close
+
+Topic 96:lunch buffet special dinner today spot busi went quick valu
+
+Topic 97:want ask buy exactli much say give tell might money
+
+Topic 98:atmospher fun cool gem relax music fantast wine wonder enjoy
+
+Topic 99:use year compani clean job profession chang last old hous
+
+Model LSA_TF:
+Topic 0:place good get food time like go one would order
+
+Topic 1:get call would said told room time ask day go
+
+Topic 2:order food us ask wait tabl would came said server
+
+Topic 3:good like order realli sauc tast chees get pizza tri
+
+Topic 4:place order go get like wait come eat tri said
+
+Topic 5:place would food good room servic told call said us
+
+Topic 6:room one us hotel stay like restaur nice love order
+
+Topic 7:place time us good order would back came pizza sushi
+
+Topic 8:would great call like chicken tast tri sauc look work
+
+Topic 9:great get order pizza servic back car place us said
+
+Topic 10:servic order get time custom place pizza one room like
+
+Topic 11:would time get place like food great also come call
+
+Topic 12:room order would go call chicken food also day hotel
+
+Topic 13:one get tabl would us great drink bar server restaur
+
+Topic 14:servic back come get de tri chicken love us le
+
+Topic 15:would go servic de le la et drink like get
+
+Topic 16:pizza de le la et us sauc crust chees tri
+
+Topic 17:de le et one great la back said got chicken
+
+Topic 18:realli de le order look et la peopl staff work
+
+Topic 19:love come back wait would ve one like minut alway
+
+Topic 20:us love good de alway like order le et chicken
+
+Topic 21:realli love tri got get want room one hair call
+
+Topic 22:chicken love fri got drink wait also us pizza car
+
+Topic 23:back car love us one realli order get would food
+
+Topic 24:car wait got minut one would look long went staff
+
+Topic 25:love said ask got call drink tri well could went
+
+Topic 26:tri got ve car us drink burger best look order
+
+Topic 27:call day wait got work restaur like go dr also
+
+Topic 28:car ve love restaur peopl got said come realli alway
+
+Topic 29:got hair look cut best amaz get came ever first
+
+Topic 30:chicken peopl got even tri love restaur sushi first would
+
+Topic 31:restaur car drink best make bar chicken recommend alway fri
+
+Topic 32:look hair also chicken cut love want price one call
+
+Topic 33:nice alway ve got work tri restaur locat came friendli
+
+Topic 34:nice car hair peopl work look littl chees tri cut
+
+Topic 35:could ve price love salad never sushi chicken drink bar
+
+Topic 36:even restaur locat fri burger never look tabl back love
+
+Topic 37:nice even sushi burger fri want price call love roll
+
+Topic 38:come work staff even alway menu friendli eat lunch tabl
+
+Topic 39:chees look nice store call got work come burger bar
+
+Topic 40:burger fri also work could sushi restaur best peopl roll
+
+Topic 41:even also best amaz vega ask drink look sushi nice
+
+Topic 42:even price work hair also drink cut want restaur tea
+
+Topic 43:want restaur ve could come definit recommend help re wait
+
+Topic 44:make work sushi manag re love need menu sure tabl
+
+Topic 45:locat littl much coffe need tast work pretti use went
+
+Topic 46:day locat salad peopl went nice lunch could also sushi
+
+Topic 47:could taco staff look bar friendli car ve call also
+
+Topic 48:best sandwich lunch taco ask salad re dog work know
+
+Topic 49:taco locat drink work never want also fish eat friendli
+
+Topic 50:tabl price alway could seat dish littl want pretti show
+
+Topic 51:want taco best nice see locat compani tast salad review
+
+Topic 52:peopl tast tabl coffe want staff friend burger tea friendli
+
+Topic 53:want even alway well friend went eat fri recommend store
+
+Topic 54:salad sandwich bar first tabl definit call come area visit
+
+Topic 55:take look new make taco went show hour fri two
+
+Topic 56:locat tabl day well best told bar come taco manag
+
+Topic 57:day store dog alway best soup server came hot hair
+
+Topic 58:re two littl want eat new dog way staff drink
+
+Topic 59:need bar price day area never locat ask well recommend
+
+Topic 60:eat use wait say new thing soup day friend review
+
+Topic 61:thing salad much tast first best went wait beer said
+
+Topic 62:eat tabl could coffe well sandwich nice taco drink price
+
+Topic 63:littl never menu call amaz best taco peopl experi came
+
+Topic 64:thing peopl definit amaz ask use say need delici first
+
+Topic 65:salad use staff server littl drink charg manag clean make
+
+Topic 66:never soup pretti eat lunch hour locat much menu experi
+
+Topic 67:dog never vega salad definit burger hot show seat lot
+
+Topic 68:take littl alway first work visit experi two burger ask
+
+Topic 69:custom eat manag menu locat littl peopl need came amaz
+
+Topic 70:dog amaz thing hot chees sauc came help ve first
+
+Topic 71:came hour need want bar chees happi experi show restaur
+
+Topic 72:experi littl say night eat locat never around friend said
+
+Topic 73:chees tabl friend tast work dog know pretti thing first
+
+Topic 74:manag minut definit re experi taco recommend tabl salad clean
+
+Topic 75:ask new taco experi vega thing made year sauc day
+
+Topic 76:server dog beer experi visit hour first recommend eat use
+
+Topic 77:amaz much beer delici never mani sandwich eat two see
+
+Topic 78:menu never definit said everyth make littl find use compani
+
+Topic 79:hour star re coffe first new busi take sauc happi
+
+Topic 80:friend dog much amaz know help ask delici fish soup
+
+Topic 81:re said soup best want coffe salad locat server still
+
+Topic 82:recommend take charg said locat littl help manag flavor vega
+
+Topic 83:manag first tea know seat went need take review ice
+
+Topic 84:said went experi review walk see clean busi server delici
+
+Topic 85:star vega give tea night went first custom year work
+
+Topic 86:thing night coffe server star busi tast chees soup definit
+
+Topic 87:never lot right thing know much visit flavor hour came
+
+Topic 88:help burger beer way sauc find made home manag live
+
+Topic 89:re sauc take told custom recommend show area came day
+
+Topic 90:amaz beer use lunch tast made lot park way work
+
+Topic 91:eat soup experi burger new amaz call server peopl beer
+
+Topic 92:pretti beer experi eat charg use came ice cream vega
+
+Topic 93:friend review park thing sauc see walk busi recommend need
+
+Topic 94:tast new walk definit fri flavor week experi sandwich steak
+
+Topic 95:pretti sauc line walk beer steak made fri put definit
+
+Topic 96:delici ask see everi soup everyth steak small room egg
+
+Topic 97:right definit two side manag steak egg friend year went
+
+Topic 98:friend ca area steak visit delici way right enjoy still
+
+Topic 99:two store salad right beer peopl staff dish vega review
+
+Model LSA_TFIDF:
+Topic 0:food place good great time servic go get order like
+
+Topic 1:food good great chicken delici place fri love pizza restaur
+
+Topic 2:great love friendli alway servic staff recommend amaz place best
+
+Topic 3:food servic great us wait order custom server back minut
+
+Topic 4:pizza great order crust servic deliveri custom call slice salad
+
+Topic 5:good room nice bar drink pizza beer hotel night realli
+
+Topic 6:good price servic recommend work help realli friendli burger car
+
+Topic 7:place food alway go sushi good get never love ve
+
+Topic 8:burger great good love place fri back time go got
+
+Topic 9:love staff friendli good wait order help us food burger
+
+Topic 10:alway great love chicken store order locat get fri custom
+
+Topic 11:place love would car chicken recommend great call got delici
+
+Topic 12:burger fri place best ever servic room one recommend hotel
+
+Topic 13:love good best room servic chicken recommend hotel highli taco
+
+Topic 14:sushi roll love us servic custom order good alway tabl
+
+Topic 15:room sushi time hotel stay order chicken vega roll car
+
+Topic 16:chicken alway sushi recommend staff great bar hair dr highli
+
+Topic 17:place recommend coffe time highli breakfast order sandwich alway egg
+
+Topic 18:taco best car drink get wait bar friendli ever chicken
+
+Topic 19:taco burger time food mexican recommend price fish love restaur
+
+Topic 20:taco hair great staff room order like place friendli realli
+
+Topic 21:hair get wait go recommend cut burger highli price salon
+
+Topic 22:go dr would staff great good offic sandwich doctor care
+
+Topic 23:car amaz alway us burger get food tri good delici
+
+Topic 24:alway servic locat go recommend taco would custom definit drink
+
+Topic 25:order go good us vega store la coffe amaz help
+
+Topic 26:nice order come best back ve definit one restaur ever
+
+Topic 27:wait recommend ice store cream highli would chicken like tast
+
+Topic 28:car us place restaur realli time vega store wait help
+
+Topic 29:car go drink realli got nice servic friendli sushi excel
+
+Topic 30:realli amaz nice go price sandwich taco time salad ve
+
+Topic 31:order nice locat realli wait beer amaz dr sandwich call
+
+Topic 32:price realli order dr vega reason go la wait noodl
+
+Topic 33:amaz tri restaur one price locat nice ice chicken cream
+
+Topic 34:tri alway vega la nice sandwich realli food would store
+
+Topic 35:realli coffe breakfast chicken tri food re got lunch want
+
+Topic 36:get tri help ve noodl realli thai soup friendli servic
+
+Topic 37:delici dog store fresh got hot food sushi realli us
+
+Topic 38:nice get dog time fri amaz drink vega peopl la
+
+Topic 39:dog amaz one sandwich got show la de vega friendli
+
+Topic 40:nice lunch tri us got dog ice locat cream excel
+
+Topic 41:one sandwich definit delici star ice make drink hair work
+
+Topic 42:lunch work go nice restaur ice best clean compani salad
+
+Topic 43:work tri sandwich excel peopl year cream ice clean bar
+
+Topic 44:tri restaur dog sandwich best make price time definit amaz
+
+Topic 45:drink locat dog happi hour definit tast tri well dinner
+
+Topic 46:one star would littl well menu excel realli give hair
+
+Topic 47:one drink like favorit lunch store breakfast menu excel come
+
+Topic 48:awesom beer hour locat one price happi like tast everi
+
+Topic 49:excel realli get locat one restaur store job place call
+
+Topic 50:salad coffe realli soup come amaz noodl beef never hair
+
+Topic 51:ice cream lunch realli dog happi eat hour special car
+
+Topic 52:salad nail make sure dog buffet massag come manag look
+
+Topic 53:de le ve like work et definit help salad us
+
+Topic 54:salad awesom like price locat steak ask excel call littl
+
+Topic 55:salad beer work buffet excel like star definit get hair
+
+Topic 56:got restaur dog experi store breakfast alway first bar went
+
+Topic 57:excel ve would restaur make got re hour peopl star
+
+Topic 58:look day bar nice help review noodl star show fri
+
+Topic 59:de le everyth one make et night locat experi want
+
+Topic 60:well restaur friend thank hour happi littl come kid fun
+
+Topic 61:help even restaur better day menu drink server look call
+
+Topic 62:us awesom tast fresh salad super bar burger call make
+
+Topic 63:awesom experi star lunch massag new give friend store use
+
+Topic 64:hour chees coffe happi got clean tri experi come salad
+
+Topic 65:awesom chees day want staff much nail job thank excel
+
+Topic 66:star fast need friendli littl nail servic shop super store
+
+Topic 67:help make use new would salad definit favorit fast nail
+
+Topic 68:would also day menu new best come drink option place
+
+Topic 69:show salad menu delici work happi everyth fast vega better
+
+Topic 70:never everyth littl fresh even look would visit spot excel
+
+Topic 71:new look definit star eat even fri buffet staff give
+
+Topic 72:even steak store went need night delici awesom last visit
+
+Topic 73:show make menu use littl lunch back delici way chees
+
+Topic 74:fri bar day favorit everyth never clean atmospher well feel
+
+Topic 75:fresh super fri nail lot kid massag fish pretti new
+
+Topic 76:littl experi awesom fresh atmospher look tea staff steak made
+
+Topic 77:eat clean littl atmospher much thank visit buffet show happi
+
+Topic 78:massag got star need steak come park even spot lot
+
+Topic 79:experi come everi massag fast ever use staff look thank
+
+Topic 80:day flavor eat everi definit bad small also night qualiti
+
+Topic 81:want fri littl well experi bar help even fish soup
+
+Topic 82:check ve need vega much portion peopl everyth sauc pretti
+
+Topic 83:tast thank show ever thai came never right want fri
+
+Topic 84:kid review definit check make never best disappoint super room
+
+Topic 85:need show come fast friend super massag took could seat
+
+Topic 86:night tast never fast need atmospher fun salad disappoint us
+
+Topic 87:thank eat mani peopl flavor littl small tri much option
+
+Topic 88:wing even peopl sauc pretti friend also home excel ca
+
+Topic 89:thai clean pretti flavor also new went much everi atmospher
+
+Topic 90:walk friend also lot could park eat guy spot home
+
+Topic 91:custom day even visit better kid right say wing tea
+
+Topic 92:make pretti use job night call work server friend ever
+
+Topic 93:also need everyth right experi say year bad shop top
+
+Topic 94:want tast experi staff went ve area seat lunch pho
+
+Topic 95:favorit first roll spot say well review re owner lot
+
+Topic 96:spot qualiti flavor shop custom check made know bad thank
+
+Topic 97:atmospher right meat even day pretti thank guy rice fast
+
+Topic 98:atmospher want wing hot buffet enjoy qualiti spot disappoint burrito
+
+Topic 99:server use know wing care disappoint tea hotel everyth day
+
