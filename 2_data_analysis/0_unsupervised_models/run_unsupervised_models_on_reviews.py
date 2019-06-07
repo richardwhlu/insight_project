@@ -186,7 +186,7 @@ def display_topics(model, feature_names, num_top_words, model_string):
 # PRESENT RESULTS
 # =========================================================================== #
 
-display_topics(lda, tf_feature_names, 10, "LDA")
-display_topics(nmf, tfidf_feature_names, 10, "NMF")
-display_topics(lsa_tf, tf_feature_names, 10, "LSA_TF")
-display_topics(lsa_tfidf, tfidf_feature_names, 10, "LSA_TFIDF")
+display_topics(lda, tf_feature_names, num_words, "LDA")
+display_topics(nmf, tfidf_feature_names, num_words, "NMF")
+display_topics(lsa_tf, tf_feature_names, num_words, "LSA_TF")
+display_topics(lsa_tfidf, tfidf_feature_names, num_words, "LSA_TFIDF")
