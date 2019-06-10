@@ -67,7 +67,7 @@ except:
 # randomization method (i.e. checking if it is already labeled then
 # randomly selecting another)
 
-random_reviews = select_reviews(random_seed, 10000)
+random_reviews = select_reviews(random_seed, 2000)
 
 counter = 0
 
