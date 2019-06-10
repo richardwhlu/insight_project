@@ -11,6 +11,7 @@ import nltk
 import numpy as np
 import os
 import pandas as pd
+import pickle
 import string
 import sys
 import time
@@ -138,6 +139,11 @@ lda = LDA(n_components=num_topics,
           learning_method="online",
           learning_offset=50,
           random_state=10191994).fit(tf)
+# save the LDA model
+with open("../../4_models/lda_50K_influential_reviews_10191994.pickle", "wb") as f:
+    pickle.dump(lda, f)
+
+
 end1 = time.time()
 print("LDA: {}".format(end1 - start1))
 
