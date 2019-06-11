@@ -39,6 +39,11 @@ test_review = data2.iloc[0]
 
 model = Word2Vec.load("../../4_models/word2vec_embeddings_100K_business_elite_reviews.model")
 
+# need to incorporate a dataset that can be used to fit tfidf and counts
+# in case number of reviews is small
+# have to create a universal set to make sure features are standardized
+# across batches
+
 # =========================================================================== #
 # FEATURE EXTRACTION FUNCTIONS
 # =========================================================================== #
@@ -199,9 +204,29 @@ def process_word_embeddings(review_text):
     cleaned_sentence = preprocess_reviews(review_text, 0)
 
     food_similarity = []
+    tasty_similarity = []
+    delicious_similarity = []
+    yummy_similarity = []
+
     service_similarity = []
+    fast_similarity = []
+    quick_similarity = []
+    line_similarity = []
+    wait_similarity = []
+    seated_similarity = []
+    
     price_similarity = []
+    expensive_similarity = []
+    cost_similarity = []
+    worth_similarity = []
+    
     ambiance_similarity = []
+    atmosphere_similarity = []
+    environment_similarity = []
+    patio_similarity = []
+    loud_similarity = []
+    smelly_similarity = []
+
 
     for word in cleaned_sentence:
         try:
@@ -210,10 +235,58 @@ def process_word_embeddings(review_text):
         except:
             pass
 
+        try:
+            tmp = model.wv.similarity(word, "tasty")
+            tasty_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "delicious")
+            delicious_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "yummy")
+            yummy_similarity.append(tmp)
+        except:
+            pass
 
         try:
             tmp = model.wv.similarity(word, "service")
             service_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "fast")
+            fast_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "quick")
+            quick_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "line")
+            line_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "wait")
+            wait_similarity.append(tmp)
+        except:
+            pass
+
+
+        try:
+            tmp = model.wv.similarity(word, "seated")
+            seated_similarity.append(tmp)
         except:
             pass
 
@@ -226,8 +299,56 @@ def process_word_embeddings(review_text):
 
 
         try:
+            tmp = model.wv.similarity(word, "expensive")
+            expensive_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "cost")
+            cost_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "worth")
+            worth_similarity.append(tmp)
+        except:
+            pass
+
+        try:
             tmp = model.wv.similarity(word, "ambiance")
             ambiance_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "atmosphere")
+            atmosphere_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "environment")
+            environment_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "patio")
+            patio_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "loud")
+            loud_similarity.append(tmp)
+        except:
+            pass
+
+        try:
+            tmp = model.wv.similarity(word, "smelly")
+            smelly_similarity.append(tmp)
         except:
             pass
 
@@ -236,13 +357,68 @@ def process_word_embeddings(review_text):
     service_avg_similarity = np.mean(service_similarity)
     price_avg_similarity = np.mean(price_similarity)
     ambiance_avg_similarity = np.mean(ambiance_similarity)
+    tasty_avg_similarity = np.mean(tasty_similarity)
+    delicious_avg_similarity = np.mean(delicious_similarity)
+    yummy_avg_similarity = np.mean(yummy_similarity)
+    fast_avg_similarity = np.mean(fast_similarity)
+    quick_avg_similarity = np.mean(quick_similarity)
+    line_avg_similarity = np.mean(line_similarity)
+    wait_avg_similarity = np.mean(wait_similarity)
+    seated_avg_similarity = np.mean(seated_similarity)
+    expensive_avg_similarity = np.mean(expensive_similarity)
+    cost_avg_similarity = np.mean(cost_similarity)
+    worth_avg_similarity = np.mean(worth_similarity)
+    atmosphere_avg_similarity = np.mean(ambiance_similarity)
+    environment_avg_similarity = np.mean(environment_similarity)
+    patio_avg_similarity = np.mean(patio_similarity)
+    loud_avg_similarity = np.mean(loud_similarity)
+    smelly_avg_similarity = np.mean(smelly_similarity)
     
     embeddings_list = [food_avg_similarity,
                        service_avg_similarity,
                        price_avg_similarity,
-                       ambiance_avg_similarity]
+                       ambiance_avg_similarity,
+                       tasty_avg_similarity,
+                       delicious_avg_similarity,
+                       yummy_avg_similarity,
+                       fast_avg_similarity,
+                       quick_avg_similarity,
+                       line_avg_similarity,
+                       wait_avg_similarity,
+                       seated_avg_similarity,
+                       expensive_avg_similarity,
+                       cost_avg_similarity,
+                       worth_avg_similarity,
+                       atmosphere_avg_similarity,
+                       environment_avg_similarity,
+                       patio_avg_similarity,
+                       loud_avg_similarity,
+                       smelly_avg_similarity]
 
     return embeddings_list
+
+
+# Category 6: Count vector (maybe binary?) normalized
+def process_counts(review_df):
+    """Process for normalized counts of common words [20 features]
+
+    Args:
+        review_df - df of raw review_text from csv
+
+    Returns:
+        count_df - df of counts
+    """
+    tf_vectorizer = CountVectorizer(max_df=0.8,
+                                    min_df=10,
+                                    max_features=20)
+    tf = tf_vectorizer.fit(review_df)
+    tf2 = tf.transform(review_df)
+    words = [word for word, index in tf.vocabulary_.items()]
+
+    tf_df = pd.DataFrame(tf2.toarray())
+    tf_df.columns = words
+
+    return tf_df
 
 
 def normalize(col):
@@ -291,6 +467,7 @@ def produce_feature_matrix(data):
     # perhaps can parallelize functions
     tfidf_df = process_tfidf(preprocessed_df)
     topic_df = process_topic_models(preprocessed_df)
+    tf_df = process_counts(preprocessed_df)
 
     (data["sen_len"],
      data["sen_avg_len"],
@@ -444,7 +621,23 @@ def produce_feature_matrix(data):
     (data["food_avg_sim"],
      data["service_avg_sim"],
      data["price_avg_sim"],
-     data["ambiance_avg_sim"]) = zip(*data[column_name].apply(
+     data["ambiance_avg_sim"],
+     data["tasty_avg_similarity"],
+     data["delicious_avg_similarity"],
+     data["yummy_avg_similarity"],
+     data["fast_avg_similarity"],
+     data["quick_avg_similarity"],
+     data["line_avg_similarity"],
+     data["wait_avg_similarity"],
+     data["seated_avg_similarity"],
+     data["expensive_avg_similarity"],
+     data["cost_avg_similarity"],
+     data["worth_avg_similarity"],
+     data["atmosphere_avg_similarity"],
+     data["environment_avg_similarity"],
+     data["patio_avg_similarity"],
+     data["loud_avg_similarity"],
+     data["smelly_avg_similarity"]) = zip(*data[column_name].apply(
         process_word_embeddings))
 
     # scale the word embedding columns
@@ -452,7 +645,27 @@ def produce_feature_matrix(data):
     data["service_avg_sim"] = normalize(data["service_avg_sim"])
     data["price_avg_sim"] = normalize(data["price_avg_sim"])
     data["ambiance_avg_sim"] = normalize(data["ambiance_avg_sim"])
+    data["tasty_avg_similarity"] = normalize(data["tasty_avg_similarity"])
+    data["delicious_avg_similarity"] = normalize(data["delicious_avg_similarity"])
+    data["yummy_avg_similarity"] = normalize(data["yummy_avg_similarity"])
+    data["fast_avg_similarity"] = normalize(data["fast_avg_similarity"])
+    data["quick_avg_similarity"] = normalize(data["quick_avg_similarity"])
+    data["line_avg_similarity"] = normalize(data["line_avg_similarity"])
+    data["wait_avg_similarity"] = normalize(data["wait_avg_similarity"])
+    data["seated_avg_similarity"] = normalize(data["seated_avg_similarity"])
+    data["expensive_avg_similarity"] = normalize(data["expensive_avg_similarity"])
+    data["cost_avg_similarity"] = normalize(data["cost_avg_similarity"])
+    data["worth_avg_similarity"] = normalize(data["worth_avg_similarity"])
+    data["atmosphere_avg_similarity"] = normalize(data["atmosphere_avg_similarity"])
+    data["environment_avg_similarity"] = normalize(data["environment_avg_similarity"])
+    data["patio_avg_similarity"] = normalize(data["patio_avg_similarity"])
+    data["loud_avg_similarity"] = normalize(data["loud_avg_similarity"])
+    data["smelly_avg_similarity"] = normalize(data["smelly_avg_similarity"])
+    
+    for column in tf_df.columns:
+        tf_df[column] = normalize(tf_df[column])
 
-    feature_matrix = pd.concat([data, tfidf_df, topic_df], axis=1)
+
+    feature_matrix = pd.concat([data, tfidf_df, topic_df, tf_df], axis=1)
 
     return feature_matrix
