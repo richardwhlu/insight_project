@@ -17,6 +17,7 @@ import string
 import time
 
 from collections import defaultdict
+from gensim.models import Word2Vec
 from nltk.corpus import stopwords
 from nltk.stem.porter import *
 from nltk.tokenize import word_tokenize
@@ -35,6 +36,8 @@ data["text_formatted"] = data["text"].apply(ast.literal_eval)
 
 data2 = data[["text_formatted"]]
 test_review = data2.iloc[0]
+
+model = Word2Vec.load("../../4_models/word2vec_embeddings_100K_business_elite_reviews.model")
 
 # =========================================================================== #
 # FEATURE EXTRACTION FUNCTIONS
@@ -183,6 +186,80 @@ def process_topic_models(review_df):
 
 
 # CATEGORY 5: Word embeddings
+def process_word_embeddings(review_text):
+    """Process similarity of word embeddings to key words [4 features]
+    # can do a lot more here with embeddings space and related words
+
+    Args:
+        review_text - raw review_text from csv
+
+    Returns:
+        embeddings_list - list of avg cosine similarity to focal words
+    """
+    cleaned_sentence = preprocess_reviews(review_text, 0)
+
+    food_similarity = []
+    service_similarity = []
+    price_similarity = []
+    ambiance_similarity = []
+
+    for word in cleaned_sentence:
+        try:
+            tmp = model.wv.similarity(word, "food")
+            food_similarity.append(tmp)
+        except:
+            pass
+
+
+        try:
+            tmp = model.wv.similarity(word, "service")
+            service_similarity.append(tmp)
+        except:
+            pass
+
+
+        try:
+            tmp = model.wv.similarity(word, "price")
+            price_similarity.append(tmp)
+        except:
+            pass
+
+
+        try:
+            tmp = model.wv.similarity(word, "ambiance")
+            ambiance_similarity.append(tmp)
+        except:
+            pass
+
+
+    food_avg_similarity = np.mean(food_similarity)
+    service_avg_similarity = np.mean(service_similarity)
+    price_avg_similarity = np.mean(price_similarity)
+    ambiance_avg_similarity = np.mean(ambiance_similarity)
+    
+    embeddings_list = [food_avg_similarity,
+                       service_avg_similarity,
+                       price_avg_similarity,
+                       ambiance_avg_similarity]
+
+    return embeddings_list
+
+
+def normalize(col):
+    """Normalize the col to gaussian
+
+    Args:
+        col - input column
+
+    Returns:
+        col_n - normalized column
+    """
+    tmp = []
+    for row in col:
+        tmp.append((row - np.mean(col)) / np.std(col))
+
+
+    return tmp
 
 
 # =========================================================================== #
@@ -363,6 +440,18 @@ def produce_feature_matrix(data):
      data['X_PRT'],
      data['X_DET'],
      data['X_CONJ']) = zip(*data[column_name].apply(process_syntax))
+
+    (data["food_avg_sim"],
+     data["service_avg_sim"],
+     data["price_avg_sim"],
+     data["ambiance_avg_sim"]) = zip(*data[column_name].apply(
+        process_word_embeddings))
+
+    # scale the word embedding columns
+    data["food_avg_sim"] = normalize(data["food_avg_sim"])
+    data["service_avg_sim"] = normalize(data["service_avg_sim"])
+    data["price_avg_sim"] = normalize(data["price_avg_sim"])
+    data["ambiance_avg_sim"] = normalize(data["ambiance_avg_sim"])
 
     feature_matrix = pd.concat([data, tfidf_df, topic_df], axis=1)
 
