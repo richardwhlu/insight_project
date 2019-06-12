@@ -1606,3 +1606,807 @@ Topic 98:say sum beef peopl dim noth sweet strip lobster sushi awesom staff tast
 
 Topic 99:awesom tabl re shrimp visit waffl park side bacon tast grill thing menu want even soup ask sum first flavor
 
+Model LDA:
+Topic 0:drink place great bar fun atmospher cool music night bartend vibe live loud realli love good decor play staff friendli
+
+Topic 1:burger fri ramen shake bun order chees patti good potato got cook chili place juici sweet side in pickl joint
+
+Topic 2:hotel stay casino pool strip vega room nice one venetian walk also get gambl tower locat resort mgm pari close
+
+Topic 3:flavor tast like good realli sauc nice also tri order sweet fri bit came salti textur got crispi fresh bite
+
+Topic 4:cook happi medium spinach pretti waitress good grill center seem mix lobster hour menu came bar steak top salad rare
+
+Topic 5:half would price expect one bit quit also item menu though high larg offer like 50 end much definit seem
+
+Topic 6:order disappoint side menu small wife serv restaur portion appet size two tast howev excit feel meal complet first plate
+
+Topic 7:truli experi sure ask enjoy everyth dine way extrem stand get much hostess place line go minut one thing right
+
+Topic 8:work clean modern interior design market lucki high need enough decor complain done end well comfort wall experi without look
+
+Topic 9:strip money crowd vega spend expens place suck want spent way save buck overpr cheap less local peopl 100 go
+
+Topic 10:second shrimp deal whole 10 hash season given long bill surprisingli overpr secret pretzel money complimentari notic spot burrito play
+
+Topic 11:mall togeth write though impress said calamari front tomato includ ye differ thick parti request tasti enter hour taken mouth
+
+Topic 12:happi recommend hour highli great would special definit also price anyon delici appet deal menu servic food reason especi valu
+
+Topic 13:old hit cocktail big spot miss fan town door crowd grab classic tabl right wall bar chair long popular pack
+
+Topic 14:chees rib mac bbq short smoke brisket side meat pull bean green tender bone eye tea sweet fri plate joint
+
+Topic 15:review custom experi read manag servic visit want write staff world anoth first make guest give see know pleas let
+
+Topic 16:ask us said told waitress guy hostess experi tell one made walk never ladi even point go take sat say
+
+Topic 17:excel servic food good top restaur well experi menu nice impress notch prepar recommend tri ambianc season dine overal deep
+
+Topic 18:waiter us got came order person time even per bill would back food bad tabl servic charg end eat calamari
+
+Topic 19:taco chip salsa mexican bean burrito tortilla guacamol corn order food fresh street black authent avocado tasti made green pineappl
+
+Topic 20:meal grill enjoy great food fantast restaur famili vegetarian experi platter atmospher servic staff share friendli dine option nice tasti
+
+Topic 21:coconut fish pork pho place serv egg beat roll color surprisingli overli seafood anoth nice meat better sinc drink short
+
+Topic 22:server us order servic came seat tabl food attent took reserv drink immedi right time greet kitchen busi friendli quickli
+
+Topic 23:husband chees split truffl look forward die slider man goat love blue yelp good tri fri oh decid menu tomato
+
+Topic 24:onion top chees sweet tomato bread green slice fresh soft savori thick ring fill serv mix pickl caramel toast bite
+
+Topic 25:french patio outsid insid sit nice outdoor seat toast rock snack app enjoy day warm bread tasti delici full fri
+
+Topic 26:pricey group tabl gave level sure summer non tortilla bottom thick establish varieti dark ladi hard com salad authent vega
+
+Topic 27:breakfast egg pancak sausag hash potato gravi morn benedict coffe bacon biscuit toast brown omelet side fruit serv fluffi huge
+
+Topic 28:beer select brew bar local list cold food huge sampl includ varieti stop good four head serv summer even menu
+
+Topic 29:area restaur bar view beauti seat nice dine great tabl get enjoy look time window see also open would go
+
+Topic 30:free show watch game play fountain bellagio tv machin view giant see fun vega water music everi check offer get
+
+Topic 31:time place alway get ve go one love come favorit everi tri never year like make eat usual re thing
+
+Topic 32:better would food like ok think good place much even go servic noth expect one thing say though tast ve
+
+Topic 33:meat pork belli bun combo fat steam cook tender fri ball cut also pickl juici piec delici dri crispi come
+
+Topic 34:hand wow except meatbal step bottom oh kinda wish bite yeah continu chang agre best simpli italian wonder establish everi
+
+Topic 35:mostli morn greasi veggi overal coupl togeth never sea red patti fine dirti move snack effici give friday combo surpris
+
+Topic 36:potato perfectli meal perfect salad delici bread cook dinner start restaur side mash flavor great entre serv filet sauc one
+
+Topic 37:noodl bowl pho broth soup egg asian spring version sprout coconut restaur place flavor long roll peanut veget pork crave
+
+Topic 38:rice spice dim chines fri mom sum dumpl authent dish cart steam level plate style asian food brown item ball
+
+Topic 39:worth total pricey section mussel yeah bake littl dollar bit stuff oh sit alon hell go buck least yum agre
+
+Topic 40:dinner lobster tofu healthi fabul so delish yum spectacular live style wonder servic wish everyth food suggest solid eat experi
+
+Topic 41:check refil com head cover servic beef tempura choic provid sometim stuff hard us mexican ingredi moist platter greet chocol
+
+Topic 42:bacon wrap stuf banana lettuc pineappl move side bigger tasti favorit sort ad quickli word piec fanci went round especi
+
+Topic 43:okay averag noth slightli possibl special standard interest overal better howev opinion close servic might especi dri decent bad rate
+
+Topic 44:lunch salad thai dress pad special good caesar order nice tasti cucumb portion side lettuc place quick restaur option stop
+
+Topic 45:wine three two option glass menu sever bottl one list offer dine bar mani differ four avail year recent trip
+
+Topic 46:order friend place tri want eat would like back realli food good came come decid go sinc menu could look
+
+Topic 47:ice cream coffe tea cup strawberri vanilla honey sugar cold cute black orang regular syrup crave creami stick place color
+
+Topic 48:great food love servic alway super also friendli spot price delici portion busi quick locat larg menu fresh tasti yummi
+
+Topic 49:wo alreadi smaller cheap given ahead red unfortun orang bean finish past amount gra savori pretzel avocado pho hostess bread
+
+Topic 50:anyth good buffet hold famou live recommend normal tasti machin often review addit authent rang grab sign world complaint beauti
+
+Topic 51:crab seafood oyster leg vegan shrimp king fresh meat shell bar also section lamb eat item serv salad option cocktail
+
+Topic 52:awesom us food servic server came brunch flavor egg refil live simpl welcom tip locat steak area avocado includ quickli
+
+Topic 53:star give rate five tradit american review cuisin reason four updat despit solid base sever receiv alon version round fact
+
+Topic 54:fast birthday margarita white celebr set ca doubl wrong strong go choic complain 40 food drink special servic atmospher imagin
+
+Topic 55:club space get floor meet danc go buy crazi friend bar etc peopl pack bring re loung top shot one
+
+Topic 56:brunch sunday restaur mediocr mimosa otherwis fit known fanci though decor even popular empti food probabl tabl also name especi
+
+Topic 57:shop beat pan better boyfriend tv tortilla convers especi stand start typic burrito realli enjoy butter vegetarian heard issu per
+
+Topic 58:sauc spici hot dip garlic fri wing korean side good also delici favorit flavor order perfect love get bean bbq
+
+Topic 59:chef gra foie miso appar describ sea black rich word origin piec tast base fanci expect much keep make one
+
+Topic 60:vega la trip cafe 24 grand open fair price restaur locat hour chain huge portion find better food plu home
+
+Topic 61:crust scottsdal establish less bf hubbi crowd dog girl chewi life cover howev mani ramen mayo enjoy waffl mgm mini
+
+Topic 62:best ever ve life probabl one eaten place serious far seen easili also incred definit omg re tri entir anywher
+
+Topic 63:sushi fish roll ayc fresh kinda today place eat qualiti sashimi order chef special menu bar item includ piec tri
+
+Topic 64:pizza slice crust secret thin chees bloodi mari pie sausag top good white oliv place sauc order perfect tomato fresh
+
+Topic 65:drink water extra sat ask feel want get tabl turn like refil glass avoid date alcohol order move milk point
+
+Topic 66:chicken fri waffl crispi huge portion yum syrup share piec biscuit plate juici moist dri good big side go giant
+
+Topic 67:show 10 welcom french final salti beef lamb serious milk phoenix price gelato went remind thought fairli 30 hot ca
+
+Topic 68:new curri level heat citi york dark found green red visit style well close alreadi tri favorit 10 choic home
+
+Topic 69:sandwich line long turkey wait bread worth stand hype quickli quick chees origin melt pay bite insid good warm huge
+
+Topic 70:room check bathroom bed book door smell like floor clean night elev comfort would two front in us smoke got
+
+Topic 71:beef soup feel tri must type differ make decor also like authent fill tender satisfi big number tast item offer
+
+Topic 72:good pretti place realli like food price get go feel decent bad reason lot want look much actual littl thing
+
+Topic 73:chose toast gave way buy deal use meatbal cocktail view town bloodi stuf burger actual filet outsid put curri wife
+
+Topic 74:awesom veggi hang weird yummi ton mean non break addit huge right servic sign build complaint food look across menu
+
+Topic 75:dessert cake chocol sweet cheesecak pud cooki tast boyfriend cream tart creme like pie caramel delici fruit lemon milk tri
+
+Topic 76:shrimp duck roast crepe outstand pot pie fruit fill mediocr savori pari tasti sweet appet order fresh good delici also
+
+Topic 77:separ etc everyon want dollar instead four around babi veggi bomb pack request perfect pleas fill japanes juici wonder buck
+
+Topic 78:roll salmon tuna japanes tempura the sashimi spici avocado scallop bake order fresh piec favorit mayo special cut appet yum
+
+Topic 79:buffet food dessert station prime vega line select rib dinner one spoon varieti qualiti price get best eat wynn gelato
+
+Topic 80:mushroom medium rare melt mouth pepper cook spinach salt order red meat side lemon grill well garlic sauc good hous
+
+Topic 81:order salad good potato kind slightli friend seat joint even name mayb afternoon look call atmospher pretti place busi bomb
+
+Topic 82:pasta bread dog corn butter italian chop appl hot pretzel peanut chees good homemad love serv also warm tri top
+
+Topic 83:park group lot street larg tabl like peopl seat feel plenti locat find sit insid across outsid small easi build
+
+Topic 84:re note part compar de owner fix pan simpl ll wall look pass true basic put stand chose unless town
+
+Topic 85:locat hous shop rememb store mall name ca beat origin center visit near corner middl wish sorri famou find like
+
+Topic 86:night late call time went friday day hour last open could get reserv problem saturday sit still take 00 around
+
+Topic 87:parti weekend girl suit perfect alreadi accommod babi rest thank day lol know heart vega take like super reserv loung
+
+Topic 88:potato awesom popular mari empti mexican noodl mouth hour went outdoor use second fat crisp spent least fresh anyth shell
+
+Topic 89:bare bone agre fat longer lucki request help sinc design night overal friendli gra other pleas happi famou black burrito
+
+Topic 90:littl like go look make know get mayb back sure think would need right walk see could someth say also
+
+Topic 91:steak yelp 99 steakhous bone com cut vega cook special in eye rib decid tender juici side dinner done well
+
+Topic 92:na almost deliv mall donut mouth fluffi taco convers cook bacon plan guest tower saturday put even wo grill caesar
+
+Topic 93:time back next first got tri come good definit go went wait great visit ll day delici realli came food
+
+Topic 94:wait minut seat 10 tabl get long 20 15 30 order food got around peopl min took 45 arriv hour
+
+Topic 95:amaz delici love perfect place absolut everyth definit food fresh juic recommend also made super mango well staff servic must
+
+Topic 96:well mix remind heat fish diner review turn lemon glass run prime fan secret serious donut chose might understand rock
+
+Topic 97:real forget cours explain flavour went come varieti crust ramen gelato fish cake offer lol fruit 11 40 casino simpl
+
+Topic 98:dish cours main menu lamb combin present accompani flavor restaur meal well cook veget quit portion plate flavour kitchen prepar
+
+Topic 99:qualiti pick ingredi concept idea made put care 45 readi restaur tast make see need like enjoy simpli cocktail flavor
+
+Model NMF:
+Topic 0:yummi fantast fine find final fill filet figur felt feel featur favorit fat fast far fanci expect fan famou famili
+
+Topic 1:room hotel stay pool casino bed strip bathroom suit clean floor venetian resort walk comfort book tower mgm area elev
+
+Topic 2:burger shake bun patti onion bacon ring medium joint juici cook truffl sweet lettuc turkey top chili mushroom out rare
+
+Topic 3:pizza crust slice secret thin pie sausag white top garlic mushroom style york meatbal italian deep tomato pasta oliv new
+
+Topic 4:buffet station select dessert wynn varieti section leg bellagio spoon qualiti gelato asian everyth item seafood option plate prime mani
+
+Topic 5:great atmospher select awesom spot fantast servic well ambianc patio experi date also deal make overal definit job choic everyth
+
+Topic 6:know even make eat want say could re way think review thing much peopl take see look sure someth ask
+
+Topic 7:breakfast morn burrito hash omelet day potato spot sausag brown bacon serv diner crepe option banana fruit weekend item biscuit
+
+Topic 8:beef corn hash tender roast brisket gra tofu slice favorit brown pepper korean patti cut combo onion chines juici lamb
+
+Topic 9:taco tortilla street salsa shrimp corn guacamol mexican flavor margarita pineappl two authent shell burrito spici bean small top also
+
+Topic 10:sushi ayc sashimi chef eat qualiti japanes tuna salmon piec miso tempura includ select spot joint per special item plate
+
+Topic 11:roll tuna tempura spici salmon spring sashimi shrimp miso bake avocado rock cucumb 95 favorit appet yum wrap hand mayo
+
+Topic 12:sandwich bread turkey 24 pickl melt italian smoke origin eat quick avocado open full tomato roast tuna bite club stop
+
+Topic 13:chicken wing biscuit curri tender dri grill moist gravi crispi juici pot tasti avocado honey wrap mash spice donut roast
+
+Topic 14:ramen broth miso spici salti extra small japanes flavor thick rich add flavour spot black base bun ad thin soft
+
+Topic 15:bowl broth healthi veggi big plenti tofu fast size super small fill larg option rock tuna add clean quick juic
+
+Topic 16:steak medium steakhous rare filet side cook potato cut 99 bone mash special hous butter tender strip expect perfectli well
+
+Topic 17:menu item option vegan offer vegetarian mani everyth choic look choos includ select varieti thing differ interest limit chang lot
+
+Topic 18:good overal thing also still stuff ok lot quit though damn look select wife think valu well better rememb servic
+
+Topic 19:wait minut worth long 30 15 10 min 20 45 hour ca seat busi around arriv prepar saturday take final
+
+Topic 20:beer select brew pretzel local hous list patio wing serv sausag game awesom sampl cold dip atmospher cool decent four
+
+Topic 21:hour happi 24 special half margarita deal open wing appet app slider day patio calamari pm went dip awesom end
+
+Topic 22:thai pad curri spici spice level coconut tofu authent flavor spring mango 10 flavour heat peanut see usual chili sweet
+
+Topic 23:lunch special day today went quick came work stop late busi spot afternoon 11 rush 95 99 tasti patio grab
+
+Topic 24:love awesom favorit absolut everyth yummi decor also husband everi beauti patio wonder ca oh perfect everyon vibe atmospher ambianc
+
+Topic 25:food qualiti mexican eat atmospher fast authent chines mediocr asian overpr ok lot varieti averag pricey noth disappoint style comfort
+
+Topic 26:bbq brisket korean side pull smoke bean joint rib mac combo corn potato moist bake sausag pork sweet style wing
+
+Topic 27:best ever far part hand probabl life town thing meal say everi world incred worth serious perfect absolut omg anywher
+
+Topic 28:night late club saturday friday last date friend music danc went open crowd girl spot parti group floor around snack
+
+Topic 29:order came friend also took side take appet husband waitress sinc decid arriv minut server waiter quickli two boyfriend brought
+
+Topic 30:flavor bread perfect meal cook potato perfectli sweet well top serv season start side butter cours bite tender dine made
+
+Topic 31:drink cocktail bartend alcohol strong friend appet margarita mix special hang grab stop loung cool crowd sweet app awesom refresh
+
+Topic 32:ve never ever year re eaten seen better sinc ll ca twice sever far gone probabl heard mani live disappoint
+
+Topic 33:place pack awesom cool friend hang town find peopl mani busi give definit vibe crowd small eat live look decor
+
+Topic 34:us server ask came took gave told waiter said manag brought minut hostess made waitress friend sat could help greet
+
+Topic 35:go back ca wrong to want re way never went hous somewher usual wo els suggest must spot sure decid
+
+Topic 36:realli also cool well want tasti though impress noth think good super lot everyth actual bad cute long special expect
+
+Topic 37:pho broth spring long bun flavor asian 24 sprout rare crave usual spot coconut combin clean open peanut better water
+
+Topic 38:star give review rate five four reason three gave solid yelp anoth given averag noth two still experi base ok
+
+Topic 39:chees mac grill bacon goat tomato side blue melt onion top pepper pretzel bread mushroom nacho truffl slider chili green
+
+Topic 40:fri crispi truffl shake deep potato pickl sweet gravi season fat chili side greasi home slider also green garlic share
+
+Topic 41:tri must definit want give differ decid new everyth worth someth also thing sinc final next friend excit glad heard
+
+Topic 42:come back definit came ll soon keep ca sure bring wo year everyth ago home super see awesom want friend
+
+Topic 43:amaz absolut everyth must also wow everi worth perfect die incred super definit ca experi simpli everyon favorit atmospher truli
+
+Topic 44:crab shrimp leg seafood oyster king shell mussel juici station prime roast cocktail pan steam hot eat scallop cold corn
+
+Topic 45:bar bartend area sit sat cocktail watch seat oyster full tv cool open bloodi mari game look live kitchen loung
+
+Topic 46:meat smoke cut cook tender qualiti korean side eat flavor grill differ veggi lamb type option fat dri vegetarian brisket
+
+Topic 47:nice patio outsid decor insid touch atmospher overal well ambianc outdoor clean pool area quit also bit relax seat light
+
+Topic 48:salad dress caesar chop side salmon green tomato lettuc healthi pasta hous tuna potato tasti spinach entre italian oliv eat
+
+Topic 49:sauc spici dip hot shrimp pasta garlic tomato meatbal red pepper sweet white spice top sausag crispi extra wing mix
+
+Topic 50:noodl broth chines dumpl asian spici flavor hand chewi authent thick veget textur bun duck pan thin cook soft beef
+
+Topic 51:like feel look seem felt someth thing kind lot think also smell though actual decor insid kinda almost much prefer
+
+Topic 52:brunch mimosa sunday bloodi mari benedict weekend friend saturday patio spot came day went crepe morn salmon fruit pastri includ
+
+Topic 53:coffe shop cup pastri brew cafe morn donut work hot cute ice strong bean local drive area hous milk need
+
+Topic 54:one favorit two thing also person anoth town three usual differ new day mani buy spot probabl top word still
+
+Topic 55:rice bean curri plate shrimp korean veggi black brown white chines red flavor combo garlic side tofu mango green veget
+
+Topic 56:vega la strip trip visit casino must de hotel stop favorit everi year mall re stay find club meal far
+
+Topic 57:line long move club stand peopl door fast front quickli around worth floor danc crowd pay cheesecak station re wait
+
+Topic 58:alway favorit never usual come spot consist make busi everi town year special sometim often new time point find keep
+
+Topic 59:would say thought definit expect think probabl better return howev ok noth overal could okay though recommend wish suggest rather
+
+Topic 60:tast better much bland flavor noth disappoint dri expect present howev differ salti bad could bit thought averag textur like
+
+Topic 61:restaur dine experi decor italian expect area beauti mani feel waiter ambianc appet chef japanes chain famili fine look casual
+
+Topic 62:got friend came went also super husband right around boyfriend final took back sinc next thought decid glad half ok
+
+Topic 63:pretti much decent though cool noth came overal probabl actual tasti sure standard bit big ok quick bad also good
+
+Topic 64:dog hot chili top patio onion ring bun veggi friendli corn water pickl juici dirti shake cold bacon sausag tasti
+
+Topic 65:locat strip conveni mall new insid scottsdal right casino open area visit origin near downtown town shop hotel york chain
+
+Topic 66:pork belli bun pull chop duck grill crispi steam roast tender fat spici dumpl pickl mouth flavor spice green wing
+
+Topic 67:servic custom slow quick attent busi fast friendli bad outstand server experi notch refil ambianc ok return averag atmospher fantast
+
+Topic 68:rib prime short bone eye potato tender mash cut brisket leg babi dessert lamb rare dri mac special 99 side
+
+Topic 69:portion huge larg size big small share group plate gener enough fan split finish hungri hash serv definit tasti two
+
+Topic 70:dish pasta deep main present chef gra tofu foie duck chines asian everi quit mushroom shrimp serv textur flavour veget
+
+Topic 71:fish chip salmon sashimi tuna grill piec qualiti sea seafood cook coconut white mango japanes ayc crispi special eat chef
+
+Topic 72:lobster seafood mac oyster filet main butter mash truffl combo roll pasta reserv pan steakhous small caesar amount set 10
+
+Topic 73:cream ice vanilla banana cooki pie sugar top caramel strawberri spinach butter sour coconut serv dessert pud cold old shake
+
+Topic 74:delici everyth absolut definit also favorit yummi super beauti eat perfect stop wonder friend worth everi fantast oh atmospher share
+
+Topic 75:pancak red syrup fluffi banana sausag hash side omelet sweet short chocol cream lemon bacon morn potato biscuit earli brown
+
+Topic 76:time first next last visit everi second went twice year day sever long mani coupl around still sinc ago rememb
+
+Topic 77:get usual re earli busi free crowd pay ll pack sometim also take card deal took come enough money extra
+
+Topic 78:staff friendli super help attent clean fast accommod quick work effici extrem welcom definit spot sure owner manag need visit
+
+Topic 79:check free yelp in offer sure decid room nacho also use card receiv book review cool see definit 10 com
+
+Topic 80:excel servic atmospher everyth wife filet well also qualiti select outstand lamb side prepar even special provid wonder valu dessert
+
+Topic 81:chip salsa mexican margarita guacamol nacho bean tortilla burrito corn dip green homemad de spici serv complimentari tasti authent sour
+
+Topic 82:wine bottl glass list select pair red white italian pasta cours date cocktail dine fantast patio wonder appet 20 dessert
+
+Topic 83:tea milk green sweet ice brew honey crepe hot black fruit mango flavor cup sugar custom regular station bean chewi
+
+Topic 84:park lot store shop street find mall spot walk area easi car plenti free downtown space around across casino right
+
+Topic 85:sum dim cart dumpl chines shrimp steam ball bun item around compar serv light ladi day select authent asian tart
+
+Topic 86:egg benedict bacon hash potato biscuit sausag brown gravi toast omelet top fruit cook white avocado morn came perfectli fluffi
+
+Topic 87:french toast bread butter onion banana pari honey syrup serv appl bacon hash dip cafe omelet slice pastri strawberri thick
+
+Topic 88:price reason qualiti high worth decent strip pay better expect cheap fair expens well 50 averag consid compar especi valu
+
+Topic 89:fresh oyster made ingredi tasti juic fruit everyth seafood super veggi hot sashimi healthi tomato orang make simpl local pasta
+
+Topic 90:enjoy meal experi visit everyon husband much friend patio dine abl sit overal tasti quit seem famili wife relax atmospher
+
+Topic 91:recommend highli definit anyon reserv friend spot re also visit experi make server waiter awesom well fantast appet made especi
+
+Topic 92:fun atmospher music play game cool club danc loud friend live group machin vibe lot peopl old watch kid crowd
+
+Topic 93:littl bit pricey side cute seem though think small slow overal mayb wish dri still worth expect much thought salti
+
+Topic 94:dinner birthday reserv came pasta start appet went dine cocktail friend earli entre dessert group even wonder waiter celebr scallop
+
+Topic 95:tabl seat reserv parti outsid sit group peopl larg arriv area hostess insid outdoor open dine patio busi walk chair
+
+Topic 96:show view fountain bellagio watch see water strip patio beauti music outsid free window tower pari front everi spectacular sit
+
+Topic 97:soup onion tomato miso dumpl yum salti hot sour special tortilla broth duck ball french tofu also cup chines base
+
+Topic 98:waffl bacon syrup hash chicken sweet hous crispi butter strawberri piec fluffi savori origin made light vanilla sugar fruit eat
+
+Topic 99:dessert cake chocol cheesecak crepe strawberri sweet cooki pastri birthday cours tart pud donut gelato caramel creme pie fruit red
+
+Model LSA_TF:
+Topic 0:good food like place order get one time go would great realli tri also servic restaur come us back got
+
+Topic 1:room hotel get stay time vega go place check casino night strip one pool wait walk us buffet peopl area
+
+Topic 2:order us tabl came wait ask server time minut would restaur menu seat one could said two meal back dish
+
+Topic 3:food place order wait servic drink time minut great tabl seat go come server us back came line hour ask
+
+Topic 4:food buffet restaur dish dessert servic great dinner crab vega meal price plate select experi dine station leg rib salad
+
+Topic 5:good order us room realli got pretti came would wait ask minut hotel tabl check said stay server nice took
+
+Topic 6:like buffet get wait line go eat tri one crab time think station meat thing want leg tast come dessert
+
+Topic 7:burger fri food chees get chicken time shake wait great room bacon got onion go buffet beer sandwich bun line
+
+Topic 8:like food room would realli hotel us burger fri place nice restaur look tast stay came feel star order seem
+
+Topic 9:pizza like great us drink burger tabl realli beer chees bar wait got server seat menu wine back would ask
+
+Topic 10:burger one place buffet vega would tabl restaur dessert us steak best good sushi dinner price star crab la meal
+
+Topic 11:order burger like time sushi buffet great roll one vega ve realli dessert love also crab select beer alway ayc
+
+Topic 12:pizza order get great chees food buffet slice crust salad room chicken line sauc sandwich like hotel beer also re
+
+Topic 13:pizza time food restaur one ve dish good slice chees crust chicken room vega first sauc hotel visit star place
+
+Topic 14:get one restaur taco menu go drink good ve food re alway beer bar make dish burger servic know star
+
+Topic 15:go would realli back tri restaur want pizza love dish vega say eat definit sushi think menu steak experi amaz
+
+Topic 16:get burger dish restaur wait time pizza sushi noodl servic roll ramen sauc like flavor great price rice seat tabl
+
+Topic 17:realli tri pizza one taco sushi got would roll sauc food us dish rice spici fish burger noodl also definit
+
+Topic 18:realli get steak time chees food got place meat love side potato one ve bread star order best cook rib
+
+Topic 19:great one chicken would us sushi servic roll go fri get sauc star ask time pizza rice eat server dish
+
+Topic 20:would great taco wait one meat line pork ramen restaur sandwich flavor order realli noodl long breakfast steak beef star
+
+Topic 21:realli go chicken restaur fri wait one tabl vega great buffet sushi bar seat nice dish waffl enjoy menu lunch
+
+Topic 22:taco meat go sauc time drink bar steak fish salsa fri night shrimp buffet chip rib vega pork hour beer
+
+Topic 23:go wait got roll sushi love us one great best egg sauc flavor like delici food back line ramen noodl
+
+Topic 24:dish drink go love buffet flavor order noodl tast burger place us night dessert ramen thai sweet good pork beef
+
+Topic 25:tri restaur vega us steak got meat buffet back pizza chicken great want came noodl friend best rib la come
+
+Topic 26:come love would drink vega ve back also got ramen noodl best restaur definit chicken came friend servic one alway
+
+Topic 27:love taco us chicken restaur fri wait like buffet good get tabl realli eat waffl delici amaz tri vega best
+
+Topic 28:come ve servic tri wait realli steak back star room bar best meat even alway fri hour make re drink
+
+Topic 29:menu breakfast taco egg servic come back us coffe look lunch pizza burger buffet dish brunch star vega item toast
+
+Topic 30:meat salad love also tabl come buffet burger lunch back pork nice noodl servic one ramen go us side ask
+
+Topic 31:ve also us ramen best chicken pork even noodl sandwich ever meat star got servic burger re flavor could broth
+
+Topic 32:also fri us egg go steak breakfast pizza nice drink time tri would one potato coffe brunch top pancak toast
+
+Topic 33:love sandwich vega eat fri us pork noodl ramen egg want beer much could great meat la would littl roll
+
+Topic 34:servic vega drink tri nice flavor star chicken ramen love would burger sauc steak tea la noodl one littl sweet
+
+Topic 35:steak menu love servic got price pretti dish fri hour salad star one happi pizza side dinner go night room
+
+Topic 36:menu also vega eat hour chicken wait us steak realli burger happi meat salad food delici come la want tast
+
+Topic 37:sandwich chees dish servic star drink us restaur hour vega also meat bread happi price like mac lunch grill beer
+
+Topic 38:nice dish ve us vega pretti burger tabl sushi salad littl chicken bar roll best would breakfast seat like taco
+
+Topic 39:eat tabl dish also want servic drink could make bar got peopl re tri egg sushi meat salad breakfast taco
+
+Topic 40:chees ramen beer bar tabl got pork noodl would egg realli like delici room get vega top mac best breakfast
+
+Topic 41:star beer also chees chicken tast love vega flavor bar sushi back well ramen steak roll pretti even give review
+
+Topic 42:sauc drink restaur breakfast meat egg side love buffet bbq steak room burger rib ve potato bacon pancak want got
+
+Topic 43:sauc tabl vega pretti menu servic la re locat definit side make got bbq much sandwich love littl also hot
+
+Topic 44:meat got well fri nice menu bar sandwich star us flavor pizza come sushi beer back tast order dish rib
+
+Topic 45:sauc nice salad star got ve lunch thai vega ask also menu steak beer shrimp sandwich soup tabl hot want
+
+Topic 46:beer sauc well sandwich delici bar even breakfast friend egg definit came fresh day select lunch servic back enjoy make
+
+Topic 47:salad star tabl bar flavor came pretti egg room us cream ice pizza potato beer sweet tast lunch dessert realli
+
+Topic 48:star come us make re nice pretti want delici dessert peopl got bar give cream alway line night two chocol
+
+Topic 49:beer eat tast come pretti servic go tabl room cream dessert alway ice flavor us restaur much well select tea
+
+Topic 50:eat star beer littl sauc menu delici servic could back nice tabl came best tast definit bbq hour pork meal
+
+Topic 51:well star tabl hour delici happi price drink come friend chees eat ramen room thai beer give littl like worth
+
+Topic 52:even tabl friend hour nice meat happi night star pork meal though egg come dinner two came tri bbq server
+
+Topic 53:pretti well star came tast friend night look sauc sandwich pork ramen noodl best definit menu seat bar nice chees
+
+Topic 54:came well vega meat friend salad wait want beer dessert la cream servic littl ask fri ice cake sweet chocol
+
+Topic 55:beer delici littl drink friend wait even sushi menu roll want definit night steak select buffet look server pork nice
+
+Topic 56:even eat back well pretti star menu though drink delici much us flavor wait vega sauc salad chees shrimp hotel
+
+Topic 57:littl even tast well come price salad delici bar came sauc go us side star though could ramen look drink
+
+Topic 58:look friend re steak price definit locat thai delici tea meat tast ve chees seat eat park ice cream sweet
+
+Topic 59:tast salad friend could much back meal vega meat delici breakfast lunch nice wait hour pretti us went tabl rice
+
+Topic 60:friend night littl eat us steak come tast bar sandwich line servic well side alway menu dessert lot thai club
+
+Topic 61:make back best pork dessert pretti steak dish hour cream beer happi nice beef noodl ice sweet tea sure made
+
+Topic 62:meal price back definit ramen enjoy two dinner want seat night experi drink ve us line sauc locat serv dine
+
+Topic 63:make definit came want star even tast seat eat side lunch sure chees thai menu locat friend best back recommend
+
+Topic 64:want delici back bar sandwich steak dessert tabl friend ve cream even littl dish sweet ice hour happi ask went
+
+Topic 65:best friend look want amaz price meal ever flavor lunch even time definit sauc crab servic come peopl serv line
+
+Topic 66:night thai best price could peopl beef lunch want soup thing breakfast tea chees crab lobster nice see pad curri
+
+Topic 67:friend delici price much bar make could meal better room peopl lobster two menu meat came ask crab noodl rice
+
+Topic 68:meal lunch pretti enjoy dinner thai littl come beef experi could day locat alway steak soup noodl pork seat much
+
+Topic 69:re meat littl lobster crab look egg server noodl soup shrimp back wait bar night room beef meal tabl wine
+
+Topic 70:meat lobster crab locat ramen alway line fresh best hot roll seat top dish side day dog cook drink pretti
+
+Topic 71:could definit amaz server ask side crab dinner price said lobster alway serv friend sandwich shrimp wait ve lunch ramen
+
+Topic 72:could definit re meal noodl line thai soup buffet top hour peopl enjoy steak happi meat room spici beef nice
+
+Topic 73:thing first server price definit experi best night say delici locat eat much bar ask thai strip check tea way
+
+Topic 74:much look better side hotel enjoy locat roll strip definit lobster meal make crab noodl shrimp want night tabl dessert
+
+Topic 75:side pork meal re crab ask tast sandwich potato lobster shrimp thing rib sweet rice pretti bbq spici say belli
+
+Topic 76:much re first experi dinner crab better bit lobster enjoy seat shrimp two lunch breakfast bread come pork day roll
+
+Topic 77:pork alway think amaz hotel thing re know lot enjoy steak strip peopl say dessert way salad top casino walk
+
+Topic 78:ramen side much dinner alway say lunch sweet enjoy thai know bar vega sandwich potato look tast room dish spici
+
+Topic 79:peopl experi price ask two enjoy alway wine amaz littl best line server said pretti thai tast locat egg never
+
+Topic 80:definit thing top two look pork hot dog alway bit enjoy fresh first visit beef ve sinc peopl bar experi
+
+Topic 81:amaz first two top side beef line roll thai alway say right ve noodl visit lobster price egg dessert perfect
+
+Topic 82:noodl side beef made server lot soup experi think bit peopl hot thing dine dog room dinner tast sushi breakfast
+
+Topic 83:serv fresh much made side know amaz bread way line sweet pork bit rice friend top wine everyth beef buffet
+
+Topic 84:alway seat think hot dog night room tea could visit amaz came sweet coffe fresh want day first pork better
+
+Topic 85:think bit thai locat peopl hotel right know take spici sweet seat strip say definit egg experi perfect still top
+
+Topic 86:thing bit enjoy thai right roll top seat price could alway experi dine egg bread back wine say room potato
+
+Topic 87:server seat bread much roll think two check lot pork definit room lobster peopl went wine dog vega littl tast
+
+Topic 88:serv two hot hotel dog locat wait say strip dinner top sushi think make wine thing enjoy side coffe bread
+
+Topic 89:sweet right definit better room potato say wine noodl ve know check coffe fresh way experi price come littl around
+
+Topic 90:say alway definit bread first coffe serv dinner lot ask breakfast noodl take sinc rib wine flavor beef locat best
+
+Topic 91:think rice first serv shrimp egg line locat room select around plate thing thai experi could top favorit dine server
+
+Topic 92:dinner hot dog locat better top bit meal room rib roll new next lot serv tea re egg made bar
+
+Topic 93:lot top first enjoy lobster buffet roll park minut dog small everyth price around know pho 10 walk hot perfect
+
+Topic 94:amaz bit think enjoy check still around hot coffe everyth rice though dog breakfast ask small plate line super ve
+
+Topic 95:say rice made lot fresh check recommend minut think 10 area egg experi small locat cake park larg pho sandwich
+
+Topic 96:way roll two dinner lobster bread sweet wait review visit buffet wine select locat fresh yelp side better friendli staff
+
+Topic 97:experi lobster day top serv review lunch soup special dine strip fish 10 yelp sweet expect everyth locat noth buffet
+
+Topic 98:locat peopl fresh visit wine server know still beef enjoy favorit first tea bit say room rib thing recommend select
+
+Topic 99:day select fish bread thai yelp rib lot recommend way around still brunch better com minut went park 10 spici
+
+Model LSA_TFIDF:
+Topic 0:good food place order like great time get one go realli tri servic would love restaur come also back wait
+
+Topic 1:room hotel stay casino pool vega strip buffet bed night check view bathroom walk floor get suit clean area nice
+
+Topic 2:burger fri room shake hotel stay beer chees casino patti onion pool bun strip sandwich bacon locat bed place nice
+
+Topic 3:pizza great crust slice place beer drink order love secret happi us night atmospher thin patio hour seat wait delici
+
+Topic 4:pizza buffet burger crab vega line slice leg dessert crust select station good chees qualiti best worth secret prime seafood
+
+Topic 5:great food place beer taco drink servic alway love burger good atmospher sushi happi price bar hour select fun friendli
+
+Topic 6:wait us minut tabl order breakfast seat line time server drink came ask long got took buffet brunch get egg
+
+Topic 7:breakfast sandwich egg chicken coffe brunch waffl great pancak toast love bacon hash french benedict bread chees potato delici biscuit
+
+Topic 8:taco line ramen sandwich wait get place noodl like good pork go long pretti salsa chicken rice re tri time
+
+Topic 9:taco buffet salsa steak chip mexican chees margarita beer drink dessert rib tortilla bar us wine guacamol meat dinner corn
+
+Topic 10:good food noodl ramen realli thai pretti chicken servic nice beer price dish buffet would like drink curri broth ok
+
+Topic 11:ramen noodl ve time alway best love thai vega dish pork amaz broth restaur everi ever one favorit wait go
+
+Topic 12:sandwich beer drink like meat bar salad bread chees go bbq get select one realli wine tri night rib ve
+
+Topic 13:chicken sandwich fri wait great hour food buffet lunch thai waffl room salad order time happi rice minut curri line
+
+Topic 14:food sandwich steak servic vega good restaur star best price meat ve experi place better qualiti ever la go would
+
+Topic 15:ramen sandwich great wait pork noodl meat line broth steak hour seat price soup long worth lunch bowl minut happi
+
+Topic 16:steak good chicken fri vega hour beer happi best wait waffl night get rib egg ramen ve potato time got
+
+Topic 17:love realli got good great back amaz time room tri us place ramen delici dessert came friend crab definit everyth
+
+Topic 18:good time alway happi hour ve lunch thai menu pretti servic drink breakfast last salad burger visit first day special
+
+Topic 19:ramen beer buffet us back sandwich order time would great breakfast star egg came pork chicken tri friend server vega
+
+Topic 20:beer room great alway time meat wait food bbq servic ve get chees sauc rib select star pork dog brisket
+
+Topic 21:great drink hour happi thai pho meat tea order steak beef breakfast coffe rice price noodl pad shrimp egg place
+
+Topic 22:beer thai vega order definit got amaz place best pad delici la curri good sandwich friend pho recommend noodl came
+
+Topic 23:salad steak lunch love alway place order buffet time side meat soup dinner come breakfast rib eat tabl thai rice
+
+Topic 24:love hour happi food place order menu room price delici amaz would hotel beer go chees dish everyth egg stay
+
+Topic 25:drink love food order alway servic ramen coffe chees tea vega star us fri sandwich ice hot ask get cream
+
+Topic 26:meat bbq pork place rib good brisket best us korean bar tri side friendli smoke definit drink recommend one staff
+
+Topic 27:salad thai place best lunch steak ramen star room ever chicken ve tea pad ice amaz got beer burger curri
+
+Topic 28:best realli love egg night got breakfast thai us ever dish bar ve sandwich club beef brunch noodl pork drink
+
+Topic 29:order steak realli ve alway drink sandwich best buffet fri also like one tri nice menu brunch ever thai recommend
+
+Topic 30:steak back time tea come nice star meat bar love coffe got friendli thai realli sushi chicken like staff definit
+
+Topic 31:go drink back come amaz definit food bar get delici re salad would tri lunch ll room ca brunch recommend
+
+Topic 32:chees ve best mac realli got lunch ever food nice dog salad hot park happi thai ramen locat lobster like
+
+Topic 33:place time fri star lobster drink chees bar crab ve night dish room shrimp pho servic better brunch tri first
+
+Topic 34:us alway realli amaz friendli get fri pho staff nice crab lobster server fresh check happi hot delici beer place
+
+Topic 35:go good thai fri bar chees buffet steak back dog tri pad pork sushi would ramen mac sandwich curri restaur
+
+Topic 36:realli order drink vega place time wait salad enjoy bar go fresh la amaz like hotel sauc stay eat food
+
+Topic 37:pho bar like wait best salad noodl soup ever roll good go back ve lobster tast look chicken great tri
+
+Topic 38:star would realli go lobster crab love locat order nice shrimp back brunch ve roll best rib bbq give definit
+
+Topic 39:chees pho mac realli tri noodl soup star get alway dish buffet roll steak taco drink beef chicken one favorit
+
+Topic 40:fri pho realli coffe go order pork night noodl ice enjoy best lunch dessert cream friend dinner room ever french
+
+Topic 41:tri lunch get fri amaz drink salad menu realli love star price shrimp lobster everyth rice one also hotel pork
+
+Topic 42:come fri like alway wait night vega back lunch tea would la salad dinner ice cream realli came servic special
+
+Topic 43:amaz like order noodl time pretti lunch view taco alway dinner restaur rib chees thai show look come happi insid
+
+Topic 44:come back get dish best would sauc buffet chip noodl bar bread definit ever seat good sushi great salsa fresh
+
+Topic 45:star one bar order salad night delici restaur dog come realli tri food give hot crab also area favorit hour
+
+Topic 46:meat recommend lobster would thai good roll eat like fri pho definit salad highli enjoy meal make experi brunch ramen
+
+Topic 47:nice salad pork fri egg time get brunch food go would eat roll happi delici french recommend pho hour belli
+
+Topic 48:salad amaz staff friendli pretti fri star line dog super vega night meat portion nice bit would dish littl give
+
+Topic 49:lunch sauc would dog recommend pho hot one like amaz dinner line drink friend highli tri locat buffet tast patio
+
+Topic 50:brunch noodl soup dog delici menu hot salad like re beef ve recommend friendli pork staff get pretti french shrimp
+
+Topic 51:like star delici restaur staff eat pork lunch good nice come feel wait one breakfast friendli peopl give buffet steak
+
+Topic 52:got brunch dog go one menu star price bar also lunch hot restaur room time back like place mimosa top
+
+Topic 53:coffe got would alway also restaur recommend delici breakfast noodl locat chip ve fish rice casino enjoy dish amaz fri
+
+Topic 54:coffe brunch one dish salad room friend shop littl tabl price amaz meat worth back favorit go like crab lobster
+
+Topic 55:one noodl nice soup breakfast locat would meat staff recommend line get friendli crab beef best food dish like time
+
+Topic 56:bar alway coffe got vega tri littl one nice servic dog la get breakfast lunch definit price would french better
+
+Topic 57:nice line meat got star tri alway want wine ve menu enjoy lobster best come restaur give coffe order friend
+
+Topic 58:restaur get vega pho like pretti go salad la time also room ramen excel best shrimp sandwich rice chip tabl
+
+Topic 59:delici meat servic locat definit like pretti fri fresh line get lunch re hotel order excel bread tast everyth french
+
+Topic 60:restaur nice pho eat wine come meal get back drink night locat shrimp wait sauc thai better place rib even
+
+Topic 61:dish staff line got friendli pork egg coffe friend get alway lunch restaur come tast eat super park went brunch
+
+Topic 62:lobster pretti menu delici roll come dog everyth breakfast tabl back got hot buffet drink place night favorit bread french
+
+Topic 63:pretti restaur lunch fun eat re meat hotel much experi drink wait enjoy crab casino littl dog sushi cool soup
+
+Topic 64:dog restaur price hot eat us dish portion night time definit tri tea best coffe reason servic line go like
+
+Topic 65:locat room got enjoy portion drink rib dish experi dine meal larg huge dog like vega la size tri patio
+
+Topic 66:eat littl dish menu coffe night vega option rib would brunch star super fish late meat get ramen lot everyth
+
+Topic 67:littl excel servic fun side line worth beef menu peopl bit dog alway best potato lot delici sushi us rib
+
+Topic 68:rib tast lobster dog food staff dish beef also get prime roll lunch special chip make noodl meat short visit
+
+Topic 69:fish chip one rib make also fresh tea want pretti side well brunch best eat would salsa view day room
+
+Topic 70:coffe sauc line portion bread menu delici noodl huge super soup make time french awesom us serv spici would lunch
+
+Topic 71:chip excel coffe everyth fish servic even salsa delici lobster pretti thai pork came locat hotel curri dish friend fun
+
+Topic 72:pho us spot definit also well look re food tast check recommend thai worth pork rib pretti park dog crab
+
+Topic 73:tea fresh everyth well make tast park sushi pretti meal even crab flavor busi cook lunch pork locat waffl star
+
+Topic 74:delici also dish price shrimp better ve room dim sum lunch peopl egg even rib experi tri fun cake make
+
+Topic 75:tast friend re recommend delici look everyth nice sum dim pancak room rice highli littl bit line come menu amaz
+
+Topic 76:excel re make nice ve beef servic also got rib recommend portion well lunch hotel review huge roll think better
+
+Topic 77:make also littl best even pork awesom sure come better got special reserv locat though french time bit re steak
+
+Topic 78:re super meat peopl fish friendli pork chip staff ve got flavor better fun definit waffl one enjoy view even
+
+Topic 79:meal hotel strip tast tabl experi best came want egg casino coffe enjoy crab pho re look time cake server
+
+Topic 80:dinner salsa line chip mexican sum dim locat brunch bean roll made rice hotel serv server margarita nice experi littl
+
+Topic 81:also meal flavor came excel could night re come eat soup lunch pork us bar locat experi potato waffl lobster
+
+Topic 82:better definit well friend tast potato option want sweet us seat check side menu pork hotel ve line one worth
+
+Topic 83:wine tea hotel friend fish breakfast us serv come beef park littl french bread better went patio know recommend rib
+
+Topic 84:park lot meal better perfect us re egg special definit beef top atmospher flavor spot went cream make one find
+
+Topic 85:well egg worth wine sum dim came roll staff friendli locat casino bread excel rib room fun atmospher dessert re
+
+Topic 86:enjoy check came meal breakfast sum free casino dim big bread even game sauc portion brunch everyth option vegan waffl
+
+Topic 87:came side wine even super potato show pancak cool meal perfect water though beef want park sweet option lobster ve
+
+Topic 88:atmospher enjoy excel us would egg fresh check cool huge cream get ice look portion tast much lunch littl select
+
+Topic 89:strip wine everyth spot would ok side dinner sweet time potato super friend favorit pancak huge everi soup bad never
+
+Topic 90:enjoy french pancak toast came side everyth well beef eat rice though bread go star back recommend ve tabl tast
+
+Topic 91:recommend littl strip fresh night well highli enjoy awesom dish ok roll want ve meal went crab tast huge cream
+
+Topic 92:awesom meal better fun dinner cool locat new price fresh super excel cook vegan bit made even still atmospher potato
+
+Topic 93:flavor eat dinner beef recommend portion excel make strip highli ok well experi bit much old noodl line shrimp minut
+
+Topic 94:dinner tabl super better look bread pancak much also say right alway spot noodl next way ca think best tast
+
+Topic 95:tast lobster tabl definit new rice went meal favorit awesom brunch spot well soup even breakfast also plate line could
+
+Topic 96:waffl fresh top pancak bread beef new fish dinner casino sure bit option bad ll rib year back old mani
+
+Topic 97:much re visit show dinner lobster expect enjoy two pasta peopl best better egg seat new stay came sushi sauc
+
+Topic 98:say sum beef peopl dim noth sweet strip lobster sushi awesom staff tasti come potato went look special corn insid
+
+Topic 99:awesom tabl re shrimp visit waffl park side bacon tast grill thing menu want even soup ask sum first flavor
+
