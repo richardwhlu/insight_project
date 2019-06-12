@@ -4,10 +4,46 @@
 # Description:
 #   extract text features from yelp reviews for ML
 # Runtime: 
+#   For 1050 handlabeled reviews:
+#       Preprocessing:  11.7s
+#       TFIDF:          0.05s
+#       Topics:         0.37s
+#       TF:             0.08s
+#       Metadata:       10.5s
+#       Syntax:         13.2s
+#       Embeddings:     22.1s
+# it is because in those we preprocess reviews line by line = slow
+#   For 3000 influential reviews:
+#       Preprocessing: 47.683074951171875
+#       TFIDF: 0.15068888664245605
+#       Topics: 1.2036569118499756
+#       TF: 0.2923722267150879
+#       Metadata: 43.83855366706848
+#       Syntax: 55.747108697891235
+#       Embeddings: 95.19462418556213
+#   For 3000 influential reviews after moving preprocessing out:
+#       Preprocessing: 49.484331369400024
+#       Preprocessing2: 42.56444954872131
+#       TFIDF: 0.15305376052856445
+#       Topics: 1.1998744010925293
+#       TF: 0.287426233291626
+#       Metadata: 0.1645956039428711
+#       Syntax: 10.236177444458008
+#       Embeddings: 50.06423091888428
+#  For 10000 influential reviews after parallel:
+#       Preprocessing (P): 56.996392011642456
+#       Preprocessing2 (P): 69.03238868713379
+#       TFIDF: 0.7404191493988037
+#       Topics: 5.112407445907593
+#       TF: 1.387791395187378
+#       Metadata: 0.887582540512085
+#       Syntax: 48.33043599128723
+#       Embeddings: 212.46494245529175
 # =========================================================================== #
 
 import ast
 import itertools as it
+import multiprocessing
 import nltk
 import numpy as np
 import os
@@ -38,6 +74,8 @@ data2 = data[["text_formatted"]]
 test_review = data2.iloc[0]
 
 model = Word2Vec.load("../../4_models/word2vec_embeddings_100K_business_elite_reviews.model")
+
+tfidf_model = pickle.load(open("../../4_models/tfidf_50K_influential_reviews_10191994.pickle", "rb"))
 
 # need to incorporate a dataset that can be used to fit tfidf and counts
 # in case number of reviews is small
@@ -85,7 +123,8 @@ def process_metadata(review_text):
     Returns:
         metadata_list - list of metadata attributes from original reviews
     """
-    cleaned_sentence = preprocess_reviews(review_text, 0)
+    cleaned_sentence = review_text
+    # cleaned_sentence = preprocess_reviews(review_text, 0)
     
     wordlength_sentence = [len(x) for x in cleaned_sentence]
     sentence_length = np.sum(wordlength_sentence)
@@ -109,7 +148,8 @@ def process_syntax(review_text):
     Returns:
         pos_list - list of parts of speech counts
     """
-    cleaned_sentence = preprocess_reviews(review_text, 0)
+    cleaned_sentence = review_text
+    # cleaned_sentence = preprocess_reviews(review_text, 0)
 
     pos_sentence = nltk.pos_tag(cleaned_sentence, tagset="universal")
 
@@ -149,12 +189,8 @@ def process_tfidf(review_df):
     Returns:
         tfidf_df - df of tfidf tokens
     """
-    tfidf_vectorizer = TfidfVectorizer(max_df=0.95,
-                                   min_df=2,
-                                   max_features=100)
-
-    tfidf = tfidf_vectorizer.fit_transform(review_df) # sparse matrix
-    tfidf_feature_names = tfidf_vectorizer.get_feature_names()
+    tfidf = tfidf_model.transform(review_df) # sparse matrix
+    tfidf_feature_names = tfidf_model.get_feature_names()
 
     tfidf_df = pd.DataFrame(tfidf.toarray())
     tfidf_df.columns = tfidf_feature_names
@@ -201,7 +237,8 @@ def process_word_embeddings(review_text):
     Returns:
         embeddings_list - list of avg cosine similarity to focal words
     """
-    cleaned_sentence = preprocess_reviews(review_text, 0)
+    cleaned_sentence = review_text
+    # cleaned_sentence = preprocess_reviews(review_text, 0)
 
     food_similarity = []
     tasty_similarity = []
@@ -401,6 +438,8 @@ def process_word_embeddings(review_text):
 # Category 6: Count vector (maybe binary?) normalized
 def process_counts(review_df):
     """Process for normalized counts of common words [20 features]
+    EXCLUDED FOR NOW
+    IF USING IN FUTURE, NEED TO INCORPORATE GLOBAL TF MODEL
 
     Args:
         review_df - df of raw review_text from csv
@@ -438,6 +477,36 @@ def normalize(col):
     return tmp
 
 
+def process_rows(data_in):
+    """Process rows function for parallelization
+
+    Args:
+        data_in - df of text
+
+    Returns:
+        parsed and formatted text df
+    """
+    columns = data_in.columns
+    data_in["text_formatted"] = data_in[columns[1]].apply(
+        lambda x: preprocess_reviews(x, 1, 1))
+    return data_in[["index", "text_formatted"]]
+
+
+def process_rows2(data_in):
+    """Process rows function for parallelization
+
+    Args:
+        data_in - df of text
+
+    Returns:
+        parsed and formatted text df
+    """
+    columns = data_in.columns
+    data_in["text_formatted"] = data_in[columns[1]].apply(
+        lambda x: preprocess_reviews(x, 0))
+    return data_in[["index", "text_formatted"]]
+
+
 # =========================================================================== #
 # PRODUCE FEATURE MATRIX
 # =========================================================================== #
@@ -461,18 +530,83 @@ def produce_feature_matrix(data):
 
     column_name = column[0]
 
-    preprocessed_df = data[column_name].apply(lambda x:
-        preprocess_reviews(x, 1, 1))
+    # start0 = time.time()
+    # preprocessed_df = data[column_name].apply(lambda x:
+    #     preprocess_reviews(x, 1, 1))
+    # end0 = time.time()
+
+    # print("Preprocessing: {}".format(end0 - start0))
+
+    # start00 = time.time()
+    # preprocessed_df2 = data[column_name].apply(lambda x:
+    #     preprocess_reviews(x, 0))
+    # end00 = time.time()
+
+    # print("Preprocessing2: {}".format(end00 - start00))
+
+    tmp_data = data[[column_name]]
+    tmp_data["index"] = range(0, tmp_data.shape[0])
+    tmp_data = tmp_data[["index", column_name]]
+
+    start0 = time.time()
+    df_split = np.array_split(tmp_data, 14)
+    pool = multiprocessing.Pool(multiprocessing.cpu_count()-1)
+    preprocessed_df = pd.concat(pool.map(process_rows, df_split))
+    pool.close()
+    pool.join()
+    end0 = time.time()
+
+    print("Preprocessing (P): {}".format(end0 - start0))
+
+    start00 = time.time()
+    df_split = np.array_split(tmp_data, 14)
+    pool = multiprocessing.Pool(multiprocessing.cpu_count()-1)
+    preprocessed_df2 = pd.concat(pool.map(process_rows2, df_split))
+    pool.close()
+    pool.join()
+    end00 = time.time()
+
+    print("Preprocessing2 (P): {}".format(end00 - start00))
+
+    if preprocessed_df["index"].tolist() == list(
+        range(preprocessed_df.shape[0])) and preprocessed_df2["index"
+        ].tolist() == list(range(preprocessed_df2.shape[0])):
+        preprocessed_df = preprocessed_df["text_formatted"]
+        preprocessed_df2 = preprocessed_df2["text_formatted"]
+    else:
+        return
+
+    # return preprocessed_df, preprocessed_df2
 
     # perhaps can parallelize functions
+    start1 = time.time()
     tfidf_df = process_tfidf(preprocessed_df)
-    topic_df = process_topic_models(preprocessed_df)
-    tf_df = process_counts(preprocessed_df)
+    end1 = time.time()
 
+    print("TFIDF: {}".format(end1 - start1))
+
+    start2 = time.time()
+    topic_df = process_topic_models(preprocessed_df)
+    end2 = time.time()
+
+    print("Topics: {}".format(end2 - start2))
+
+    # just use tfidf for now
+    # start3 = time.time()
+    # tf_df = process_counts(preprocessed_df)
+    # end3 = time.time()
+
+    # print("TF: {}".format(end3 - start3))
+
+    start4 = time.time()
     (data["sen_len"],
      data["sen_avg_len"],
-     data["sen_med_len"]) = zip(*data[column_name].apply(process_metadata))
+     data["sen_med_len"]) = zip(*preprocessed_df2.apply(process_metadata))
+    end4 = time.time()
 
+    print("Metadata: {}".format(end4 - start4))
+
+    start5 = time.time()
     (data['NOUN'],
      data['VERB'],
      data['ADJ'],
@@ -616,8 +750,12 @@ def produce_feature_matrix(data):
      data['X_PRON'],
      data['X_PRT'],
      data['X_DET'],
-     data['X_CONJ']) = zip(*data[column_name].apply(process_syntax))
+     data['X_CONJ']) = zip(*preprocessed_df2.apply(process_syntax))
+    end5 = time.time()
 
+    print("Syntax: {}".format(end5 - start5))
+
+    start6 = time.time()
     (data["food_avg_sim"],
      data["service_avg_sim"],
      data["price_avg_sim"],
@@ -637,8 +775,11 @@ def produce_feature_matrix(data):
      data["environment_avg_similarity"],
      data["patio_avg_similarity"],
      data["loud_avg_similarity"],
-     data["smelly_avg_similarity"]) = zip(*data[column_name].apply(
+     data["smelly_avg_similarity"]) = zip(*preprocessed_df2.apply(
         process_word_embeddings))
+    end6 = time.time()
+
+    print("Embeddings: {}".format(end6 - start6))
 
     # scale the word embedding columns
     data["food_avg_sim"] = normalize(data["food_avg_sim"])
@@ -662,10 +803,14 @@ def produce_feature_matrix(data):
     data["loud_avg_similarity"] = normalize(data["loud_avg_similarity"])
     data["smelly_avg_similarity"] = normalize(data["smelly_avg_similarity"])
     
-    for column in tf_df.columns:
-        tf_df[column] = normalize(tf_df[column])
+    # for column in tf_df.columns:
+    #     tf_df[column] = normalize(tf_df[column])
+    metadata_columns = ['NOUN', 'VERB', 'ADJ', 'ADV', '.', 'ADP', 'NUM', 'PRON', 'PRT', 'DET', 'CONJ', 'X', 'NOUN_VERB', 'NOUN_ADJ', 'NOUN_ADV', 'NOUN_.', 'NOUN_ADP', 'NOUN_NUM', 'NOUN_PRON', 'NOUN_PRT', 'NOUN_DET', 'NOUN_CONJ', 'NOUN_X', 'VERB_NOUN', 'VERB_ADJ', 'VERB_ADV', 'VERB_.', 'VERB_ADP', 'VERB_NUM', 'VERB_PRON', 'VERB_PRT', 'VERB_DET', 'VERB_CONJ', 'VERB_X', 'ADJ_NOUN', 'ADJ_VERB', 'ADJ_ADV', 'ADJ_.', 'ADJ_ADP', 'ADJ_NUM', 'ADJ_PRON', 'ADJ_PRT', 'ADJ_DET', 'ADJ_CONJ', 'ADJ_X', 'ADV_NOUN', 'ADV_VERB', 'ADV_ADJ', 'ADV_.', 'ADV_ADP', 'ADV_NUM', 'ADV_PRON', 'ADV_PRT', 'ADV_DET', 'ADV_CONJ', 'ADV_X', '._NOUN', '._VERB', '._ADJ', '._ADV', '._ADP', '._NUM', '._PRON', '._PRT', '._DET', '._CONJ', '._X', 'ADP_NOUN', 'ADP_VERB', 'ADP_ADJ', 'ADP_ADV', 'ADP_.', 'ADP_NUM', 'ADP_PRON', 'ADP_PRT', 'ADP_DET', 'ADP_CONJ', 'ADP_X', 'NUM_NOUN', 'NUM_VERB', 'NUM_ADJ', 'NUM_ADV', 'NUM_.', 'NUM_ADP', 'NUM_PRON', 'NUM_PRT', 'NUM_DET', 'NUM_CONJ', 'NUM_X', 'PRON_NOUN', 'PRON_VERB', 'PRON_ADJ', 'PRON_ADV', 'PRON_.', 'PRON_ADP', 'PRON_NUM', 'PRON_PRT', 'PRON_DET', 'PRON_CONJ', 'PRON_X', 'PRT_NOUN', 'PRT_VERB', 'PRT_ADJ', 'PRT_ADV', 'PRT_.', 'PRT_ADP', 'PRT_NUM', 'PRT_PRON', 'PRT_DET', 'PRT_CONJ', 'PRT_X', 'DET_NOUN', 'DET_VERB', 'DET_ADJ', 'DET_ADV', 'DET_.', 'DET_ADP', 'DET_NUM', 'DET_PRON', 'DET_PRT', 'DET_CONJ', 'DET_X', 'CONJ_NOUN', 'CONJ_VERB', 'CONJ_ADJ', 'CONJ_ADV', 'CONJ_.', 'CONJ_ADP', 'CONJ_NUM', 'CONJ_PRON', 'CONJ_PRT', 'CONJ_DET', 'CONJ_X', 'X_NOUN', 'X_VERB', 'X_ADJ', 'X_ADV', 'X_.', 'X_ADP', 'X_NUM', 'X_PRON', 'X_PRT', 'X_DET', 'X_CONJ']
+    
+    for column in metadata_columns:
+        data[column] = normalize(data[column])
 
 
-    feature_matrix = pd.concat([data, tfidf_df, topic_df, tf_df], axis=1)
+    feature_matrix = pd.concat([data, tfidf_df, topic_df], axis=1)
 
     return feature_matrix
