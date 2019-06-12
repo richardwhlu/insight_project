@@ -121,14 +121,31 @@ tfidf_vectorizer = TfidfVectorizer(max_df=0.95,
                                    min_df=2,
                                    max_features=1000)
 
-# add in truncated SVD here
+tf_vectorizer_small = CountVectorizer(max_df=0.95,
+                                      min_df=2,
+                                      max_features=100)
+
+tfidf_vectorizer_small = TfidfVectorizer(max_df=0.95,
+                                         min_df=2,
+                                         max_features=100)
+
 
 # =========================================================================== #
 # TRANSFORM DATA AND GET RESULTS
 # =========================================================================== #
 
+tf_model = tf_vectorizer_small.fit(text)
+with open("../../4_models/tf_50K_influential_reviews_10191994.pickle", "wb") as f:
+  pickle.dump(tf_model, f)
+
+
 tf = tf_vectorizer.fit_transform(text)
 tf_feature_names = tf_vectorizer.get_feature_names()
+
+tfidf_model = tfidf_vectorizer_small.fit(text)
+with open("../../4_models/tfidf_50K_influential_reviews_10191994.pickle", "wb") as f:
+  pickle.dump(tfidf_model, f)
+
 
 tfidf = tfidf_vectorizer.fit_transform(text)
 tfidf_feature_names = tfidf_vectorizer.get_feature_names()
