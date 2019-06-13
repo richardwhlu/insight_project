@@ -213,17 +213,17 @@ def process_topic_models(review_df):
         "rb") as f:
         lda = pickle.load(f)
 
-        tf_vectorizer = CountVectorizer(max_df=0.95,
-                                        min_df=2,
-                                        max_features=1000)
+        with open("../../4_models/tfidf_50K_influential_reviews_10191994.pickle",
+            "rb") as f2:
+             tf_vectorizer = pickle.load(f2)
 
-        review_tf = tf_vectorizer.fit_transform(review_df)
+            review_tf = tf_vectorizer.transform(review_df)
 
-        topic_df = pd.DataFrame(lda.transform(review_tf))
+            topic_df = pd.DataFrame(lda.transform(review_tf))
 
-        topic_df.columns = ["topic_{}".format(x) for x in range(100)]
+            topic_df.columns = ["topic_{}".format(x) for x in range(100)]
 
-        return topic_df
+            return topic_df
 
 
 # CATEGORY 5: Word embeddings
