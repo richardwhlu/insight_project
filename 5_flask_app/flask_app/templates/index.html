@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+        <script type="text/javascript" src="../static/d3.js"></script>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <p>Test 1: https://www.yelp.com/biz/bansho-ramen-berkeley-3</p>
+                    <p>Test 2: https://www.yelp.com/biz/tacos-sinaloa-berkeley</p>
+                    <form action="" method="POST">
+                        <input type="text" name="url" placeholder="Please input your Yelp URL here." size="80">
+                        <input type="submit" value="Process Reviews" name="submit_button">
+                    </form>
+                    <p>{{ tmp_url }}</p>
+                </div>
+                <div class="panel-body">
+                    <div id="d3-visualization">
+                    </div>
+                    <p></p>
+                    <p></p>
+                    <!-- <input type="submit" value="Food" name="submit_button">
+                    <input type="submit" value="Service" name="submit_button">
+                    <input type="submit" value="Price" name="submit_button">
+                    <input type="submit" value="Ambiance" name="submit_button">
+                    <p></p>
+                    <p></p> -->
+                    {% for index, row in data.iterrows() %}
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                {% for i in range(row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star"></span>
+                                {% endfor %}
+                                {% for i in range(5 - row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                {% endfor %}
+                            </div>
+                            <div class="panel-body">
+                                {% if row["food"] %}
+                                    <button class="btn btn-primary">Food</button>
+                                {% endif %}
+                                {% if row["service"] %}
+                                    <button class="btn btn-success">Service</button>
+                                {% endif %}
+                                {% if row["ambiance"] %}
+                                    <button class="btn btn-danger">Ambiance</button>
+                                {% endif %}
+                                {% if row["price"] %}
+                                    <button class="btn btn-warning">Price</button>
+                                {% endif %}
+                                <p></p>
+                                <p>{{ row["text"] }}</p>
+                            </div>
+                        </div>                         
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            let dataset = {{ ind_rating_data }};
+        console.log(dataset);
+        
+        let colorset = ["#000000", "#337ab7", "#5cb85c", "#ac2925", "#f0ad4e"];
+        let textset = ["Overall", "Food", "Service", "Ambiance", "Price"];
+
+        let w = 300;
+        let h = 200;
+        let barPadding = 5;
+
+        let svg = d3.select("#d3-visualization")
+                .attr("padding-bottom", "50px")
+                    .append("svg")
+                .attr("width", w)
+                .attr("height", h)
+                .style("display", "block")
+                .style("margin", "auto");
+            
+            svg.selectAll("rect")
+               .data(dataset)
+               .enter()
+           .append("rect")
+               .attr("x", function(d, i) {
+                   return i * (w / dataset.length);
+               })
+                   .attr("y", function(d) {
+                   return h - d * 40;
+               })
+                   .attr("width", (w / dataset.length - barPadding))
+               .attr("height", function(d) {
+                   return d * 40;
+               })
+                   .attr("fill", function(d, i) {
+                   return colorset[i];
+               })
+
+            svg.selectAll("text.cat")
+               .data(dataset)
+               .enter()
+           .append("text")
+               .text(function(d, i) {
+                   return textset[i]
+               })
+               .attr("x", function(d, i) {
+                   return i * (w / dataset.length) + (w / dataset.length - barPadding) / 2;
+               })
+               .attr("y", function(d) {
+                           return h - d * 40 + 14;
+            })
+               .attr("font-family", "sans-serif")
+               .attr("font-size", "11px")
+               .attr("fill", "white")
+               .attr("text-anchor", "middle");
+
+            svg.selectAll("text.rating")
+               .data(dataset)
+               .enter()
+           .append("text")
+               .text(function(d, i) {
+                   return Math.round(dataset[i] * 100) / 100
+               })
+               .attr("x", function(d, i) {
+                   return i * (w / dataset.length) + (w / dataset.length - barPadding) / 2;
+               })
+               .attr("y", function(d) {
+                           return h - d * 40 + 28;
+            })
+               .attr("font-family", "sans-serif")
+               .attr("font-size", "11px")
+               .attr("fill", "white")
+               .attr("text-anchor", "middle");
+          
+
+        </script>
+    </body>
+</html>
