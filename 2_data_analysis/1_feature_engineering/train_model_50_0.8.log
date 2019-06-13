@@ -1,0 +1,390 @@
+12-Jun-19 22:57:29 - Start script
+12-Jun-19 22:58:25 - Train test split
+12-Jun-19 22:58:28 - Initial model trained
+12-Jun-19 22:58:28 - Size of train set: 441
+12-Jun-19 22:58:28 - Number of 0: 262
+12-Jun-19 22:58:28 - Number of 1: 179
+12-Jun-19 22:58:28 - Initial score: 0.7724867724867724
+12-Jun-19 22:58:28 - Initial conf_matrix: [[100  13]
+ [ 30  46]]
+12-Jun-19 23:01:46 - Pseudolabel 1 finished
+12-Jun-19 23:01:46 - Not improved: 0.7724867724867724
+12-Jun-19 23:05:07 - Pseudolabel 2 finished
+12-Jun-19 23:05:07 - Not improved: 0.7724867724867724
+12-Jun-19 23:08:34 - Pseudolabel 3 finished
+12-Jun-19 23:08:34 - Not improved: 0.7724867724867724
+12-Jun-19 23:11:53 - Pseudolabel 4 finished
+12-Jun-19 23:11:53 - Not improved: 0.7671957671957672
+12-Jun-19 23:15:15 - Pseudolabel 5 finished
+12-Jun-19 23:15:15 - Not improved: 0.7724867724867724
+12-Jun-19 23:18:39 - Pseudolabel 6 finished
+12-Jun-19 23:18:39 - Not improved: 0.7724867724867724
+12-Jun-19 23:22:08 - Pseudolabel 7 finished
+12-Jun-19 23:22:08 - Size of train set: 442
+12-Jun-19 23:22:08 - Number of 0: 0    262
+dtype: int64
+12-Jun-19 23:22:08 - Number of 1: 0    180
+dtype: int64
+12-Jun-19 23:22:08 - Initial score: 0.7777777777777778
+12-Jun-19 23:22:08 - Initial conf_matrix: [[101  12]
+ [ 30  46]]
+12-Jun-19 23:25:32 - Pseudolabel 8 finished
+12-Jun-19 23:25:32 - Not improved: 0.7724867724867724
+12-Jun-19 23:28:49 - Pseudolabel 9 finished
+12-Jun-19 23:28:49 - Not improved: 0.7777777777777778
+12-Jun-19 23:32:06 - Pseudolabel 10 finished
+12-Jun-19 23:32:06 - Not improved: 0.7777777777777778
+12-Jun-19 23:35:24 - Pseudolabel 11 finished
+12-Jun-19 23:35:24 - Not improved: 0.7777777777777778
+12-Jun-19 23:38:43 - Pseudolabel 12 finished
+12-Jun-19 23:38:43 - Not improved: 0.7724867724867724
+12-Jun-19 23:41:59 - Pseudolabel 13 finished
+12-Jun-19 23:41:59 - Not improved: 0.7777777777777778
+12-Jun-19 23:45:17 - Pseudolabel 14 finished
+12-Jun-19 23:45:17 - Not improved: 0.7777777777777778
+12-Jun-19 23:48:32 - Pseudolabel 15 finished
+12-Jun-19 23:48:32 - Not improved: 0.7777777777777778
+12-Jun-19 23:51:46 - Pseudolabel 16 finished
+12-Jun-19 23:51:46 - Not improved: 0.7777777777777778
+12-Jun-19 23:55:06 - Pseudolabel 17 finished
+12-Jun-19 23:55:06 - Not improved: 0.7777777777777778
+12-Jun-19 23:58:23 - Pseudolabel 18 finished
+12-Jun-19 23:58:23 - Not improved: 0.7777777777777778
+13-Jun-19 00:01:40 - Pseudolabel 19 finished
+13-Jun-19 00:01:40 - Not improved: 0.7724867724867724
+13-Jun-19 00:04:56 - Pseudolabel 20 finished
+13-Jun-19 00:04:56 - Not improved: 0.7777777777777778
+13-Jun-19 00:08:14 - Pseudolabel 21 finished
+13-Jun-19 00:08:14 - Not improved: 0.7724867724867724
+13-Jun-19 00:11:41 - Pseudolabel 22 finished
+13-Jun-19 00:11:41 - Not improved: 0.7777777777777778
+13-Jun-19 00:14:58 - Pseudolabel 23 finished
+13-Jun-19 00:14:58 - Not improved: 0.7777777777777778
+13-Jun-19 00:18:11 - Pseudolabel 24 finished
+13-Jun-19 00:18:11 - Not improved: 0.7777777777777778
+13-Jun-19 00:21:37 - Pseudolabel 25 finished
+13-Jun-19 00:21:37 - Not improved: 0.7671957671957672
+13-Jun-19 00:24:52 - Pseudolabel 26 finished
+13-Jun-19 00:24:52 - Not improved: 0.7671957671957672
+13-Jun-19 00:28:09 - Pseudolabel 27 finished
+13-Jun-19 00:28:09 - Not improved: 0.7777777777777778
+13-Jun-19 00:31:26 - Pseudolabel 28 finished
+13-Jun-19 00:31:26 - Not improved: 0.7724867724867724
+13-Jun-19 00:34:43 - Pseudolabel 29 finished
+13-Jun-19 00:34:43 - Not improved: 0.7777777777777778
+13-Jun-19 00:38:00 - Pseudolabel 30 finished
+13-Jun-19 00:38:00 - Not improved: 0.7724867724867724
+13-Jun-19 00:41:27 - Pseudolabel 31 finished
+13-Jun-19 00:41:27 - Not improved: 0.7777777777777778
+13-Jun-19 00:44:41 - Pseudolabel 32 finished
+13-Jun-19 00:44:41 - Not improved: 0.7671957671957672
+13-Jun-19 00:48:09 - Pseudolabel 33 finished
+13-Jun-19 00:48:09 - Not improved: 0.7777777777777778
+13-Jun-19 00:51:31 - Pseudolabel 34 finished
+13-Jun-19 00:51:31 - Size of train set: 448
+13-Jun-19 00:51:31 - Number of 0: 0    262
+dtype: int64
+13-Jun-19 00:51:31 - Number of 1: 0    186
+dtype: int64
+13-Jun-19 00:51:31 - Initial score: 0.783068783068783
+13-Jun-19 00:51:31 - Initial conf_matrix: [[101  12]
+ [ 29  47]]
+13-Jun-19 00:54:48 - Pseudolabel 35 finished
+13-Jun-19 00:54:48 - Not improved: 0.7724867724867724
+13-Jun-19 00:58:04 - Pseudolabel 36 finished
+13-Jun-19 00:58:04 - Not improved: 0.7724867724867724
+13-Jun-19 01:01:23 - Pseudolabel 37 finished
+13-Jun-19 01:01:23 - Not improved: 0.7619047619047619
+13-Jun-19 01:04:40 - Pseudolabel 38 finished
+13-Jun-19 01:04:40 - Not improved: 0.7619047619047619
+13-Jun-19 01:07:56 - Pseudolabel 39 finished
+13-Jun-19 01:07:56 - Not improved: 0.7619047619047619
+13-Jun-19 01:11:15 - Pseudolabel 40 finished
+13-Jun-19 01:11:15 - Not improved: 0.7671957671957672
+13-Jun-19 01:14:35 - Pseudolabel 41 finished
+13-Jun-19 01:14:35 - Not improved: 0.7566137566137566
+13-Jun-19 01:17:52 - Pseudolabel 42 finished
+13-Jun-19 01:17:52 - Not improved: 0.7566137566137566
+13-Jun-19 01:21:09 - Pseudolabel 43 finished
+13-Jun-19 01:21:09 - Not improved: 0.7777777777777778
+13-Jun-19 01:24:35 - Pseudolabel 44 finished
+13-Jun-19 01:24:35 - Not improved: 0.7619047619047619
+13-Jun-19 01:27:49 - Pseudolabel 45 finished
+13-Jun-19 01:27:49 - Not improved: 0.7619047619047619
+13-Jun-19 01:31:10 - Pseudolabel 46 finished
+13-Jun-19 01:31:10 - Not improved: 0.7671957671957672
+13-Jun-19 01:34:31 - Pseudolabel 47 finished
+13-Jun-19 01:34:31 - Not improved: 0.7619047619047619
+13-Jun-19 01:37:48 - Pseudolabel 48 finished
+13-Jun-19 01:37:48 - Not improved: 0.7724867724867724
+13-Jun-19 01:41:02 - Pseudolabel 49 finished
+13-Jun-19 01:41:02 - Not improved: 0.7619047619047619
+13-Jun-19 01:44:19 - Pseudolabel 50 finished
+13-Jun-19 01:44:19 - Not improved: 0.7619047619047619
+13-Jun-19 01:44:19 - Train test split
+13-Jun-19 01:44:22 - Initial model trained
+13-Jun-19 01:44:22 - Size of train set: 441
+13-Jun-19 01:44:22 - Number of 0: 325
+13-Jun-19 01:44:22 - Number of 1: 116
+13-Jun-19 01:44:22 - Initial score: 0.8042328042328042
+13-Jun-19 01:44:22 - Initial conf_matrix: [[126  13]
+ [ 24  26]]
+13-Jun-19 01:47:48 - Pseudolabel 1 finished
+13-Jun-19 01:47:48 - Size of train set: 455
+13-Jun-19 01:47:48 - Number of 0: 0    325
+dtype: int64
+13-Jun-19 01:47:48 - Number of 1: 0    130
+dtype: int64
+13-Jun-19 01:47:48 - Initial score: 0.8095238095238095
+13-Jun-19 01:47:48 - Initial conf_matrix: [[126  13]
+ [ 23  27]]
+13-Jun-19 01:51:04 - Pseudolabel 2 finished
+13-Jun-19 01:51:04 - Not improved: 0.8042328042328042
+13-Jun-19 01:54:23 - Pseudolabel 3 finished
+13-Jun-19 01:54:23 - Not improved: 0.8095238095238095
+13-Jun-19 01:57:41 - Pseudolabel 4 finished
+13-Jun-19 01:57:41 - Not improved: 0.8095238095238095
+13-Jun-19 02:01:06 - Pseudolabel 5 finished
+13-Jun-19 02:01:06 - Not improved: 0.8042328042328042
+13-Jun-19 02:04:21 - Pseudolabel 6 finished
+13-Jun-19 02:04:21 - Not improved: 0.8042328042328042
+13-Jun-19 02:07:38 - Pseudolabel 7 finished
+13-Jun-19 02:07:38 - Size of train set: 512
+13-Jun-19 02:07:38 - Number of 0: 0    325
+dtype: int64
+13-Jun-19 02:07:38 - Number of 1: 0    187
+dtype: int64
+13-Jun-19 02:07:38 - Initial score: 0.8148148148148148
+13-Jun-19 02:07:38 - Initial conf_matrix: [[127  12]
+ [ 23  27]]
+13-Jun-19 02:10:59 - Pseudolabel 8 finished
+13-Jun-19 02:10:59 - Not improved: 0.8148148148148148
+13-Jun-19 02:14:19 - Pseudolabel 9 finished
+13-Jun-19 02:14:19 - Not improved: 0.8148148148148148
+13-Jun-19 02:17:33 - Pseudolabel 10 finished
+13-Jun-19 02:17:33 - Not improved: 0.8042328042328042
+13-Jun-19 02:20:52 - Pseudolabel 11 finished
+13-Jun-19 02:20:52 - Not improved: 0.8042328042328042
+13-Jun-19 02:24:10 - Pseudolabel 12 finished
+13-Jun-19 02:24:10 - Not improved: 0.8148148148148148
+13-Jun-19 02:27:34 - Pseudolabel 13 finished
+13-Jun-19 02:27:34 - Not improved: 0.8095238095238095
+13-Jun-19 02:30:51 - Pseudolabel 14 finished
+13-Jun-19 02:30:51 - Not improved: 0.8042328042328042
+13-Jun-19 02:34:09 - Pseudolabel 15 finished
+13-Jun-19 02:34:09 - Not improved: 0.8042328042328042
+13-Jun-19 02:37:24 - Pseudolabel 16 finished
+13-Jun-19 02:37:24 - Not improved: 0.8042328042328042
+13-Jun-19 02:40:47 - Pseudolabel 17 finished
+13-Jun-19 02:40:47 - Not improved: 0.8042328042328042
+13-Jun-19 02:44:01 - Pseudolabel 18 finished
+13-Jun-19 02:44:01 - Not improved: 0.8095238095238095
+13-Jun-19 02:47:16 - Pseudolabel 19 finished
+13-Jun-19 02:47:16 - Not improved: 0.798941798941799
+13-Jun-19 02:50:39 - Pseudolabel 20 finished
+13-Jun-19 02:50:39 - Not improved: 0.8042328042328042
+13-Jun-19 02:53:55 - Pseudolabel 21 finished
+13-Jun-19 02:53:55 - Not improved: 0.8095238095238095
+13-Jun-19 02:57:06 - Pseudolabel 22 finished
+13-Jun-19 02:57:06 - Not improved: 0.8148148148148148
+13-Jun-19 03:00:21 - Pseudolabel 23 finished
+13-Jun-19 03:00:21 - Not improved: 0.8042328042328042
+13-Jun-19 03:03:40 - Pseudolabel 24 finished
+13-Jun-19 03:03:40 - Not improved: 0.8042328042328042
+13-Jun-19 03:06:58 - Pseudolabel 25 finished
+13-Jun-19 03:06:58 - Not improved: 0.8042328042328042
+13-Jun-19 03:10:10 - Pseudolabel 26 finished
+13-Jun-19 03:10:10 - Not improved: 0.8042328042328042
+13-Jun-19 03:13:30 - Pseudolabel 27 finished
+13-Jun-19 03:13:30 - Not improved: 0.8148148148148148
+13-Jun-19 03:16:46 - Pseudolabel 28 finished
+13-Jun-19 03:16:46 - Not improved: 0.8042328042328042
+13-Jun-19 03:20:06 - Pseudolabel 29 finished
+13-Jun-19 03:20:06 - Not improved: 0.8042328042328042
+13-Jun-19 03:23:17 - Pseudolabel 30 finished
+13-Jun-19 03:23:17 - Not improved: 0.8042328042328042
+13-Jun-19 03:26:32 - Pseudolabel 31 finished
+13-Jun-19 03:26:32 - Not improved: 0.8042328042328042
+13-Jun-19 03:29:42 - Pseudolabel 32 finished
+13-Jun-19 03:29:42 - Not improved: 0.8042328042328042
+13-Jun-19 03:32:57 - Pseudolabel 33 finished
+13-Jun-19 03:32:57 - Not improved: 0.8042328042328042
+13-Jun-19 03:36:08 - Pseudolabel 34 finished
+13-Jun-19 03:36:08 - Not improved: 0.8042328042328042
+13-Jun-19 03:39:27 - Pseudolabel 35 finished
+13-Jun-19 03:39:27 - Not improved: 0.8095238095238095
+13-Jun-19 03:42:40 - Pseudolabel 36 finished
+13-Jun-19 03:42:40 - Not improved: 0.8042328042328042
+13-Jun-19 03:45:53 - Pseudolabel 37 finished
+13-Jun-19 03:45:53 - Not improved: 0.8042328042328042
+13-Jun-19 03:49:06 - Pseudolabel 38 finished
+13-Jun-19 03:49:06 - Not improved: 0.8042328042328042
+13-Jun-19 03:52:18 - Pseudolabel 39 finished
+13-Jun-19 03:52:18 - Not improved: 0.8042328042328042
+13-Jun-19 03:55:34 - Pseudolabel 40 finished
+13-Jun-19 03:55:34 - Not improved: 0.798941798941799
+13-Jun-19 03:58:49 - Pseudolabel 41 finished
+13-Jun-19 03:58:49 - Not improved: 0.8042328042328042
+13-Jun-19 04:01:57 - Pseudolabel 42 finished
+13-Jun-19 04:01:57 - Not improved: 0.8042328042328042
+13-Jun-19 04:05:08 - Pseudolabel 43 finished
+13-Jun-19 04:05:08 - Not improved: 0.8148148148148148
+13-Jun-19 04:08:17 - Pseudolabel 44 finished
+13-Jun-19 04:08:17 - Not improved: 0.8042328042328042
+13-Jun-19 04:11:33 - Pseudolabel 45 finished
+13-Jun-19 04:11:33 - Not improved: 0.8042328042328042
+13-Jun-19 04:14:42 - Pseudolabel 46 finished
+13-Jun-19 04:14:42 - Not improved: 0.8042328042328042
+13-Jun-19 04:17:50 - Pseudolabel 47 finished
+13-Jun-19 04:17:50 - Not improved: 0.8042328042328042
+13-Jun-19 04:21:00 - Pseudolabel 48 finished
+13-Jun-19 04:21:00 - Not improved: 0.8042328042328042
+13-Jun-19 04:24:10 - Pseudolabel 49 finished
+13-Jun-19 04:24:10 - Not improved: 0.8095238095238095
+13-Jun-19 04:27:20 - Pseudolabel 50 finished
+13-Jun-19 04:27:20 - Not improved: 0.8095238095238095
+13-Jun-19 04:27:20 - Train test split
+13-Jun-19 04:27:23 - Initial model trained
+13-Jun-19 04:27:23 - Size of train set: 441
+13-Jun-19 04:27:23 - Number of 0: 160
+13-Jun-19 04:27:23 - Number of 1: 281
+13-Jun-19 04:27:23 - Initial score: 0.8095238095238095
+13-Jun-19 04:27:23 - Initial conf_matrix: [[ 43  26]
+ [ 10 110]]
+13-Jun-19 04:30:31 - Pseudolabel 1 finished
+13-Jun-19 04:30:31 - Not improved: 0.8095238095238095
+13-Jun-19 04:33:50 - Pseudolabel 2 finished
+13-Jun-19 04:33:50 - Not improved: 0.8095238095238095
+13-Jun-19 04:36:58 - Pseudolabel 3 finished
+13-Jun-19 04:36:58 - Size of train set: 444
+13-Jun-19 04:36:58 - Number of 0: 0    163
+dtype: int64
+13-Jun-19 04:36:58 - Number of 1: 0    281
+dtype: int64
+13-Jun-19 04:36:58 - Initial score: 0.8201058201058201
+13-Jun-19 04:36:58 - Initial conf_matrix: [[ 45  24]
+ [ 10 110]]
+13-Jun-19 04:40:08 - Pseudolabel 4 finished
+13-Jun-19 04:40:08 - Not improved: 0.8148148148148148
+13-Jun-19 04:43:20 - Pseudolabel 5 finished
+13-Jun-19 04:43:20 - Not improved: 0.8148148148148148
+13-Jun-19 04:46:23 - Pseudolabel 6 finished
+13-Jun-19 04:46:23 - Not improved: 0.8148148148148148
+13-Jun-19 04:49:33 - Pseudolabel 7 finished
+13-Jun-19 04:49:33 - Not improved: 0.8042328042328042
+13-Jun-19 04:52:29 - Pseudolabel 8 finished
+13-Jun-19 04:52:29 - Not improved: 0.8148148148148148
+13-Jun-19 04:55:36 - Pseudolabel 9 finished
+13-Jun-19 04:55:36 - Not improved: 0.8095238095238095
+13-Jun-19 04:58:31 - Pseudolabel 10 finished
+13-Jun-19 04:58:31 - Not improved: 0.8148148148148148
+13-Jun-19 05:01:32 - Pseudolabel 11 finished
+13-Jun-19 05:01:32 - Not improved: 0.8095238095238095
+13-Jun-19 05:04:27 - Pseudolabel 12 finished
+13-Jun-19 05:04:27 - Not improved: 0.8042328042328042
+13-Jun-19 05:07:25 - Pseudolabel 13 finished
+13-Jun-19 05:07:25 - Size of train set: 460
+13-Jun-19 05:07:25 - Number of 0: 0    179
+dtype: int64
+13-Jun-19 05:07:25 - Number of 1: 0    281
+dtype: int64
+13-Jun-19 05:07:25 - Initial score: 0.8306878306878307
+13-Jun-19 05:07:25 - Initial conf_matrix: [[ 43  26]
+ [  6 114]]
+13-Jun-19 05:10:34 - Pseudolabel 14 finished
+13-Jun-19 05:10:34 - Not improved: 0.7936507936507936
+13-Jun-19 05:13:28 - Pseudolabel 15 finished
+13-Jun-19 05:13:28 - Not improved: 0.7777777777777778
+13-Jun-19 05:16:27 - Pseudolabel 16 finished
+13-Jun-19 05:16:27 - Not improved: 0.7883597883597884
+13-Jun-19 05:19:32 - Pseudolabel 17 finished
+13-Jun-19 05:19:32 - Not improved: 0.7883597883597884
+13-Jun-19 05:22:30 - Pseudolabel 18 finished
+13-Jun-19 05:22:30 - Not improved: 0.7777777777777778
+13-Jun-19 05:25:26 - Pseudolabel 19 finished
+13-Jun-19 05:25:26 - Not improved: 0.7936507936507936
+13-Jun-19 05:28:29 - Pseudolabel 20 finished
+13-Jun-19 05:28:29 - Not improved: 0.7936507936507936
+13-Jun-19 05:31:26 - Pseudolabel 21 finished
+13-Jun-19 05:31:26 - Not improved: 0.7777777777777778
+13-Jun-19 05:34:32 - Pseudolabel 22 finished
+13-Jun-19 05:34:32 - Not improved: 0.783068783068783
+13-Jun-19 05:37:30 - Pseudolabel 23 finished
+13-Jun-19 05:37:30 - Not improved: 0.7936507936507936
+13-Jun-19 05:40:24 - Pseudolabel 24 finished
+13-Jun-19 05:40:24 - Not improved: 0.783068783068783
+13-Jun-19 05:43:23 - Pseudolabel 25 finished
+13-Jun-19 05:43:23 - Not improved: 0.783068783068783
+13-Jun-19 05:46:24 - Pseudolabel 26 finished
+13-Jun-19 05:46:24 - Not improved: 0.7883597883597884
+13-Jun-19 05:49:21 - Pseudolabel 27 finished
+13-Jun-19 05:49:21 - Not improved: 0.783068783068783
+13-Jun-19 05:52:16 - Pseudolabel 28 finished
+13-Jun-19 05:52:16 - Not improved: 0.783068783068783
+13-Jun-19 05:55:16 - Pseudolabel 29 finished
+13-Jun-19 05:55:16 - Not improved: 0.783068783068783
+13-Jun-19 05:58:15 - Pseudolabel 30 finished
+13-Jun-19 05:58:15 - Not improved: 0.7883597883597884
+13-Jun-19 06:01:15 - Pseudolabel 31 finished
+13-Jun-19 06:01:15 - Not improved: 0.7883597883597884
+13-Jun-19 06:04:16 - Pseudolabel 32 finished
+13-Jun-19 06:04:16 - Not improved: 0.783068783068783
+13-Jun-19 06:07:24 - Pseudolabel 33 finished
+13-Jun-19 06:07:24 - Not improved: 0.783068783068783
+13-Jun-19 06:10:16 - Pseudolabel 34 finished
+13-Jun-19 06:10:16 - Not improved: 0.783068783068783
+13-Jun-19 06:13:15 - Pseudolabel 35 finished
+13-Jun-19 06:13:15 - Not improved: 0.7883597883597884
+13-Jun-19 06:16:14 - Pseudolabel 36 finished
+13-Jun-19 06:16:14 - Not improved: 0.7883597883597884
+13-Jun-19 06:19:08 - Pseudolabel 37 finished
+13-Jun-19 06:19:08 - Not improved: 0.783068783068783
+13-Jun-19 06:22:20 - Pseudolabel 38 finished
+13-Jun-19 06:22:20 - Not improved: 0.783068783068783
+13-Jun-19 06:25:26 - Pseudolabel 39 finished
+13-Jun-19 06:25:26 - Not improved: 0.7883597883597884
+13-Jun-19 06:28:30 - Pseudolabel 40 finished
+13-Jun-19 06:28:30 - Not improved: 0.7883597883597884
+13-Jun-19 06:31:36 - Pseudolabel 41 finished
+13-Jun-19 06:31:36 - Not improved: 0.783068783068783
+13-Jun-19 06:34:30 - Pseudolabel 42 finished
+13-Jun-19 06:34:30 - Not improved: 0.7777777777777778
+13-Jun-19 06:37:29 - Pseudolabel 43 finished
+13-Jun-19 06:37:29 - Not improved: 0.7883597883597884
+13-Jun-19 06:40:29 - Pseudolabel 44 finished
+13-Jun-19 06:40:29 - Not improved: 0.783068783068783
+13-Jun-19 06:43:26 - Pseudolabel 45 finished
+13-Jun-19 06:43:26 - Not improved: 0.783068783068783
+13-Jun-19 06:46:22 - Pseudolabel 46 finished
+13-Jun-19 06:46:22 - Not improved: 0.7883597883597884
+13-Jun-19 06:49:26 - Pseudolabel 47 finished
+13-Jun-19 06:49:26 - Not improved: 0.783068783068783
+13-Jun-19 06:52:23 - Pseudolabel 48 finished
+13-Jun-19 06:52:23 - Not improved: 0.8042328042328042
+13-Jun-19 06:55:23 - Pseudolabel 49 finished
+13-Jun-19 06:55:23 - Not improved: 0.7883597883597884
+13-Jun-19 06:58:23 - Pseudolabel 50 finished
+13-Jun-19 06:58:23 - Not improved: 0.7777777777777778
+13-Jun-19 06:58:23 - Train test split
+13-Jun-19 06:58:26 - Initial model trained
+13-Jun-19 06:58:26 - Size of train set: 441
+13-Jun-19 06:58:26 - Number of 0: 41
+13-Jun-19 06:58:26 - Number of 1: 400
+13-Jun-19 06:58:26 - Initial score: 0.9259259259259259
+13-Jun-19 06:58:26 - Initial conf_matrix: [[  6  11]
+ [  3 169]]
+13-Jun-19 07:01:34 - Pseudolabel 1 finished
+13-Jun-19 07:01:34 - Not improved: 0.9259259259259259
+13-Jun-19 07:04:41 - Pseudolabel 2 finished
+13-Jun-19 07:04:41 - Not improved: 0.9259259259259259
+13-Jun-19 07:07:48 - Pseudolabel 3 finished
+13-Jun-19 07:07:48 - Not improved: 0.9259259259259259
+13-Jun-19 07:10:52 - Pseudolabel 4 finished
+13-Jun-19 07:10:52 - Size of train set: 442
+13-Jun-19 07:10:52 - Number of 0: 0    42
+dtype: int64
+13-Jun-19 07:10:52 - Number of 1: 0    400
+dtype: int64
+13-Jun-19 07:10:52 - Initial score: 0.9312169312169312
+13-Jun-19 07:10:52 - Initial conf_matrix: [[  7  10]
+ [  3 169]]

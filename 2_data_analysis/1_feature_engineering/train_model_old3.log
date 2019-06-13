@@ -1,0 +1,107 @@
+12-Jun-19 20:33:48 - Start script
+12-Jun-19 20:34:43 - Train test split
+12-Jun-19 20:34:46 - Initial model trained
+12-Jun-19 20:34:46 - Size of train set: 441
+12-Jun-19 20:34:46 - Number of 0: 262
+12-Jun-19 20:34:46 - Number of 1: 179
+12-Jun-19 20:34:46 - Initial score: 0.7724867724867724
+12-Jun-19 20:34:46 - Initial conf_matrix: [[100  13]
+ [ 30  46]]
+12-Jun-19 20:40:59 - Pseudolabel 1 finished
+12-Jun-19 20:40:59 - Size of train set: 441
+12-Jun-19 20:40:59 - Number of 0: 0    262
+dtype: int64
+12-Jun-19 20:40:59 - Number of 1: 0    179
+dtype: int64
+12-Jun-19 20:40:59 - Initial score: 0.7724867724867724
+12-Jun-19 20:40:59 - Initial conf_matrix: [[100  13]
+ [ 30  46]]
+12-Jun-19 20:47:02 - Pseudolabel 2 finished
+12-Jun-19 20:47:02 - Size of train set: 441
+12-Jun-19 20:47:02 - Number of 0: 0    262
+dtype: int64
+12-Jun-19 20:47:02 - Number of 1: 0    179
+dtype: int64
+12-Jun-19 20:47:02 - Initial score: 0.7724867724867724
+12-Jun-19 20:47:02 - Initial conf_matrix: [[100  13]
+ [ 30  46]]
+12-Jun-19 20:53:06 - Pseudolabel 3 finished
+12-Jun-19 20:53:06 - Size of train set: 442
+12-Jun-19 20:53:06 - Number of 0: 0    262
+dtype: int64
+12-Jun-19 20:53:06 - Number of 1: 0    180
+dtype: int64
+12-Jun-19 20:53:06 - Initial score: 0.7777777777777778
+12-Jun-19 20:53:06 - Initial conf_matrix: [[101  12]
+ [ 30  46]]
+12-Jun-19 20:59:08 - Pseudolabel 4 finished
+12-Jun-19 20:59:08 - Size of train set: 446
+12-Jun-19 20:59:08 - Number of 0: 0    262
+dtype: int64
+12-Jun-19 20:59:08 - Number of 1: 0    184
+dtype: int64
+12-Jun-19 20:59:08 - Initial score: 0.783068783068783
+12-Jun-19 20:59:08 - Initial conf_matrix: [[102  11]
+ [ 30  46]]
+12-Jun-19 21:05:12 - Pseudolabel 5 finished
+12-Jun-19 21:05:12 - Size of train set: 477
+12-Jun-19 21:05:12 - Number of 0: 0    262
+dtype: int64
+12-Jun-19 21:05:12 - Number of 1: 0    215
+dtype: int64
+12-Jun-19 21:05:12 - Initial score: 0.7671957671957672
+12-Jun-19 21:05:12 - Initial conf_matrix: [[103  10]
+ [ 34  42]]
+12-Jun-19 21:11:14 - Pseudolabel 6 finished
+12-Jun-19 21:11:14 - Size of train set: 810
+12-Jun-19 21:11:14 - Number of 0: 0    405
+dtype: int64
+12-Jun-19 21:11:14 - Number of 1: 0    405
+dtype: int64
+12-Jun-19 21:11:14 - Initial score: 0.7407407407407407
+12-Jun-19 21:11:14 - Initial conf_matrix: [[100  13]
+ [ 36  40]]
+12-Jun-19 21:17:27 - Pseudolabel 7 finished
+12-Jun-19 21:17:27 - Size of train set: 1545
+12-Jun-19 21:17:27 - Number of 0: 0    773
+dtype: int64
+12-Jun-19 21:17:27 - Number of 1: 0    772
+dtype: int64
+12-Jun-19 21:17:27 - Initial score: 0.7195767195767195
+12-Jun-19 21:17:27 - Initial conf_matrix: [[99 14]
+ [39 37]]
+12-Jun-19 21:23:53 - Pseudolabel 8 finished
+12-Jun-19 21:23:53 - Size of train set: 2635
+12-Jun-19 21:23:53 - Number of 0: 0    1318
+dtype: int64
+12-Jun-19 21:23:53 - Number of 1: 0    1317
+dtype: int64
+12-Jun-19 21:23:53 - Initial score: 0.7195767195767195
+12-Jun-19 21:23:53 - Initial conf_matrix: [[100  13]
+ [ 40  36]]
+12-Jun-19 21:30:18 - Pseudolabel 9 finished
+12-Jun-19 21:30:18 - Size of train set: 3814
+12-Jun-19 21:30:18 - Number of 0: 0    1907
+dtype: int64
+12-Jun-19 21:30:18 - Number of 1: 0    1907
+dtype: int64
+12-Jun-19 21:30:18 - Initial score: 0.7354497354497355
+12-Jun-19 21:30:18 - Initial conf_matrix: [[99 14]
+ [36 40]]
+12-Jun-19 21:36:56 - Pseudolabel 10 finished
+12-Jun-19 21:36:56 - Size of train set: 5339
+12-Jun-19 21:36:56 - Number of 0: 0    2670
+dtype: int64
+12-Jun-19 21:36:56 - Number of 1: 0    2669
+dtype: int64
+12-Jun-19 21:36:56 - Initial score: 0.7037037037037037
+12-Jun-19 21:36:56 - Initial conf_matrix: [[104   9]
+ [ 47  29]]
+12-Jun-19 21:36:56 - Train test split
+12-Jun-19 21:36:59 - Initial model trained
+12-Jun-19 21:36:59 - Size of train set: 441
+12-Jun-19 21:36:59 - Number of 0: 325
+12-Jun-19 21:36:59 - Number of 1: 116
+12-Jun-19 21:36:59 - Initial score: 0.8042328042328042
+12-Jun-19 21:36:59 - Initial conf_matrix: [[126  13]
+ [ 24  26]]

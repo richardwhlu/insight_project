@@ -1,0 +1,35 @@
+12-Jun-19 22:25:11 - Start script
+12-Jun-19 22:26:04 - Train test split
+12-Jun-19 22:26:07 - Initial model trained
+12-Jun-19 22:26:07 - Size of train set: 441
+12-Jun-19 22:26:07 - Number of 0: 262
+12-Jun-19 22:26:07 - Number of 1: 179
+12-Jun-19 22:26:07 - Initial score: 0.7724867724867724
+12-Jun-19 22:26:07 - Initial conf_matrix: [[100  13]
+ [ 30  46]]
+12-Jun-19 22:28:25 - Pseudolabel 1 finished
+12-Jun-19 22:28:25 - Not improved: 0.7724867724867724
+12-Jun-19 22:30:39 - Pseudolabel 2 finished
+12-Jun-19 22:30:39 - Not improved: 0.7724867724867724
+12-Jun-19 22:32:58 - Pseudolabel 3 finished
+12-Jun-19 22:32:58 - Not improved: 0.7724867724867724
+12-Jun-19 22:35:11 - Pseudolabel 4 finished
+12-Jun-19 22:35:11 - Not improved: 0.7724867724867724
+12-Jun-19 22:37:27 - Pseudolabel 5 finished
+12-Jun-19 22:37:27 - Not improved: 0.7724867724867724
+12-Jun-19 22:39:38 - Pseudolabel 6 finished
+12-Jun-19 22:39:38 - Not improved: 0.7724867724867724
+12-Jun-19 22:41:53 - Pseudolabel 7 finished
+12-Jun-19 22:41:53 - Not improved: 0.7724867724867724
+12-Jun-19 22:44:06 - Pseudolabel 8 finished
+12-Jun-19 22:44:06 - Not improved: 0.7724867724867724
+12-Jun-19 22:46:19 - Pseudolabel 9 finished
+12-Jun-19 22:46:19 - Not improved: 0.7724867724867724
+12-Jun-19 22:48:33 - Pseudolabel 10 finished
+12-Jun-19 22:48:33 - Not improved: 0.7724867724867724
+12-Jun-19 22:50:46 - Pseudolabel 11 finished
+12-Jun-19 22:50:46 - Not improved: 0.7724867724867724
+12-Jun-19 22:53:01 - Pseudolabel 12 finished
+12-Jun-19 22:53:01 - Not improved: 0.7724867724867724
+12-Jun-19 22:55:15 - Pseudolabel 13 finished
+12-Jun-19 22:55:15 - Not improved: 0.7724867724867724
