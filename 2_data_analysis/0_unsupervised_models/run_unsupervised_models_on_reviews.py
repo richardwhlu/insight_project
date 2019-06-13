@@ -139,6 +139,11 @@ with open("../../4_models/tf_50K_influential_reviews_10191994.pickle", "wb") as 
   pickle.dump(tf_model, f)
 
 
+tf_model_full = tf_vectorizer.fit(text)
+with open("../../4_models/tf_50K_influential_reviews_10191994_full.pickle", "wb") as f:
+  pickle.dump(tf_model_full, f)
+  
+
 tf = tf_vectorizer.fit_transform(text)
 tf_feature_names = tf_vectorizer.get_feature_names()
 
