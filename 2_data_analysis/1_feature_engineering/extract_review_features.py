@@ -213,7 +213,7 @@ def process_topic_models(review_df):
         "rb") as f:
         lda = pickle.load(f)
 
-        with open("../../4_models/tfidf_50K_influential_reviews_10191994.pickle",
+        with open("../../4_models/tfidf_50K_influential_reviews_10191994_full.pickle",
             "rb") as f2:
             tf_vectorizer = pickle.load(f2)
 
