@@ -215,7 +215,7 @@ def process_topic_models(review_df):
 
         with open("../../4_models/tfidf_50K_influential_reviews_10191994.pickle",
             "rb") as f2:
-             tf_vectorizer = pickle.load(f2)
+            tf_vectorizer = pickle.load(f2)
 
             review_tf = tf_vectorizer.transform(review_df)
 
