@@ -129,6 +129,11 @@ tfidf_vectorizer_small = TfidfVectorizer(max_df=0.95,
                                          min_df=2,
                                          max_features=100)
 
+tfidf_bigram_vectorizer_small = TfidfVectorizer(max_df=0.95,
+                                                min_df=2,
+                                                max_features=100,
+                                                ngram_range=(2,2))
+
 
 # =========================================================================== #
 # TRANSFORM DATA AND GET RESULTS
@@ -150,6 +155,10 @@ tf_feature_names = tf_vectorizer.get_feature_names()
 tfidf_model = tfidf_vectorizer_small.fit(text)
 with open("../../4_models/tfidf_50K_influential_reviews_10191994.pickle", "wb") as f:
   pickle.dump(tfidf_model, f)
+
+tfidf_bigram_model = tfidf_bigram_vectorizer_small.fit(text)
+with open("../../4_models/tfidf_bigram_50K_influential_reviews_10191994.pickle", "wb") as f:
+  pickle.dump(tfidf_bigram_model, f)
 
 
 tfidf = tfidf_vectorizer.fit_transform(text)
