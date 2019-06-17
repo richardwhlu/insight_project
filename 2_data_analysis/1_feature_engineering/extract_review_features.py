@@ -145,21 +145,22 @@ def process_metadata(review_text):
     cleaned_sentence = review_text
     # cleaned_sentence = preprocess_reviews(review_text, 0)
     
-    wordlength_sentence = 0
+    wordlength_sentence = []
     money_punct_sentence = 0
     numbers_sentence = 0
     for word in cleaned_sentence:
-        wordlength_sentence += len(word)
+        wordlength_sentence.append(len(word))
         if "$" in word or "%" in word or "+" in word or "-" in word:
             money_punct_sentence += 1
 
         numbers_sentence += len(re.findall("[0-9]", word))
 
+    sentence_length = np.sum(wordlength_sentence)
     sentence_avg_length = np.mean(wordlength_sentence)
     sentence_med_length = np.median(wordlength_sentence)
 
 
-    metadata_list = [wordlength_sentence,
+    metadata_list = [sentence_length,
                      sentence_avg_length,
                      sentence_med_length,
                      money_punct_sentence,
@@ -448,20 +449,6 @@ def produce_feature_matrix(data):
 
     column_name = column[0]
 
-    # start0 = time.time()
-    # preprocessed_df = data[column_name].apply(lambda x:
-    #     preprocess_reviews(x, 1, 1))
-    # end0 = time.time()
-
-    # print("Preprocessing: {}".format(end0 - start0))
-
-    # start00 = time.time()
-    # preprocessed_df2 = data[column_name].apply(lambda x:
-    #     preprocess_reviews(x, 0))
-    # end00 = time.time()
-
-    # print("Preprocessing2: {}".format(end00 - start00))
-
     tmp_data = data[[column_name]]
     tmp_data["index"] = range(0, tmp_data.shape[0])
     tmp_data = tmp_data[["index", column_name]]
@@ -488,7 +475,7 @@ def produce_feature_matrix(data):
 
     start000 = time.time()
     pool = multiprocessing.Pool(multiprocessing.cpu_count()-1)
-    preprocessed_df3 = pd.concat(pool.map(process_rows4, df_split))
+    preprocessed_df3 = pd.concat(pool.map(process_rows3, df_split))
     pool.close()
     pool.join()
     end000 = time.time()
@@ -506,11 +493,6 @@ def produce_feature_matrix(data):
         preprocessed_df3 = preprocessed_df3["text_formatted"]
     else:
         return
-
-
-
-
-    # return preprocessed_df, preprocessed_df2
 
     # perhaps can parallelize functions
     start1 = time.time()
