@@ -1,0 +1,234 @@
+15-Jun-19 16:10:03 - Start script
+15-Jun-19 16:10:55 - Train test split
+15-Jun-19 16:11:00 - Initial model trained
+15-Jun-19 16:11:00 - Size of train set: 630
+15-Jun-19 16:11:00 - Number of 0: 375
+15-Jun-19 16:11:00 - Number of 1: 255
+15-Jun-19 16:11:00 - Initial score: 0.6952380952380952
+15-Jun-19 16:11:00 - Initial conf_matrix: [[105  20]
+ [ 44  41]]
+15-Jun-19 16:12:58 - First row added: [0.89930681 0.10069319]
+15-Jun-19 16:12:58 - First row added: [0.89771092 0.10228908]
+15-Jun-19 16:12:58 - First row added: [0.89750011 0.10249989]
+15-Jun-19 16:12:58 - First row added: [0.89659221 0.10340779]
+15-Jun-19 16:12:58 - First row added: [0.10514475 0.89485525]
+15-Jun-19 16:12:58 - Last row added: [0.18730432 0.81269568]
+15-Jun-19 16:13:02 - Pseudolabel 1 finished
+15-Jun-19 16:13:02 - Size of train set: 730
+15-Jun-19 16:13:02 - Number of 0: 0    375
+dtype: int64
+15-Jun-19 16:13:02 - Number of 1: 0    355
+dtype: int64
+15-Jun-19 16:13:02 - Updated score: 0.7
+15-Jun-19 16:13:02 - Updated conf_matrix: [[107  18]
+ [ 45  40]]
+15-Jun-19 16:16:01 - First row added: [0.03723081 0.96276919]
+15-Jun-19 16:16:01 - Last row added: [0.20616566 0.79383434]
+15-Jun-19 16:16:06 - Pseudolabel 2 finished
+15-Jun-19 16:16:06 - Not improved: 0.6904761904761905
+15-Jun-19 16:18:58 - First row added: [0.03401577 0.96598423]
+15-Jun-19 16:18:58 - Last row added: [0.21521143 0.78478857]
+15-Jun-19 16:19:03 - Pseudolabel 3 finished
+15-Jun-19 16:19:03 - Not improved: 0.6952380952380952
+15-Jun-19 16:21:54 - First row added: [0.0403161 0.9596839]
+15-Jun-19 16:21:54 - Last row added: [0.21694706 0.78305294]
+15-Jun-19 16:21:59 - Pseudolabel 4 finished
+15-Jun-19 16:21:59 - Not improved: 0.7
+15-Jun-19 16:24:58 - First row added: [0.03628139 0.96371861]
+15-Jun-19 16:24:58 - Last row added: [0.23334232 0.76665768]
+15-Jun-19 16:25:04 - Pseudolabel 5 finished
+15-Jun-19 16:25:04 - Not improved: 0.6904761904761905
+15-Jun-19 16:27:59 - First row added: [0.03835391 0.96164609]
+15-Jun-19 16:27:59 - Last row added: [0.21400394 0.78599606]
+15-Jun-19 16:28:04 - Pseudolabel 6 finished
+15-Jun-19 16:28:04 - Not improved: 0.7
+15-Jun-19 16:30:55 - First row added: [0.03751342 0.96248658]
+15-Jun-19 16:30:55 - Last row added: [0.2258272 0.7741728]
+15-Jun-19 16:31:00 - Pseudolabel 7 finished
+15-Jun-19 16:31:00 - Not improved: 0.7
+15-Jun-19 16:33:53 - First row added: [0.03283644 0.96716356]
+15-Jun-19 16:33:53 - Last row added: [0.22929384 0.77070616]
+15-Jun-19 16:33:57 - Pseudolabel 8 finished
+15-Jun-19 16:33:57 - Not improved: 0.6952380952380952
+15-Jun-19 16:36:56 - First row added: [0.03386341 0.96613659]
+15-Jun-19 16:36:56 - Last row added: [0.20923251 0.79076749]
+15-Jun-19 16:37:01 - Pseudolabel 9 finished
+15-Jun-19 16:37:01 - Size of train set: 830
+15-Jun-19 16:37:01 - Number of 0: 0    415
+dtype: int64
+15-Jun-19 16:37:01 - Number of 1: 0    415
+dtype: int64
+15-Jun-19 16:37:01 - Updated score: 0.7047619047619048
+15-Jun-19 16:37:01 - Updated conf_matrix: [[107  18]
+ [ 44  41]]
+15-Jun-19 16:39:58 - First row added: [0.01980885 0.98019115]
+15-Jun-19 16:39:58 - Last row added: [0.1075631 0.8924369]
+15-Jun-19 16:40:03 - Pseudolabel 10 finished
+15-Jun-19 16:40:03 - Size of train set: 930
+15-Jun-19 16:40:03 - Number of 0: 0    465
+dtype: int64
+15-Jun-19 16:40:03 - Number of 1: 0    465
+dtype: int64
+15-Jun-19 16:40:03 - Updated score: 0.7095238095238096
+15-Jun-19 16:40:03 - Updated conf_matrix: [[107  18]
+ [ 43  42]]
+15-Jun-19 16:43:02 - First row added: [0.02367216 0.97632784]
+15-Jun-19 16:43:02 - Last row added: [0.91606622 0.08393378]
+15-Jun-19 16:43:07 - Pseudolabel 11 finished
+15-Jun-19 16:43:07 - Not improved: 0.7
+15-Jun-19 16:46:05 - First row added: [0.02358153 0.97641847]
+15-Jun-19 16:46:05 - Last row added: [0.07607925 0.92392075]
+15-Jun-19 16:46:10 - Pseudolabel 12 finished
+15-Jun-19 16:46:10 - Not improved: 0.7047619047619048
+15-Jun-19 16:49:06 - First row added: [0.01816669 0.98183331]
+15-Jun-19 16:49:06 - Last row added: [0.07517327 0.92482673]
+15-Jun-19 16:49:13 - Pseudolabel 13 finished
+15-Jun-19 16:49:13 - Not improved: 0.7
+15-Jun-19 16:52:06 - First row added: [0.02161835 0.97838165]
+15-Jun-19 16:52:06 - Last row added: [0.0829273 0.9170727]
+15-Jun-19 16:52:11 - Pseudolabel 14 finished
+15-Jun-19 16:52:11 - Not improved: 0.7047619047619048
+15-Jun-19 16:55:11 - First row added: [0.02437115 0.97562885]
+15-Jun-19 16:55:11 - Last row added: [0.08314116 0.91685884]
+15-Jun-19 16:55:17 - Pseudolabel 15 finished
+15-Jun-19 16:55:17 - Not improved: 0.7095238095238096
+15-Jun-19 16:58:13 - First row added: [0.01671358 0.98328642]
+15-Jun-19 16:58:13 - Last row added: [0.09069823 0.90930177]
+15-Jun-19 16:58:18 - Pseudolabel 16 finished
+15-Jun-19 16:58:18 - Not improved: 0.7047619047619048
+15-Jun-19 17:01:13 - First row added: [0.01612875 0.98387125]
+15-Jun-19 17:01:13 - Last row added: [0.09152298 0.90847702]
+15-Jun-19 17:01:19 - Pseudolabel 17 finished
+15-Jun-19 17:01:19 - Not improved: 0.7047619047619048
+15-Jun-19 17:04:17 - First row added: [0.01531563 0.98468437]
+15-Jun-19 17:04:17 - Last row added: [0.09769044 0.90230956]
+15-Jun-19 17:04:22 - Pseudolabel 18 finished
+15-Jun-19 17:04:22 - Not improved: 0.7047619047619048
+15-Jun-19 17:07:19 - First row added: [0.02128652 0.97871348]
+15-Jun-19 17:07:19 - Last row added: [0.92498857 0.07501143]
+15-Jun-19 17:07:24 - Pseudolabel 19 finished
+15-Jun-19 17:07:24 - Not improved: 0.7
+15-Jun-19 17:10:18 - First row added: [0.02240157 0.97759843]
+15-Jun-19 17:10:18 - Last row added: [0.91813484 0.08186516]
+15-Jun-19 17:10:24 - Pseudolabel 20 finished
+15-Jun-19 17:10:24 - Not improved: 0.7
+15-Jun-19 17:13:18 - First row added: [0.01690978 0.98309022]
+15-Jun-19 17:13:18 - Last row added: [0.91370318 0.08629682]
+15-Jun-19 17:13:24 - Pseudolabel 21 finished
+15-Jun-19 17:13:24 - Not improved: 0.7047619047619048
+15-Jun-19 17:16:21 - First row added: [0.02199128 0.97800872]
+15-Jun-19 17:16:21 - Last row added: [0.90486064 0.09513936]
+15-Jun-19 17:16:26 - Pseudolabel 22 finished
+15-Jun-19 17:16:26 - Not improved: 0.7047619047619048
+15-Jun-19 17:19:21 - First row added: [0.03184793 0.96815207]
+15-Jun-19 17:19:21 - Last row added: [0.92370444 0.07629556]
+15-Jun-19 17:19:28 - Pseudolabel 23 finished
+15-Jun-19 17:19:28 - Not improved: 0.7047619047619048
+15-Jun-19 17:22:25 - First row added: [0.02105505 0.97894495]
+15-Jun-19 17:22:25 - Last row added: [0.08959904 0.91040096]
+15-Jun-19 17:22:32 - Pseudolabel 24 finished
+15-Jun-19 17:22:32 - Not improved: 0.7047619047619048
+15-Jun-19 17:25:24 - First row added: [0.01775577 0.98224423]
+15-Jun-19 17:25:24 - Last row added: [0.09525414 0.90474586]
+15-Jun-19 17:25:29 - Pseudolabel 25 finished
+15-Jun-19 17:25:29 - Not improved: 0.7047619047619048
+15-Jun-19 17:28:30 - First row added: [0.02433082 0.97566918]
+15-Jun-19 17:28:30 - Last row added: [0.92008619 0.07991381]
+15-Jun-19 17:28:35 - Pseudolabel 26 finished
+15-Jun-19 17:28:35 - Not improved: 0.7047619047619048
+15-Jun-19 17:31:26 - First row added: [0.02351105 0.97648895]
+15-Jun-19 17:31:26 - Last row added: [0.08912521 0.91087479]
+15-Jun-19 17:31:32 - Pseudolabel 27 finished
+15-Jun-19 17:31:32 - Not improved: 0.7
+15-Jun-19 17:34:33 - First row added: [0.01554461 0.98445539]
+15-Jun-19 17:34:34 - Last row added: [0.89367651 0.10632349]
+15-Jun-19 17:34:39 - Pseudolabel 28 finished
+15-Jun-19 17:34:39 - Not improved: 0.7
+15-Jun-19 17:37:30 - First row added: [0.01632119 0.98367881]
+15-Jun-19 17:37:30 - Last row added: [0.092586 0.907414]
+15-Jun-19 17:37:36 - Pseudolabel 29 finished
+15-Jun-19 17:37:36 - Not improved: 0.7
+15-Jun-19 17:40:32 - First row added: [0.01844432 0.98155568]
+15-Jun-19 17:40:32 - Last row added: [0.08763089 0.91236911]
+15-Jun-19 17:40:39 - Pseudolabel 30 finished
+15-Jun-19 17:40:39 - Not improved: 0.7
+15-Jun-19 17:43:32 - First row added: [0.01632513 0.98367487]
+15-Jun-19 17:43:32 - Last row added: [0.0789201 0.9210799]
+15-Jun-19 17:43:38 - Pseudolabel 31 finished
+15-Jun-19 17:43:38 - Not improved: 0.7
+15-Jun-19 17:46:35 - First row added: [0.01710271 0.98289729]
+15-Jun-19 17:46:35 - Last row added: [0.07601577 0.92398423]
+15-Jun-19 17:46:41 - Pseudolabel 32 finished
+15-Jun-19 17:46:41 - Not improved: 0.7
+15-Jun-19 17:49:36 - First row added: [0.01696623 0.98303377]
+15-Jun-19 17:49:36 - Last row added: [0.08999835 0.91000165]
+15-Jun-19 17:49:42 - Pseudolabel 33 finished
+15-Jun-19 17:49:42 - Not improved: 0.7047619047619048
+15-Jun-19 17:52:41 - First row added: [0.01648198 0.98351802]
+15-Jun-19 17:52:41 - Last row added: [0.08048571 0.91951429]
+15-Jun-19 17:52:46 - Pseudolabel 34 finished
+15-Jun-19 17:52:46 - Not improved: 0.7
+15-Jun-19 17:55:37 - First row added: [0.01709455 0.98290545]
+15-Jun-19 17:55:37 - Last row added: [0.09638734 0.90361266]
+15-Jun-19 17:55:43 - Pseudolabel 35 finished
+15-Jun-19 17:55:43 - Not improved: 0.7
+15-Jun-19 17:58:42 - First row added: [0.0171101 0.9828899]
+15-Jun-19 17:58:42 - Last row added: [0.91261741 0.08738259]
+15-Jun-19 17:58:48 - Pseudolabel 36 finished
+15-Jun-19 17:58:48 - Not improved: 0.7
+15-Jun-19 18:01:41 - First row added: [0.01790702 0.98209298]
+15-Jun-19 18:01:41 - Last row added: [0.08920343 0.91079657]
+15-Jun-19 18:01:47 - Pseudolabel 37 finished
+15-Jun-19 18:01:47 - Not improved: 0.7047619047619048
+15-Jun-19 18:04:41 - First row added: [0.02884767 0.97115233]
+15-Jun-19 18:04:41 - Last row added: [0.07127505 0.92872495]
+15-Jun-19 18:04:47 - Pseudolabel 38 finished
+15-Jun-19 18:04:47 - Not improved: 0.7095238095238096
+15-Jun-19 18:07:42 - First row added: [0.01348958 0.98651042]
+15-Jun-19 18:07:42 - Last row added: [0.07866643 0.92133357]
+15-Jun-19 18:07:47 - Pseudolabel 39 finished
+15-Jun-19 18:07:47 - Not improved: 0.7047619047619048
+15-Jun-19 18:10:39 - First row added: [0.01539627 0.98460373]
+15-Jun-19 18:10:39 - Last row added: [0.0856362 0.9143638]
+15-Jun-19 18:10:45 - Pseudolabel 40 finished
+15-Jun-19 18:10:45 - Not improved: 0.7
+15-Jun-19 18:13:44 - First row added: [0.01901029 0.98098971]
+15-Jun-19 18:13:44 - Last row added: [0.10277044 0.89722956]
+15-Jun-19 18:13:49 - Pseudolabel 41 finished
+15-Jun-19 18:13:49 - Not improved: 0.7047619047619048
+15-Jun-19 18:16:44 - First row added: [0.02057539 0.97942461]
+15-Jun-19 18:16:44 - Last row added: [0.0837365 0.9162635]
+15-Jun-19 18:16:50 - Pseudolabel 42 finished
+15-Jun-19 18:16:50 - Not improved: 0.7
+15-Jun-19 18:19:44 - First row added: [0.02069633 0.97930367]
+15-Jun-19 18:19:44 - Last row added: [0.08400513 0.91599487]
+15-Jun-19 18:19:49 - Pseudolabel 43 finished
+15-Jun-19 18:19:49 - Not improved: 0.7
+15-Jun-19 18:22:44 - First row added: [0.02656608 0.97343392]
+15-Jun-19 18:22:44 - Last row added: [0.07198916 0.92801084]
+15-Jun-19 18:22:51 - Pseudolabel 44 finished
+15-Jun-19 18:22:51 - Not improved: 0.7047619047619048
+15-Jun-19 18:25:50 - First row added: [0.02599482 0.97400518]
+15-Jun-19 18:25:50 - Last row added: [0.0694929 0.9305071]
+15-Jun-19 18:25:56 - Pseudolabel 45 finished
+15-Jun-19 18:25:56 - Not improved: 0.7095238095238096
+15-Jun-19 18:28:53 - First row added: [0.02054789 0.97945211]
+15-Jun-19 18:28:53 - Last row added: [0.08946793 0.91053207]
+15-Jun-19 18:28:59 - Pseudolabel 46 finished
+15-Jun-19 18:28:59 - Not improved: 0.7
+15-Jun-19 18:31:54 - First row added: [0.02646553 0.97353447]
+15-Jun-19 18:31:54 - Last row added: [0.92211344 0.07788656]
+15-Jun-19 18:32:00 - Pseudolabel 47 finished
+15-Jun-19 18:32:00 - Not improved: 0.7
+15-Jun-19 18:34:57 - First row added: [0.01414833 0.98585167]
+15-Jun-19 18:34:58 - Last row added: [0.08670458 0.91329542]
+15-Jun-19 18:35:03 - Pseudolabel 48 finished
+15-Jun-19 18:35:03 - Not improved: 0.7
+15-Jun-19 18:37:58 - First row added: [0.0207556 0.9792444]
+15-Jun-19 18:37:58 - Last row added: [0.08271396 0.91728604]
+15-Jun-19 18:38:03 - Pseudolabel 49 finished
+15-Jun-19 18:38:03 - Not improved: 0.7
+15-Jun-19 18:40:54 - First row added: [0.01536213 0.98463787]
+15-Jun-19 18:40:54 - Last row added: [0.92650238 0.07349762]
+15-Jun-19 18:40:59 - Pseudolabel 50 finished
+15-Jun-19 18:40:59 - Not improved: 0.7

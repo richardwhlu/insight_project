@@ -1,0 +1,111 @@
+15-Jun-19 22:21:43 - Start script
+15-Jun-19 22:22:35 - Train test split
+15-Jun-19 22:22:39 - Initial model trained
+15-Jun-19 22:22:39 - Step size: 3000; Samples selected: 100; Iterations: 100
+15-Jun-19 22:22:39 - Size of train set: 630
+15-Jun-19 22:22:39 - Number of 0: 375
+15-Jun-19 22:22:39 - Number of 1: 255
+15-Jun-19 22:22:39 - Initial score: 0.6952380952380952
+15-Jun-19 22:22:39 - Initial conf_matrix: [[105  20]
+ [ 44  41]]
+15-Jun-19 22:24:35 - First row added: [0.4999853 0.5000147]
+15-Jun-19 22:32:32 - Start script
+15-Jun-19 22:33:24 - Train test split
+15-Jun-19 22:33:29 - Initial model trained
+15-Jun-19 22:33:29 - Step size: 3000; Samples selected: 100; Iterations: 100
+15-Jun-19 22:33:29 - Size of train set: 630
+15-Jun-19 22:33:29 - Number of 0: 375
+15-Jun-19 22:33:29 - Number of 1: 255
+15-Jun-19 22:33:29 - Initial score: 0.6952380952380952
+15-Jun-19 22:33:29 - Initial conf_matrix: [[105  20]
+ [ 44  41]]
+15-Jun-19 22:35:25 - First row added: [0.4999853 0.5000147]
+15-Jun-19 22:39:22 - Start script
+15-Jun-19 22:40:15 - Train test split
+15-Jun-19 22:40:20 - Initial model trained
+15-Jun-19 22:40:20 - Step size: 3000; Samples selected: 100; Iterations: 100
+15-Jun-19 22:40:20 - Size of train set: 630
+15-Jun-19 22:40:20 - Number of 0: 375
+15-Jun-19 22:40:20 - Number of 1: 255
+15-Jun-19 22:40:20 - Initial score: 0.6952380952380952
+15-Jun-19 22:40:20 - Initial conf_matrix: [[105  20]
+ [ 44  41]]
+15-Jun-19 22:42:12 - First row added: [0.4999853 0.5000147]
+15-Jun-19 22:43:06 - Start script
+15-Jun-19 22:44:00 - Train test split
+15-Jun-19 22:44:04 - Initial model trained
+15-Jun-19 22:44:04 - Step size: 3000; Samples selected: 100; Iterations: 100
+15-Jun-19 22:44:04 - Size of train set: 630
+15-Jun-19 22:44:04 - Number of 0: 375
+15-Jun-19 22:44:04 - Number of 1: 255
+15-Jun-19 22:44:04 - Initial score: 0.6952380952380952
+15-Jun-19 22:44:04 - Initial conf_matrix: [[105  20]
+ [ 44  41]]
+15-Jun-19 22:45:58 - First row added: [0.4999853 0.5000147]
+15-Jun-19 22:46:10 - Start script
+15-Jun-19 22:47:02 - Train test split
+15-Jun-19 22:47:06 - Initial model trained
+15-Jun-19 22:47:06 - Step size: 3000; Samples selected: 100; Iterations: 100
+15-Jun-19 22:47:06 - Size of train set: 630
+15-Jun-19 22:47:06 - Number of 0: 375
+15-Jun-19 22:47:06 - Number of 1: 255
+15-Jun-19 22:47:06 - Initial score: 0.6952380952380952
+15-Jun-19 22:47:06 - Initial conf_matrix: [[105  20]
+ [ 44  41]]
+15-Jun-19 22:49:02 - First row added: [0.4999853 0.5000147]
+15-Jun-19 22:50:44 - Start script
+15-Jun-19 22:51:37 - Train test split
+15-Jun-19 22:51:41 - Initial model trained
+15-Jun-19 22:51:41 - Step size: 3000; Samples selected: 100; Iterations: 100
+15-Jun-19 22:51:41 - Size of train set: 630
+15-Jun-19 22:51:41 - Number of 0: 375
+15-Jun-19 22:51:41 - Number of 1: 255
+15-Jun-19 22:51:41 - Initial score: 0.6952380952380952
+15-Jun-19 22:51:41 - Initial conf_matrix: [[105  20]
+ [ 44  41]]
+15-Jun-19 22:53:40 - First row added: [0.50047037 0.49952963]
+15-Jun-19 22:53:40 - First row added: [0.49923303 0.50076697]
+15-Jun-19 22:53:40 - Last row added: [0.41569772 0.58430228]
+15-Jun-19 22:53:44 - Pseudolabel 1 finished
+15-Jun-19 22:53:44 - Size of train set: 730
+15-Jun-19 22:53:44 - Number of 0: 0    375
+dtype: int64
+15-Jun-19 22:53:44 - Number of 1: 0    355
+dtype: int64
+15-Jun-19 22:53:44 - Updated score: 0.7
+15-Jun-19 22:53:44 - Updated conf_matrix: [[108  17]
+ [ 46  39]]
+15-Jun-19 22:56:48 - First row added: [0.47127819 0.52872181]
+15-Jun-19 22:56:52 - Pseudolabel 2 finished
+15-Jun-19 22:56:52 - Not improved: 0.6904761904761905
+15-Jun-19 22:59:46 - First row added: [0.48217535 0.51782465]
+15-Jun-19 22:59:50 - Pseudolabel 3 finished
+15-Jun-19 22:59:50 - Not improved: 0.6952380952380952
+15-Jun-19 23:02:46 - First row added: [0.49261452 0.50738548]
+15-Jun-19 23:02:50 - Pseudolabel 4 finished
+15-Jun-19 23:02:50 - Not improved: 0.6952380952380952
+15-Jun-19 23:05:50 - First row added: [0.39154765 0.60845235]
+15-Jun-19 23:05:54 - Pseudolabel 5 finished
+15-Jun-19 23:05:54 - Not improved: 0.7
+15-Jun-19 23:08:48 - First row added: [0.50003947 0.49996053]
+15-Jun-19 23:08:48 - First row added: [0.50006825 0.49993175]
+15-Jun-19 23:08:48 - First row added: [0.49989074 0.50010926]
+15-Jun-19 23:08:48 - Last row added: [0.49634609 0.50365391]
+15-Jun-19 23:08:52 - Pseudolabel 6 finished
+15-Jun-19 23:08:52 - Size of train set: 830
+15-Jun-19 23:08:52 - Number of 0: 0    415
+dtype: int64
+15-Jun-19 23:08:52 - Number of 1: 0    415
+dtype: int64
+15-Jun-19 23:08:52 - Updated score: 0.7047619047619048
+15-Jun-19 23:08:52 - Updated conf_matrix: [[112  13]
+ [ 49  36]]
+15-Jun-19 23:11:48 - First row added: [0.40373498 0.59626502]
+15-Jun-19 23:11:52 - Pseudolabel 7 finished
+15-Jun-19 23:11:52 - Not improved: 0.7047619047619048
+15-Jun-19 23:14:46 - First row added: [0.35270253 0.64729747]
+15-Jun-19 23:14:51 - Pseudolabel 8 finished
+15-Jun-19 23:14:51 - Not improved: 0.7047619047619048
+15-Jun-19 23:17:47 - First row added: [0.48571261 0.51428739]
+15-Jun-19 23:17:52 - Pseudolabel 9 finished
+15-Jun-19 23:17:52 - Not improved: 0.7047619047619048

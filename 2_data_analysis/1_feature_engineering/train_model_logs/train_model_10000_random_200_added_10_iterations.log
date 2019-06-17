@@ -1,0 +1,45 @@
+15-Jun-19 20:44:34 - Start script
+15-Jun-19 20:45:29 - Train test split
+15-Jun-19 20:45:33 - Initial model trained
+15-Jun-19 20:45:33 - Step size: 10000; Samples selected: 200; Iterations: 10
+15-Jun-19 20:45:33 - Size of train set: 630
+15-Jun-19 20:45:33 - Number of 0: 375
+15-Jun-19 20:45:33 - Number of 1: 255
+15-Jun-19 20:45:33 - Initial score: 0.6952380952380952
+15-Jun-19 20:45:33 - Initial conf_matrix: [[105  20]
+ [ 44  41]]
+15-Jun-19 20:55:31 - First row added: [0.09339145 0.90660855]
+15-Jun-19 20:55:31 - Last row added: [0.17492822 0.82507178]
+15-Jun-19 20:55:36 - Pseudolabel 1 finished
+15-Jun-19 20:55:36 - Not improved: 0.6952380952380952
+15-Jun-19 21:07:05 - First row added: [0.07860985 0.92139015]
+15-Jun-19 21:07:06 - Last row added: [0.13387262 0.86612738]
+15-Jun-19 21:07:11 - Pseudolabel 2 finished
+15-Jun-19 21:07:11 - Size of train set: 830
+15-Jun-19 21:07:11 - Number of 0: 0    415
+dtype: int64
+15-Jun-19 21:07:11 - Number of 1: 0    415
+dtype: int64
+15-Jun-19 21:07:11 - Updated score: 0.7
+15-Jun-19 21:07:11 - Updated conf_matrix: [[106  19]
+ [ 44  41]]
+15-Jun-19 21:18:14 - First row added: [0.01499502 0.98500498]
+15-Jun-19 21:18:14 - Last row added: [0.12632941 0.87367059]
+15-Jun-19 21:18:20 - Pseudolabel 3 finished
+15-Jun-19 21:18:20 - Not improved: 0.7
+15-Jun-19 21:29:20 - First row added: [0.01726364 0.98273636]
+15-Jun-19 21:29:20 - Last row added: [0.13017918 0.86982082]
+15-Jun-19 21:29:26 - Pseudolabel 4 finished
+15-Jun-19 21:29:26 - Not improved: 0.7
+15-Jun-19 21:40:39 - First row added: [0.01526369 0.98473631]
+15-Jun-19 21:40:40 - Last row added: [0.13170813 0.86829187]
+15-Jun-19 21:40:46 - Pseudolabel 5 finished
+15-Jun-19 21:40:46 - Not improved: 0.7
+15-Jun-19 21:52:03 - First row added: [0.01694992 0.98305008]
+15-Jun-19 21:52:04 - Last row added: [0.12857708 0.87142292]
+15-Jun-19 21:52:10 - Pseudolabel 6 finished
+15-Jun-19 21:52:10 - Not improved: 0.7
+15-Jun-19 22:03:27 - First row added: [0.01484294 0.98515706]
+15-Jun-19 22:03:27 - Last row added: [0.11687293 0.88312707]
+15-Jun-19 22:03:33 - Pseudolabel 7 finished
+15-Jun-19 22:03:33 - Not improved: 0.7
