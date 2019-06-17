@@ -17,7 +17,7 @@ import ujson
 import warnings
 
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, roc_curve, auc
 from sklearn.model_selection import cross_val_score, cross_val_predict
 
 # =========================================================================== #
@@ -101,7 +101,7 @@ def train_pseudolabel_model(feature_matrix, target, target_string, iterations=0,
 
     logging.info("Train test split")
 
-    score, conf_mat, clf = train_model(X_train, y_train,
+    score, conf_mat, roc, clf = train_model(X_train, y_train,
         X_validation, y_validation, target_string)
 
     with open("../../4_models/rf_{}_{}iterations_athreshold_{}_{}initial.pickle".format(
@@ -115,7 +115,7 @@ def train_pseudolabel_model(feature_matrix, target, target_string, iterations=0,
     logging.info("Number of 0: {}".format(
         y_train.shape[0] - y_train.sum()))
     logging.info("Number of 1: {}".format(y_train.sum()))
-    logging.info("Initial score: {}".format(score))
+    logging.info("Initial score: {}".format(auc(roc[0], roc[1])))
     logging.info("Initial conf_matrix: {}".format(conf_mat))
 
     if iterations:
@@ -127,13 +127,14 @@ def train_pseudolabel_model(feature_matrix, target, target_string, iterations=0,
                 X_train, y_train, target_string,
                 clf, threshold="adaptive", random_seed=10191994+i,
                 num_samples=step, num_to_add=num_to_add)
-            score_new, conf_mat_new, clf_new = train_model(
+            score_new, conf_mat_new, roc_new, clf_new = train_model(
                 X_train_new, y_train_new,
                 X_validation, y_validation, target_string)
 
-            if score_new >= score: # try adding = for now
+            if auc(roc_new[0], roc_new[1]) >= auc(roc[0], roc[1]): # try adding = for now
                 add_counter = 0
-                score = score_new
+                roc = auc(roc_new[0], roc_new[1])
+                # score = score_new
                 conf_mat = conf_mat_new
                 clf = clf_new
                 X_train = X_train_new
@@ -194,6 +195,9 @@ def train_model(feature_matrix, target, validation_x, validation_y, target_strin
         conf_mat = confusion_matrix(validation_y,
             clf.predict(validation_x[:, 1:]))
 
+        roc = roc_curve(validation_y,
+                        clf.predict_proba(validation_x[:, 1:])[:,1])
+
         clf.fit(feature_matrix[:, 1:], target)
     except: # np array versus dataframe
         score = clf.fit(feature_matrix.iloc[:, 1:], # because first column is raw text
@@ -204,9 +208,12 @@ def train_model(feature_matrix, target, validation_x, validation_y, target_strin
         conf_mat = confusion_matrix(validation_y,
             clf.predict(validation_x[:, 1:]))
 
+        roc = roc_curve(validation_y,
+                        clf.predict_proba(validation_x[:, 1:])[:,1])
+
         clf.fit(feature_matrix.iloc[:, 1:], target)
 
-    return score, conf_mat, clf
+    return score, conf_mat, roc, clf
 
 
 def pseudolabel_data(feature_matrix_o, target_o, target_string_o, clf,
