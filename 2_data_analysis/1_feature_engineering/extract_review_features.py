@@ -49,6 +49,7 @@ import numpy as np
 import os
 import pandas as pd
 import pickle
+import re
 import string
 import time
 
@@ -75,7 +76,11 @@ test_review = data2.iloc[0]
 
 model = Word2Vec.load("../../4_models/word2vec_embeddings_100K_business_elite_reviews.model")
 
-tfidf_model = pickle.load(open("../../4_models/tfidf_50K_influential_reviews_10191994.pickle", "rb"))
+tfidf_model = pickle.load(
+    open("../../4_models/tfidf_50K_influential_reviews_10191994.pickle", "rb"))
+
+tfidf_bigram_model = pickle.load(
+    open("../../4_models/tfidf_bigram_50K_influential_reviews_10191994.pickle", "rb"))
 
 # need to incorporate a dataset that can be used to fit tfidf and counts
 # in case number of reviews is small
@@ -86,30 +91,44 @@ tfidf_model = pickle.load(open("../../4_models/tfidf_50K_influential_reviews_101
 # FEATURE EXTRACTION FUNCTIONS
 # =========================================================================== #
 
-def preprocess_reviews(review_text, stem, join=0):
+def preprocess_reviews(review_text, stem, join=0, punct=1):
     """Clean up the raw review text a little.
 
     Args:
         review_text - raw review text from csv
         stem - stem tokens or not
         join - join the stems into sentence or not
+        punct - 1 if remove punct, 0 otherwise
 
     Returns:
         cleaned_sentence - tokenized and stemmed sentence
     """
     stemmer = PorterStemmer()
     if stem:
-        cleaned_sentence = [stemmer.stem(x.lower()) 
-               for x in word_tokenize(review_text)
-               if x.lower() not in stopwords.words("english")
-               and x.lower() not in string.punctuation]
+        if punct:
+            cleaned_sentence = [stemmer.stem(x.lower()) 
+                   for x in word_tokenize(review_text)
+                   if x.lower() not in stopwords.words("english")
+                   and x.lower() not in string.punctuation]
+        else:
+            cleaned_sentence = [stemmer.stem(x.lower()) 
+                   for x in word_tokenize(review_text)
+                   if x.lower() not in stopwords.words("english")]
+
         if join:
             cleaned_sentence = " ".join(cleaned_sentence)
     else:
-        cleaned_sentence = [x.lower() 
-               for x in word_tokenize(review_text)
-               if x.lower() not in stopwords.words("english")
-               and x.lower() not in string.punctuation]
+        if punct:
+            cleaned_sentence = [x.lower() 
+                   for x in word_tokenize(review_text)
+                   if x.lower() not in stopwords.words("english")
+                   and x.lower() not in string.punctuation]
+        else:
+            cleaned_sentence = [x.lower() 
+                   for x in word_tokenize(review_text)
+                   if x.lower() not in stopwords.words("english")] 
+
+
     return cleaned_sentence
 
 
@@ -126,14 +145,25 @@ def process_metadata(review_text):
     cleaned_sentence = review_text
     # cleaned_sentence = preprocess_reviews(review_text, 0)
     
-    wordlength_sentence = [len(x) for x in cleaned_sentence]
-    sentence_length = np.sum(wordlength_sentence)
+    wordlength_sentence = 0
+    money_punct_sentence = 0
+    numbers_sentence = 0
+    for word in cleaned_sentence:
+        wordlength_sentence += len(word)
+        if "$" in word or "%" in word or "+" in word or "-" in word:
+            money_punct_sentence += 1
+
+        numbers_sentence += len(re.findall("[0-9]", word))
+
     sentence_avg_length = np.mean(wordlength_sentence)
     sentence_med_length = np.median(wordlength_sentence)
 
-    metadata_list = [sentence_length,
+
+    metadata_list = [wordlength_sentence,
                      sentence_avg_length,
-                     sentence_med_length]
+                     sentence_med_length,
+                     money_punct_sentence,
+                     numbers_sentence]
 
     return metadata_list
 
@@ -188,6 +218,7 @@ def process_tfidf(review_df):
 
     Returns:
         tfidf_df - df of tfidf tokens
+        tfidf_bigram_df - df of tfidf tokens for bigrams
     """
     tfidf = tfidf_model.transform(review_df) # sparse matrix
     tfidf_feature_names = tfidf_model.get_feature_names()
@@ -195,7 +226,13 @@ def process_tfidf(review_df):
     tfidf_df = pd.DataFrame(tfidf.toarray())
     tfidf_df.columns = tfidf_feature_names
 
-    return tfidf_df
+    tfidf_bigram = tfidf_bigram_model.transform(review_df)
+    tfidf_bigram_feature_names = tfidf_bigram_model.get_feature_names()
+
+    tfidf_bigram_df = pd.DataFrame(tfidf_bigram.toarray())
+    tfidf_bigram_df.columns = tfidf_bigram_feature_names
+
+    return tfidf_df, tfidf_bigram_df
 
 
 # CATEGORY 4: Topic model outputs
@@ -239,6 +276,40 @@ def process_word_embeddings(review_text):
     """
     cleaned_sentence = review_text
     # cleaned_sentence = preprocess_reviews(review_text, 0)
+    stemmer = PorterStemmer()
+    wordlist = ["food",
+                "delicious",
+                "service",
+                "staff",
+                "price",
+                "cost",
+                "ambiance",
+                "patio",
+                "loud"]
+
+    similarity_dict = defaultdict(list)
+    for word in cleaned_sentence:
+        for target_word in wordlist:
+            try:
+                other_words = [stemmer.stem(x)
+                               for x in wordlist if x is not target_word]
+                if stemmer.stem(word) not in other_words:
+                    similarity_dict[target_word].append(
+                        (word, model.wv.similarity(word, target_word)))
+            except:
+                pass
+        
+    most_similar_dict = {}
+    for target_word, similarity_list in similarity_dict.items():
+        sorted_similarity_list = sorted(similarity_list, key=lambda x: -x[1])
+        most_similar_dict[target_word] = np.mean(
+            [x[1] for x in sorted_similarity_list[:3]])
+    
+    embeddings_list = []
+    for target_word in wordlist:
+        embeddings_list.append(most_similar_dict[target_word])
+        
+    return embeddings_list
 
     food_similarity = []
     tasty_similarity = []
@@ -263,174 +334,6 @@ def process_word_embeddings(review_text):
     patio_similarity = []
     loud_similarity = []
     smelly_similarity = []
-
-
-    for word in cleaned_sentence:
-        try:
-            tmp = model.wv.similarity(word, "food")
-            food_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "tasty")
-            tasty_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "delicious")
-            delicious_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "yummy")
-            yummy_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "service")
-            service_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "fast")
-            fast_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "quick")
-            quick_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "line")
-            line_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "wait")
-            wait_similarity.append(tmp)
-        except:
-            pass
-
-
-        try:
-            tmp = model.wv.similarity(word, "seated")
-            seated_similarity.append(tmp)
-        except:
-            pass
-
-
-        try:
-            tmp = model.wv.similarity(word, "price")
-            price_similarity.append(tmp)
-        except:
-            pass
-
-
-        try:
-            tmp = model.wv.similarity(word, "expensive")
-            expensive_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "cost")
-            cost_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "worth")
-            worth_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "ambiance")
-            ambiance_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "atmosphere")
-            atmosphere_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "environment")
-            environment_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "patio")
-            patio_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "loud")
-            loud_similarity.append(tmp)
-        except:
-            pass
-
-        try:
-            tmp = model.wv.similarity(word, "smelly")
-            smelly_similarity.append(tmp)
-        except:
-            pass
-
-
-    food_avg_similarity = np.mean(food_similarity)
-    service_avg_similarity = np.mean(service_similarity)
-    price_avg_similarity = np.mean(price_similarity)
-    ambiance_avg_similarity = np.mean(ambiance_similarity)
-    tasty_avg_similarity = np.mean(tasty_similarity)
-    delicious_avg_similarity = np.mean(delicious_similarity)
-    yummy_avg_similarity = np.mean(yummy_similarity)
-    fast_avg_similarity = np.mean(fast_similarity)
-    quick_avg_similarity = np.mean(quick_similarity)
-    line_avg_similarity = np.mean(line_similarity)
-    wait_avg_similarity = np.mean(wait_similarity)
-    seated_avg_similarity = np.mean(seated_similarity)
-    expensive_avg_similarity = np.mean(expensive_similarity)
-    cost_avg_similarity = np.mean(cost_similarity)
-    worth_avg_similarity = np.mean(worth_similarity)
-    atmosphere_avg_similarity = np.mean(ambiance_similarity)
-    environment_avg_similarity = np.mean(environment_similarity)
-    patio_avg_similarity = np.mean(patio_similarity)
-    loud_avg_similarity = np.mean(loud_similarity)
-    smelly_avg_similarity = np.mean(smelly_similarity)
-    
-    embeddings_list = [food_avg_similarity,
-                       service_avg_similarity,
-                       price_avg_similarity,
-                       ambiance_avg_similarity,
-                       tasty_avg_similarity,
-                       delicious_avg_similarity,
-                       yummy_avg_similarity,
-                       fast_avg_similarity,
-                       quick_avg_similarity,
-                       line_avg_similarity,
-                       wait_avg_similarity,
-                       seated_avg_similarity,
-                       expensive_avg_similarity,
-                       cost_avg_similarity,
-                       worth_avg_similarity,
-                       atmosphere_avg_similarity,
-                       environment_avg_similarity,
-                       patio_avg_similarity,
-                       loud_avg_similarity,
-                       smelly_avg_similarity]
 
     return embeddings_list
 
@@ -507,6 +410,21 @@ def process_rows2(data_in):
     return data_in[["index", "text_formatted"]]
 
 
+def process_rows3(data_in):
+    """Process rows function for parallelization
+
+    Args:
+        data_in - df of text
+
+    Returns:
+        parsed and formatted text df
+    """
+    columns = data_in.columns
+    data_in["text_formatted"] = data_in[columns[1]].apply(
+        lambda x: preprocess_reviews(x, 0, punct=0))
+    return data_in[["index", "text_formatted"]]
+
+
 # =========================================================================== #
 # PRODUCE FEATURE MATRIX
 # =========================================================================== #
@@ -548,39 +466,55 @@ def produce_feature_matrix(data):
     tmp_data["index"] = range(0, tmp_data.shape[0])
     tmp_data = tmp_data[["index", column_name]]
 
-    start0 = time.time()
     df_split = np.array_split(tmp_data, 14)
+
+    start0 = time.time()
     pool = multiprocessing.Pool(multiprocessing.cpu_count()-1)
     preprocessed_df = pd.concat(pool.map(process_rows, df_split))
     pool.close()
     pool.join()
     end0 = time.time()
 
-    print("Preprocessing (P): {}".format(end0 - start0))
+    print("Preprocessing Stem & Join (P): {}".format(end0 - start0))
 
     start00 = time.time()
-    df_split = np.array_split(tmp_data, 14)
     pool = multiprocessing.Pool(multiprocessing.cpu_count()-1)
     preprocessed_df2 = pd.concat(pool.map(process_rows2, df_split))
     pool.close()
     pool.join()
     end00 = time.time()
 
-    print("Preprocessing2 (P): {}".format(end00 - start00))
+    print("Preprocessing No Stem (P): {}".format(end00 - start00))
+
+    start000 = time.time()
+    pool = multiprocessing.Pool(multiprocessing.cpu_count()-1)
+    preprocessed_df3 = pd.concat(pool.map(process_rows4, df_split))
+    pool.close()
+    pool.join()
+    end000 = time.time()
+
+    print("Preprocessing No Stem & Punct (P): {}".format(end000 - start000))
+
 
     if preprocessed_df["index"].tolist() == list(
-        range(preprocessed_df.shape[0])) and preprocessed_df2["index"
-        ].tolist() == list(range(preprocessed_df2.shape[0])):
+        range(preprocessed_df.shape[0])) and (preprocessed_df2["index"
+        ].tolist() == list(range(preprocessed_df2.shape[0]))) and (
+        preprocessed_df3["index"].tolist() == list(
+            range(preprocessed_df3.shape[0]))):
         preprocessed_df = preprocessed_df["text_formatted"]
         preprocessed_df2 = preprocessed_df2["text_formatted"]
+        preprocessed_df3 = preprocessed_df3["text_formatted"]
     else:
         return
+
+
+
 
     # return preprocessed_df, preprocessed_df2
 
     # perhaps can parallelize functions
     start1 = time.time()
-    tfidf_df = process_tfidf(preprocessed_df)
+    tfidf_df, tfidf_bigram_df = process_tfidf(preprocessed_df)
     end1 = time.time()
 
     print("TFIDF: {}".format(end1 - start1))
@@ -601,7 +535,9 @@ def produce_feature_matrix(data):
     start4 = time.time()
     (data["sen_len"],
      data["sen_avg_len"],
-     data["sen_med_len"]) = zip(*preprocessed_df2.apply(process_metadata))
+     data["sen_med_len"],
+     data["sen_money_len"],
+     data["sen_num_len"]) = zip(*preprocessed_df3.apply(process_metadata))
     end4 = time.time()
 
     print("Metadata: {}".format(end4 - start4))
@@ -751,66 +687,42 @@ def produce_feature_matrix(data):
      data['X_PRT'],
      data['X_DET'],
      data['X_CONJ']) = zip(*preprocessed_df2.apply(process_syntax))
+
+    metadata_columns = ['NOUN', 'VERB', 'ADJ', 'ADV', '.', 'ADP', 'NUM', 'PRON', 'PRT', 'DET', 'CONJ', 'X', 'NOUN_VERB', 'NOUN_ADJ', 'NOUN_ADV', 'NOUN_.', 'NOUN_ADP', 'NOUN_NUM', 'NOUN_PRON', 'NOUN_PRT', 'NOUN_DET', 'NOUN_CONJ', 'NOUN_X', 'VERB_NOUN', 'VERB_ADJ', 'VERB_ADV', 'VERB_.', 'VERB_ADP', 'VERB_NUM', 'VERB_PRON', 'VERB_PRT', 'VERB_DET', 'VERB_CONJ', 'VERB_X', 'ADJ_NOUN', 'ADJ_VERB', 'ADJ_ADV', 'ADJ_.', 'ADJ_ADP', 'ADJ_NUM', 'ADJ_PRON', 'ADJ_PRT', 'ADJ_DET', 'ADJ_CONJ', 'ADJ_X', 'ADV_NOUN', 'ADV_VERB', 'ADV_ADJ', 'ADV_.', 'ADV_ADP', 'ADV_NUM', 'ADV_PRON', 'ADV_PRT', 'ADV_DET', 'ADV_CONJ', 'ADV_X', '._NOUN', '._VERB', '._ADJ', '._ADV', '._ADP', '._NUM', '._PRON', '._PRT', '._DET', '._CONJ', '._X', 'ADP_NOUN', 'ADP_VERB', 'ADP_ADJ', 'ADP_ADV', 'ADP_.', 'ADP_NUM', 'ADP_PRON', 'ADP_PRT', 'ADP_DET', 'ADP_CONJ', 'ADP_X', 'NUM_NOUN', 'NUM_VERB', 'NUM_ADJ', 'NUM_ADV', 'NUM_.', 'NUM_ADP', 'NUM_PRON', 'NUM_PRT', 'NUM_DET', 'NUM_CONJ', 'NUM_X', 'PRON_NOUN', 'PRON_VERB', 'PRON_ADJ', 'PRON_ADV', 'PRON_.', 'PRON_ADP', 'PRON_NUM', 'PRON_PRT', 'PRON_DET', 'PRON_CONJ', 'PRON_X', 'PRT_NOUN', 'PRT_VERB', 'PRT_ADJ', 'PRT_ADV', 'PRT_.', 'PRT_ADP', 'PRT_NUM', 'PRT_PRON', 'PRT_DET', 'PRT_CONJ', 'PRT_X', 'DET_NOUN', 'DET_VERB', 'DET_ADJ', 'DET_ADV', 'DET_.', 'DET_ADP', 'DET_NUM', 'DET_PRON', 'DET_PRT', 'DET_CONJ', 'DET_X', 'CONJ_NOUN', 'CONJ_VERB', 'CONJ_ADJ', 'CONJ_ADV', 'CONJ_.', 'CONJ_ADP', 'CONJ_NUM', 'CONJ_PRON', 'CONJ_PRT', 'CONJ_DET', 'CONJ_X', 'X_NOUN', 'X_VERB', 'X_ADJ', 'X_ADV', 'X_.', 'X_ADP', 'X_NUM', 'X_PRON', 'X_PRT', 'X_DET', 'X_CONJ']
+    
+    for column in metadata_columns:
+        data[column] = normalize(data[column])
     end5 = time.time()
 
     print("Syntax: {}".format(end5 - start5))
 
     start6 = time.time()
-    (data["food_avg_sim"],
-     data["service_avg_sim"],
-     data["price_avg_sim"],
-     data["ambiance_avg_sim"],
-     data["tasty_avg_similarity"],
-     data["delicious_avg_similarity"],
-     data["yummy_avg_similarity"],
-     data["fast_avg_similarity"],
-     data["quick_avg_similarity"],
-     data["line_avg_similarity"],
-     data["wait_avg_similarity"],
-     data["seated_avg_similarity"],
-     data["expensive_avg_similarity"],
-     data["cost_avg_similarity"],
-     data["worth_avg_similarity"],
-     data["atmosphere_avg_similarity"],
-     data["environment_avg_similarity"],
-     data["patio_avg_similarity"],
-     data["loud_avg_similarity"],
-     data["smelly_avg_similarity"]) = zip(*preprocessed_df2.apply(
+    (data["food_3avg_sim"],
+     data["delicious_3avg_sim"],
+     data["service_3avg_sim"],
+     data["staff_3avg_sim"],
+     data["price_3avg_similarity"],
+     data["cost_3avg_similarity"],
+     data["ambiance_3avg_similarity"],
+     data["patio_3avg_similarity"],
+     data["loud_3avg_similarity"]) = zip(*preprocessed_df2.apply(
         process_word_embeddings))
     end6 = time.time()
 
+    # scale the word embedding columns
+    data["food_3avg_sim"] = normalize(data["food_3avg_sim"])
+    data["delicious_3avg_sim"] = normalize(data["delicious_3avg_sim"])
+    data["service_3avg_sim"] = normalize(data["service_3avg_sim"])
+    data["staff_3avg_sim"] = normalize(data["staff_3avg_sim"])
+    data["price_3avg_similarity"] = normalize(data["price_3avg_similarity"])
+    data["cost_3avg_similarity"] = normalize(data["cost_3avg_similarity"])
+    data["ambiance_3avg_similarity"] = normalize(data["ambiance_3avg_similarity"])
+    data["patio_3avg_similarity"] = normalize(data["patio_3avg_similarity"])
+    data["loud_3avg_similarity"] = normalize(data["loud_3avg_similarity"])
+
     print("Embeddings: {}".format(end6 - start6))
 
-    # scale the word embedding columns
-    data["food_avg_sim"] = normalize(data["food_avg_sim"])
-    data["service_avg_sim"] = normalize(data["service_avg_sim"])
-    data["price_avg_sim"] = normalize(data["price_avg_sim"])
-    data["ambiance_avg_sim"] = normalize(data["ambiance_avg_sim"])
-    data["tasty_avg_similarity"] = normalize(data["tasty_avg_similarity"])
-    data["delicious_avg_similarity"] = normalize(data["delicious_avg_similarity"])
-    data["yummy_avg_similarity"] = normalize(data["yummy_avg_similarity"])
-    data["fast_avg_similarity"] = normalize(data["fast_avg_similarity"])
-    data["quick_avg_similarity"] = normalize(data["quick_avg_similarity"])
-    data["line_avg_similarity"] = normalize(data["line_avg_similarity"])
-    data["wait_avg_similarity"] = normalize(data["wait_avg_similarity"])
-    data["seated_avg_similarity"] = normalize(data["seated_avg_similarity"])
-    data["expensive_avg_similarity"] = normalize(data["expensive_avg_similarity"])
-    data["cost_avg_similarity"] = normalize(data["cost_avg_similarity"])
-    data["worth_avg_similarity"] = normalize(data["worth_avg_similarity"])
-    data["atmosphere_avg_similarity"] = normalize(data["atmosphere_avg_similarity"])
-    data["environment_avg_similarity"] = normalize(data["environment_avg_similarity"])
-    data["patio_avg_similarity"] = normalize(data["patio_avg_similarity"])
-    data["loud_avg_similarity"] = normalize(data["loud_avg_similarity"])
-    data["smelly_avg_similarity"] = normalize(data["smelly_avg_similarity"])
-    
-    # for column in tf_df.columns:
-    #     tf_df[column] = normalize(tf_df[column])
-    metadata_columns = ['NOUN', 'VERB', 'ADJ', 'ADV', '.', 'ADP', 'NUM', 'PRON', 'PRT', 'DET', 'CONJ', 'X', 'NOUN_VERB', 'NOUN_ADJ', 'NOUN_ADV', 'NOUN_.', 'NOUN_ADP', 'NOUN_NUM', 'NOUN_PRON', 'NOUN_PRT', 'NOUN_DET', 'NOUN_CONJ', 'NOUN_X', 'VERB_NOUN', 'VERB_ADJ', 'VERB_ADV', 'VERB_.', 'VERB_ADP', 'VERB_NUM', 'VERB_PRON', 'VERB_PRT', 'VERB_DET', 'VERB_CONJ', 'VERB_X', 'ADJ_NOUN', 'ADJ_VERB', 'ADJ_ADV', 'ADJ_.', 'ADJ_ADP', 'ADJ_NUM', 'ADJ_PRON', 'ADJ_PRT', 'ADJ_DET', 'ADJ_CONJ', 'ADJ_X', 'ADV_NOUN', 'ADV_VERB', 'ADV_ADJ', 'ADV_.', 'ADV_ADP', 'ADV_NUM', 'ADV_PRON', 'ADV_PRT', 'ADV_DET', 'ADV_CONJ', 'ADV_X', '._NOUN', '._VERB', '._ADJ', '._ADV', '._ADP', '._NUM', '._PRON', '._PRT', '._DET', '._CONJ', '._X', 'ADP_NOUN', 'ADP_VERB', 'ADP_ADJ', 'ADP_ADV', 'ADP_.', 'ADP_NUM', 'ADP_PRON', 'ADP_PRT', 'ADP_DET', 'ADP_CONJ', 'ADP_X', 'NUM_NOUN', 'NUM_VERB', 'NUM_ADJ', 'NUM_ADV', 'NUM_.', 'NUM_ADP', 'NUM_PRON', 'NUM_PRT', 'NUM_DET', 'NUM_CONJ', 'NUM_X', 'PRON_NOUN', 'PRON_VERB', 'PRON_ADJ', 'PRON_ADV', 'PRON_.', 'PRON_ADP', 'PRON_NUM', 'PRON_PRT', 'PRON_DET', 'PRON_CONJ', 'PRON_X', 'PRT_NOUN', 'PRT_VERB', 'PRT_ADJ', 'PRT_ADV', 'PRT_.', 'PRT_ADP', 'PRT_NUM', 'PRT_PRON', 'PRT_DET', 'PRT_CONJ', 'PRT_X', 'DET_NOUN', 'DET_VERB', 'DET_ADJ', 'DET_ADV', 'DET_.', 'DET_ADP', 'DET_NUM', 'DET_PRON', 'DET_PRT', 'DET_CONJ', 'DET_X', 'CONJ_NOUN', 'CONJ_VERB', 'CONJ_ADJ', 'CONJ_ADV', 'CONJ_.', 'CONJ_ADP', 'CONJ_NUM', 'CONJ_PRON', 'CONJ_PRT', 'CONJ_DET', 'CONJ_X', 'X_NOUN', 'X_VERB', 'X_ADJ', 'X_ADV', 'X_.', 'X_ADP', 'X_NUM', 'X_PRON', 'X_PRT', 'X_DET', 'X_CONJ']
-    
-    for column in metadata_columns:
-        data[column] = normalize(data[column])
 
-
-    feature_matrix = pd.concat([data, tfidf_df, topic_df], axis=1)
+    feature_matrix = pd.concat([data, tfidf_df, tfidf_bigram_df, topic_df], axis=1)
 
     return feature_matrix
