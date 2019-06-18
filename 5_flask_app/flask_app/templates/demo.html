@@ -29,7 +29,145 @@
                     <input type="submit" value="Ambiance" name="submit_button">
                     <p></p>
                     <p></p> -->
+                    <!-- document.querySelector(".food").style.display = "none"; 
+                      can hide elements with js-->
                     {% for index, row in data.iterrows() %}
+                        {% if row["food"] %}
+                        <div class="panel panel-default food">
+                            <div class="panel-heading">
+                                {% for i in range(row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star"></span>
+                                {% endfor %}
+                                {% for i in range(5 - row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                {% endfor %}
+                            </div>
+                            <div class="panel-body">
+                                {% if row["food"] %}
+                                    <button class="btn btn-primary">Food</button>
+                                {% endif %}
+                                {% if row["service"] %}
+                                    <button class="btn btn-success">Service</button>
+                                {% endif %}
+                                {% if row["ambiance"] %}
+                                    <button class="btn btn-danger">Ambiance</button>
+                                {% endif %}
+                                {% if row["price"] %}
+                                    <button class="btn btn-warning">Price</button>
+                                {% endif %}
+                                <p></p>
+                                <p>{{ row["text"] }}</p>
+                            </div>
+                        </div>
+                        {% elif row["service"] %}
+                        <div class="panel panel-default service">
+                            <div class="panel-heading">
+                                {% for i in range(row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star"></span>
+                                {% endfor %}
+                                {% for i in range(5 - row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                {% endfor %}
+                            </div>
+                            <div class="panel-body">
+                                {% if row["food"] %}
+                                    <button class="btn btn-primary">Food</button>
+                                {% endif %}
+                                {% if row["service"] %}
+                                    <button class="btn btn-success">Service</button>
+                                {% endif %}
+                                {% if row["ambiance"] %}
+                                    <button class="btn btn-danger">Ambiance</button>
+                                {% endif %}
+                                {% if row["price"] %}
+                                    <button class="btn btn-warning">Price</button>
+                                {% endif %}
+                                <p></p>
+                                <p>{{ row["text"] }}</p>
+                            </div>
+                        </div>
+                        {% elif row["price"] %}
+                        <div class="panel panel-default price">
+                            <div class="panel-heading">
+                                {% for i in range(row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star"></span>
+                                {% endfor %}
+                                {% for i in range(5 - row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                {% endfor %}
+                            </div>
+                            <div class="panel-body">
+                                {% if row["food"] %}
+                                    <button class="btn btn-primary">Food</button>
+                                {% endif %}
+                                {% if row["service"] %}
+                                    <button class="btn btn-success">Service</button>
+                                {% endif %}
+                                {% if row["ambiance"] %}
+                                    <button class="btn btn-danger">Ambiance</button>
+                                {% endif %}
+                                {% if row["price"] %}
+                                    <button class="btn btn-warning">Price</button>
+                                {% endif %}
+                                <p></p>
+                                <p>{{ row["text"] }}</p>
+                            </div>
+                        </div>
+                        {% elif row["ambiance"] %}
+                        <div class="panel panel-default ambiance">
+                            <div class="panel-heading">
+                                {% for i in range(row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star"></span>
+                                {% endfor %}
+                                {% for i in range(5 - row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                {% endfor %}
+                            </div>
+                            <div class="panel-body">
+                                {% if row["food"] %}
+                                    <button class="btn btn-primary">Food</button>
+                                {% endif %}
+                                {% if row["service"] %}
+                                    <button class="btn btn-success">Service</button>
+                                {% endif %}
+                                {% if row["ambiance"] %}
+                                    <button class="btn btn-danger">Ambiance</button>
+                                {% endif %}
+                                {% if row["price"] %}
+                                    <button class="btn btn-warning">Price</button>
+                                {% endif %}
+                                <p></p>
+                                <p>{{ row["text"] }}</p>
+                            </div>
+                        </div>
+                        {% elif row["food"] and row["service"] %} <!-- check if this works -->
+                        <div class="panel panel-default food service">
+                            <div class="panel-heading">
+                                {% for i in range(row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star"></span>
+                                {% endfor %}
+                                {% for i in range(5 - row["rating"]) %}
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                {% endfor %}
+                            </div>
+                            <div class="panel-body">
+                                {% if row["food"] %}
+                                    <button class="btn btn-primary">Food</button>
+                                {% endif %}
+                                {% if row["service"] %}
+                                    <button class="btn btn-success">Service</button>
+                                {% endif %}
+                                {% if row["ambiance"] %}
+                                    <button class="btn btn-danger">Ambiance</button>
+                                {% endif %}
+                                {% if row["price"] %}
+                                    <button class="btn btn-warning">Price</button>
+                                {% endif %}
+                                <p></p>
+                                <p>{{ row["text"] }}</p>
+                            </div>
+                        </div>
+                        {% else %}
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 {% for i in range(row["rating"]) %}
@@ -55,7 +193,8 @@
                                 <p></p>
                                 <p>{{ row["text"] }}</p>
                             </div>
-                        </div>                         
+                        </div>
+                        {% endif %}                         
                     {% endfor %}
                 </div>
             </div>
