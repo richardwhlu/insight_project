@@ -23,7 +23,7 @@ from flask_app.scrape import scrape_url
 @app.route("/index", methods=["POST", "GET"])
 def index():
     return render_template("index.html")
-    
+
 
 @app.route("/demo", methods=["POST", "GET"])
 def demo():
@@ -36,49 +36,49 @@ def demo():
 
         feature_matrix = run_models.produce_feature_matrix(data[["text"]])
 
-        food_model = pickle.load(
-            open("flask_app/static/models/rf_food_50iterations_0.8threshold.pickle", "rb"))
+        # food_model = pickle.load(
+        #     open("flask_app/static/models/rf_food_50iterations_0.8threshold.pickle", "rb"))
 
-        food_pred = food_model.predict(feature_matrix.iloc[:, 1:].fillna(0))
+        # food_pred = food_model.predict(feature_matrix.iloc[:, 1:].fillna(0))
 
-        service_model = pickle.load(
-            open("flask_app/static/models/rf_service_50iterations_0.8threshold.pickle", "rb"))
+        # service_model = pickle.load(
+        #     open("flask_app/static/models/rf_service_50iterations_0.8threshold.pickle", "rb"))
 
-        service_pred = service_model.predict(feature_matrix.iloc[:, 1:].fillna(0))
+        # service_pred = service_model.predict(feature_matrix.iloc[:, 1:].fillna(0))
 
-        price_model = pickle.load(
-            open("flask_app/static/models/rf_price_50iterations_0.8threshold.pickle", "rb"))
+        # price_model = pickle.load(
+        #     open("flask_app/static/models/rf_price_50iterations_0.8threshold.pickle", "rb"))
 
-        price_pred = price_model.predict(feature_matrix.iloc[:, 1:].fillna(0))
+        # price_pred = price_model.predict(feature_matrix.iloc[:, 1:].fillna(0))
 
         ambiance_model = pickle.load(
-            open("flask_app/static/models/rf_ambiance_50iterations_0.8threshold.pickle", "rb"))
+            open("flask_app/static/models/rf_ambiance_700iterations_athreshold_100_1initial.pickle", "rb"))
 
         ambiance_pred = ambiance_model.predict(feature_matrix.iloc[:, 1:].fillna(0))
 
-        data["food"] = food_pred
-        data["service"] = service_pred
-        data["price"] = price_pred
+        # data["food"] = food_pred
+        # data["service"] = service_pred
+        # data["price"] = price_pred
         data["ambiance"] = ambiance_pred
 
         overall_rating = data["rating"].mean()
-        food_rating = (data["rating"] * data["food"])[
-            (data["rating"] * data["food"]).apply(
-            lambda x: x > 0)].mean()
-        service_rating = (data["rating"] * data["service"])[
-            (data["rating"] * data["service"]).apply(
-            lambda x: x > 0)].mean()
-        price_rating = (data["rating"] * data["price"])[
-            (data["rating"] * data["price"]).apply(
-            lambda x: x > 0)].mean()
+        # food_rating = (data["rating"] * data["food"])[
+        #     (data["rating"] * data["food"]).apply(
+        #     lambda x: x > 0)].mean()
+        # service_rating = (data["rating"] * data["service"])[
+        #     (data["rating"] * data["service"]).apply(
+        #     lambda x: x > 0)].mean()
+        # price_rating = (data["rating"] * data["price"])[
+        #     (data["rating"] * data["price"]).apply(
+        #     lambda x: x > 0)].mean()
         ambiance_rating = (data["rating"] * data["ambiance"])[
             (data["rating"] * data["ambiance"]).apply(
             lambda x: x > 0)].mean()
 
         ind_rating_data = [overall_rating,
-                           food_rating,
-                           service_rating,
-                           price_rating,
+                           # food_rating,
+                           # service_rating,
+                           # price_rating,
                            ambiance_rating]
 
         # print(request.form["submit_button"])

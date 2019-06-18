@@ -195,11 +195,11 @@ def process_topic_models(review_df):
     Returns:
         topic_df - topic space df of texts
     """
-    with open("../../4_models/lda_50K_influential_reviews_10191994.pickle",
+    with open("flask_app/static/models/lda_50K_influential_reviews_10191994.pickle",
         "rb") as f:
         lda = pickle.load(f)
 
-        with open("../../4_models/tf_50K_influential_reviews_10191994_full.pickle",
+        with open("flask_app/static/models/tf_50K_influential_reviews_10191994_full.pickle",
             "rb") as f2:
             tf_vectorizer = pickle.load(f2)
 
