@@ -22,6 +22,11 @@ from flask_app.scrape import scrape_url
 @app.route("/", methods=["POST", "GET"])
 @app.route("/index", methods=["POST", "GET"])
 def index():
+    return render_template("index.html")
+    
+
+@app.route("/demo", methods=["POST", "GET"])
+def demo():
     """MVP for Demo
     """
     if request.method == "POST":
@@ -98,7 +103,7 @@ def index():
 
 
     return render_template(
-        "index.html",
+        "demo.html",
         title="Insight Demo 2 - MockUp",
         tmp_url=tmp_url,
         data=data,
