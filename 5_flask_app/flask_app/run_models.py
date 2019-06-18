@@ -33,7 +33,7 @@ model = Word2Vec.load("flask_app/static/models/word2vec_embeddings_100K_business
 tfidf_model = pickle.load(open("flask_app/static/models/tfidf_50K_influential_reviews_10191994.pickle", "rb"))
 
 tfidf_bigram_model = pickle.load(
-    open("flask_app/static/tfidf_bigram_50K_influential_reviews_10191994.pickle", "rb"))
+    open("flask_app/static/models/tfidf_bigram_50K_influential_reviews_10191994.pickle", "rb"))
 
 # =========================================================================== #
 # FEATURE EXTRACTION FUNCTIONS
