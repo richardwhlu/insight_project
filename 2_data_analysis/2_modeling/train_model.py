@@ -101,7 +101,7 @@ def train_pseudolabel_model(feature_matrix, target, target_string, iterations=0,
 
     logging.info("Train test split")
 
-    score, conf_mat, auc_score, clf = train_model(X_train, y_train,
+    score, conf_mat, clf = train_model(X_train, y_train,
         X_validation, y_validation, target_string)
 
     with open("../../4_models/rf_{}_{}iterations_athreshold_{}_{}initial.pickle".format(
@@ -115,7 +115,7 @@ def train_pseudolabel_model(feature_matrix, target, target_string, iterations=0,
     logging.info("Number of 0: {}".format(
         y_train.shape[0] - y_train.sum()))
     logging.info("Number of 1: {}".format(y_train.sum()))
-    logging.info("Initial score: {}".format(auc_score))
+    logging.info("Initial score: {}".format(score))
     logging.info("Initial conf_matrix: {}".format(conf_mat))
 
     if iterations:
@@ -127,13 +127,13 @@ def train_pseudolabel_model(feature_matrix, target, target_string, iterations=0,
                 X_train, y_train, target_string,
                 clf, threshold="adaptive", random_seed=10191994+i,
                 num_samples=step, num_to_add=num_to_add)
-            score_new, conf_mat_new, auc_score_new, clf_new = train_model(
+            score_new, conf_mat_new, clf_new = train_model(
                 X_train_new, y_train_new,
                 X_validation, y_validation, target_string)
 
-            if auc_score_new >= auc_score: # try adding = for now
+            if score_new >= score: # try adding = for now
                 add_counter = 0
-                auc_score = auc_score_new
+                score = score_new
                 # score = score_new
                 conf_mat = conf_mat_new
                 clf = clf_new
@@ -144,7 +144,7 @@ def train_pseudolabel_model(feature_matrix, target, target_string, iterations=0,
                 logging.info("Number of 0: {}".format(
                     y_train.shape[0] - y_train.sum()))
                 logging.info("Number of 1: {}".format(y_train.sum()))
-                logging.info("Updated score: {}".format(auc_score))
+                logging.info("Updated score: {}".format(score))
                 logging.info("Updated conf_matrix: {}\n\n".format(conf_mat))
             else:
                 add_counter += 1
@@ -166,7 +166,8 @@ def train_pseudolabel_model(feature_matrix, target, target_string, iterations=0,
 # HELPER FUNCTIONS
 # =========================================================================== #
 
-def train_model(feature_matrix, target, validation_x, validation_y, target_string):
+def train_model(feature_matrix, target, validation_x, validation_y,
+    target_string, roc=0):
     """Train a classifier on review data to get topic classes
 
     Args:
@@ -175,6 +176,7 @@ def train_model(feature_matrix, target, validation_x, validation_y, target_strin
         validation_x - validation features
         validation_y - validation target
         target_string - column name of intended target
+        roc - whether to generate auc score or not
 
     Returns:
         accuracy scores, conf matrices, clf
@@ -184,6 +186,7 @@ def train_model(feature_matrix, target, validation_x, validation_y, target_strin
                                  min_samples_leaf=10,
                                  max_features=0.6,
                                  random_state=10191994,
+                                 class_weight="balanced",
                                  n_jobs=-1)
 
     try:
@@ -195,9 +198,10 @@ def train_model(feature_matrix, target, validation_x, validation_y, target_strin
         conf_mat = confusion_matrix(validation_y,
             clf.predict(validation_x[:, 1:]))
 
-        fpr, tpr, _ = roc_curve(validation_y,
-                        clf.predict_proba(validation_x[:, 1:])[:,1])
-        auc_score = auc(fpr, tpr)
+        if roc:
+            fpr, tpr, _ = roc_curve(validation_y,
+                            clf.predict_proba(validation_x[:, 1:])[:,1])
+            auc_score = auc(fpr, tpr)
 
         clf.fit(feature_matrix[:, 1:], target)
     except: # np array versus dataframe
@@ -209,13 +213,17 @@ def train_model(feature_matrix, target, validation_x, validation_y, target_strin
         conf_mat = confusion_matrix(validation_y,
             clf.predict(validation_x[:, 1:]))
 
-        fpr, tpr, _ = roc_curve(validation_y,
-                        clf.predict_proba(validation_x[:, 1:])[:,1])
-        auc_score = auc(fpr, tpr)
+        if roc:
+            fpr, tpr, _ = roc_curve(validation_y,
+                            clf.predict_proba(validation_x[:, 1:])[:,1])
+            auc_score = auc(fpr, tpr)
 
         clf.fit(feature_matrix.iloc[:, 1:], target)
 
-    return score, conf_mat, auc_score, clf
+    if roc:
+        return score, conf_mat, auc_score, clf
+    else:
+        return score, conf_mat, clf
 
 
 def pseudolabel_data(feature_matrix_o, target_o, target_string_o, clf,
@@ -436,24 +444,24 @@ def select_random_reviews(random_seed, num_reviews):
 # =========================================================================== #
 
 clf_ambiance = train_pseudolabel_model(feature_matrix, target, "ambiance",
-    iterations=1500, step=100, num_to_add=1)
-with open("../../4_models/rf_ambiance_1500iterations_athreshold_100_1.pickle", "wb") as f:
+    iterations=700, step=100, num_to_add=1)
+with open("../../4_models/rf_ambiance_700iterations_athreshold_100_1.pickle", "wb") as f:
     pickle.dump(clf_ambiance, f)
 
 
 clf_price = train_pseudolabel_model(feature_matrix, target, "price",
-    iterations=1500, step=100, num_to_add=1)
-with open("../../4_models/rf_price_1500iterations_athreshold_100_1.pickle", "wb") as f:
+    iterations=700, step=100, num_to_add=1)
+with open("../../4_models/rf_price_700iterations_athreshold_100_1.pickle", "wb") as f:
     pickle.dump(clf_price, f)
 
 
 clf_service = train_pseudolabel_model(feature_matrix, target, "service",
-    iterations=1500, step=100, num_to_add=1)
-with open("../../4_models/rf_service_1500iterations_athreshold_100_1.pickle", "wb") as f:
+    iterations=700, step=100, num_to_add=1)
+with open("../../4_models/rf_service_700iterations_athreshold_100_1.pickle", "wb") as f:
     pickle.dump(clf_service, f)
 
 
 clf_food = train_pseudolabel_model(feature_matrix, target, "food",
-    iterations=1500, step=100, num_to_add=1)
-with open("../../4_models/rf_food_1500iterations_athreshold_100_1.pickle", "wb") as f:
+    iterations=700, step=100, num_to_add=1)
+with open("../../4_models/rf_food_700iterations_athreshold_100_1.pickle", "wb") as f:
     pickle.dump(clf_food, f)
