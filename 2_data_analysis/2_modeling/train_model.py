@@ -144,7 +144,7 @@ def train_pseudolabel_model(feature_matrix, target, target_string, iterations=0,
                 logging.info("Number of 0: {}".format(
                     y_train.shape[0] - y_train.sum()))
                 logging.info("Number of 1: {}".format(y_train.sum()))
-                logging.info("Updated score: {}".format(score))
+                logging.info("Updated score: {}".format(auc_score))
                 logging.info("Updated conf_matrix: {}\n\n".format(conf_mat))
             else:
                 add_counter += 1
