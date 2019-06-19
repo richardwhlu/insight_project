@@ -87,39 +87,51 @@ def train_pseudolabel_model(feature_matrix, target, target_string, iterations=0,
         final classifier
 
     """
-    # X_tmp, y_tmp, X_test, y_test = iterative_train_test_split(
-    #     np.array(feature_matrix),
-    #     np.array(target[[target_string]]),
-    #     test_size=0.2,
-    #     random_state=10191994)
+    X_tmp, y_tmp, X_test, y_test = iterative_train_test_split(
+        np.array(feature_matrix),
+        np.array(target[[target_string]]),
+        test_size=0.2,
+        random_state=10191994)
 
-    # X_train, y_train, X_validation, y_validation = iterative_train_test_split(
-    #     X_tmp,
-    #     y_tmp,
-    #     test_size=0.25, # 0.25 * 0.8 = 0.2
-    #     random_state=10191994)
+    X_train, y_train, X_validation, y_validation = iterative_train_test_split(
+        X_tmp,
+        y_tmp,
+        test_size=0.25, # 0.25 * 0.8 = 0.2
+        random_state=10191994)
 
-    # with open("../../0_data/5_train_validation_test/X_train.pickle", "wb") as f:
-    #     pickle.dump(X_train, f)
-    # with open("../../0_data/5_train_validation_test/X_validation.pickle", "wb") as f:
-    #     pickle.dump(X_validation, f)
-    # with open("../../0_data/5_train_validation_test/X_test.pickle", "wb") as f:
-    #     pickle.dump(X_test, f)
-    # with open("../../0_data/5_train_validation_test/y_train.pickle", "wb") as f:
-    #     pickle.dump(y_train, f)
-    # with open("../../0_data/5_train_validation_test/y_validation.pickle", "wb") as f:
-    #     pickle.dump(y_validation, f)
-    # with open("../../0_data/5_train_validation_test/y_test.pickle", "wb") as f:
-    #     pickle.dump(y_test, f)
+    with open("../../0_data/5_train_validation_test/X_train_{}_1050.pickle".format(
+        target_string), "wb") as f:
+        pickle.dump(X_train, f)
+    with open("../../0_data/5_train_validation_test/X_validation_{}_1050.pickle".format(
+        target_string), "wb") as f:
+        pickle.dump(X_validation, f)
+    with open("../../0_data/5_train_validation_test/X_test_{}_1050.pickle".format(
+        target_string), "wb") as f:
+        pickle.dump(X_test, f)
+    with open("../../0_data/5_train_validation_test/y_train_{}_1050.pickle".format(
+        target_string), "wb") as f:
+        pickle.dump(y_train, f)
+    with open("../../0_data/5_train_validation_test/y_validation_{}_1050.pickle".format(
+        target_string), "wb") as f:
+        pickle.dump(y_validation, f)
+    with open("../../0_data/5_train_validation_test/y_test_{}_1050.pickle".format(
+        target_string), "wb") as f:
+        pickle.dump(y_test, f)
 
-    X_train = pickle.load(open("../../0_data/5_train_validation_test/X_train.pickle", "rb"))
-    X_validation = pickle.load(open("../../0_data/5_train_validation_test/X_validation.pickle", "rb"))
-    X_test = pickle.load(open("../../0_data/5_train_validation_test/X_test.pickle", "rb"))
-    y_train = pickle.load(open("../../0_data/5_train_validation_test/y_train.pickle", "rb"))
-    y_validation = pickle.load(open("../../0_data/5_train_validation_test/y_validation.pickle", "rb"))
-    y_test = pickle.load(open("../../0_data/5_train_validation_test/y_test.pickle", "rb"))
+    X_train = pickle.load(open("../../0_data/5_train_validation_test/X_train_{}_1050.pickle".format(
+        target_string), "rb"))
+    X_validation = pickle.load(open("../../0_data/5_train_validation_test/X_validation_{}_1050.pickle".format(
+        target_string), "rb"))
+    X_test = pickle.load(open("../../0_data/5_train_validation_test/X_test_{}_1050.pickle".format(
+        target_string), "rb"))
+    y_train = pickle.load(open("../../0_data/5_train_validation_test/y_train_{}_1050.pickle".format(
+        target_string), "rb"))
+    y_validation = pickle.load(open("../../0_data/5_train_validation_test/y_validation_{}_1050.pickle".format(
+        target_string), "rb"))
+    y_test = pickle.load(open("../../0_data/5_train_validation_test/y_test_{}_1050.pickle".format(
+        target_string), "rb"))
 
-    logging.info("Train test split saved")
+    logging.info("Starting {}".format(target_string))
 
     score, conf_mat, clf = train_model(X_train, y_train,
         X_validation, y_validation, target_string)
@@ -478,25 +490,22 @@ def select_random_reviews(random_seed, num_reviews):
 # RUN AND SAVE MODELS
 # =========================================================================== #
 
-clf_ambiance = train_pseudolabel_model(feature_matrix, target, "ambiance",
+# clf_ambiance = train_pseudolabel_model(feature_matrix, target, "ambiance",
+#     iterations=5, step=5000, num_samples=200)
+# with open("../../4_models/rf_ambiance_5iterations_athreshold_5000_200.pickle", "wb") as f:
+#     pickle.dump(clf_ambiance, f)
+
+clf_price = train_pseudolabel_model(feature_matrix, target, "price",
     iterations=5, step=5000, num_samples=200)
-with open("../../4_models/rf_ambiance_5iterations_athreshold_5000_200.pickle", "wb") as f:
-    pickle.dump(clf_ambiance, f)
+with open("../../4_models/rf_price_5iterations_athreshold_5000_200.pickle", "wb") as f:
+    pickle.dump(clf_price, f)
 
+clf_service = train_pseudolabel_model(feature_matrix, target, "service",
+    iterations=5, step=5000, num_samples=200)
+with open("../../4_models/rf_service_5iterations_athreshold_5000_200.pickle", "wb") as f:
+    pickle.dump(clf_service, f)
 
-# clf_price = train_pseudolabel_model(feature_matrix, target, "price",
-#     iterations=50, step=2000, num_samples=10)
-# with open("../../4_models/rf_price_700iterations_athreshold_100_1.pickle", "wb") as f:
-#     pickle.dump(clf_price, f)
-
-
-# clf_service = train_pseudolabel_model(feature_matrix, target, "service",
-#     iterations=50, step=2000, num_samples=10)
-# with open("../../4_models/rf_service_700iterations_athreshold_100_1.pickle", "wb") as f:
-#     pickle.dump(clf_service, f)
-
-
-# clf_food = train_pseudolabel_model(feature_matrix, target, "food",
-#     iterations=50, step=2000, num_samples=10)
-# with open("../../4_models/rf_food_700iterations_athreshold_100_1.pickle", "wb") as f:
-#     pickle.dump(clf_food, f)
+clf_food = train_pseudolabel_model(feature_matrix, target, "food",
+    iterations=5, step=5000, num_samples=200)
+with open("../../4_models/rf_food_5iterations_athreshold_5000_200.pickle", "wb") as f:
+    pickle.dump(clf_food, f)
