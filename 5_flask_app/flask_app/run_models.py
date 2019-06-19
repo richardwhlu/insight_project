@@ -380,7 +380,7 @@ def produce_feature_matrix(data):
     df_split = np.array_split(tmp_data, 14)
 
     start0 = time.time()
-    pool = multiprocessing.Pool(multiprocessing.cpu_count()-1)
+    pool = multiprocessing.Pool(multiprocessing.cpu_count())
     preprocessed_df = pd.concat(pool.map(process_rows, df_split))
     pool.close()
     pool.join()
@@ -389,7 +389,7 @@ def produce_feature_matrix(data):
     print("Preprocessing Stem & Join (P): {}".format(end0 - start0))
 
     start00 = time.time()
-    pool = multiprocessing.Pool(multiprocessing.cpu_count()-1)
+    pool = multiprocessing.Pool(multiprocessing.cpu_count())
     preprocessed_df2 = pd.concat(pool.map(process_rows2, df_split))
     pool.close()
     pool.join()
@@ -398,7 +398,7 @@ def produce_feature_matrix(data):
     print("Preprocessing No Stem (P): {}".format(end00 - start00))
 
     start000 = time.time()
-    pool = multiprocessing.Pool(multiprocessing.cpu_count()-1)
+    pool = multiprocessing.Pool(multiprocessing.cpu_count())
     preprocessed_df3 = pd.concat(pool.map(process_rows3, df_split))
     pool.close()
     pool.join()
