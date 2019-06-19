@@ -308,34 +308,8 @@ def process_word_embeddings(review_text):
     
     embeddings_list = []
     for target_word in wordlist:
-        embeddings_list.append(most_similar_dict[target_word])
+        embeddings_list.append(most_similar_dict.get(target_word, 0))
         
-    return embeddings_list
-
-    food_similarity = []
-    tasty_similarity = []
-    delicious_similarity = []
-    yummy_similarity = []
-
-    service_similarity = []
-    fast_similarity = []
-    quick_similarity = []
-    line_similarity = []
-    wait_similarity = []
-    seated_similarity = []
-    
-    price_similarity = []
-    expensive_similarity = []
-    cost_similarity = []
-    worth_similarity = []
-    
-    ambiance_similarity = []
-    atmosphere_similarity = []
-    environment_similarity = []
-    patio_similarity = []
-    loud_similarity = []
-    smelly_similarity = []
-
     return embeddings_list
 
 
