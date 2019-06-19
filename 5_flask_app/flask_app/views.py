@@ -36,65 +36,60 @@ def demo():
 
         feature_matrix = run_models.produce_feature_matrix(data[["text"]])
 
-        # food_model = pickle.load(
-        #     open("flask_app/static/models/rf_food_50iterations_0.8threshold.pickle", "rb"))
+        food_model = pickle.load(
+            open("flask_app/static/models/rf_food_700iterations_athreshold_100_1initial.pickle", "rb"))
 
-        # food_pred = food_model.predict(feature_matrix.iloc[:, 1:].fillna(0))
+        food_pred = food_model.predict_proba(feature_matrix.iloc[:, 1:].fillna(0))[:, 1]
 
-        # service_model = pickle.load(
-        #     open("flask_app/static/models/rf_service_50iterations_0.8threshold.pickle", "rb"))
+        service_model = pickle.load(
+            open("flask_app/static/models/rf_service_700iterations_athreshold_100_1initial.pickle", "rb"))
 
-        # service_pred = service_model.predict(feature_matrix.iloc[:, 1:].fillna(0))
+        service_pred = service_model.predict_proba(feature_matrix.iloc[:, 1:].fillna(0))[:, 1]
 
-        # price_model = pickle.load(
-        #     open("flask_app/static/models/rf_price_50iterations_0.8threshold.pickle", "rb"))
+        price_model = pickle.load(
+            open("flask_app/static/models/rf_price_700iterations_athreshold_100_1initial.pickle", "rb"))
 
-        # price_pred = price_model.predict(feature_matrix.iloc[:, 1:].fillna(0))
+        price_pred = price_model.predict_proba(feature_matrix.iloc[:, 1:].fillna(0))[:, 1]
 
         ambiance_model = pickle.load(
             open("flask_app/static/models/rf_ambiance_700iterations_athreshold_100_1initial.pickle", "rb"))
 
-        ambiance_pred = ambiance_model.predict(feature_matrix.iloc[:, 1:].fillna(0))
+        ambiance_pred = ambiance_model.predict_proba(feature_matrix.iloc[:, 1:].fillna(0))[:, 1]
 
-        # data["food"] = food_pred
-        # data["service"] = service_pred
-        # data["price"] = price_pred
-        data["ambiance"] = ambiance_pred
+        data["food"] = [round(x) for x in food_pred]
+        data["service"] = [round(x) for x in service_pred]
+        data["price"] = [round(x) for x in price_pred]
+        data["ambiance"] = [round(x) for x in ambiance_pred]
+
+        data["food_pred"] = [round(x, 2) for x in food_pred]
+        data["service_pred"] = [round(x, 2) for x in service_pred]
+        data["price_pred"] = [round(x, 2) for x in price_pred]
+        data["ambiance_pred"] = [round(x, 2) for x in ambiance_pred]
+
+        data = data.sort_values(["food_pred",
+                                 "service_pred",
+                                 "price_pred",
+                                 "ambiance_pred"], ascending=False)
 
         overall_rating = data["rating"].mean()
-        # food_rating = (data["rating"] * data["food"])[
-        #     (data["rating"] * data["food"]).apply(
-        #     lambda x: x > 0)].mean()
-        # service_rating = (data["rating"] * data["service"])[
-        #     (data["rating"] * data["service"]).apply(
-        #     lambda x: x > 0)].mean()
-        # price_rating = (data["rating"] * data["price"])[
-        #     (data["rating"] * data["price"]).apply(
-        #     lambda x: x > 0)].mean()
+        food_rating = (data["rating"] * data["food"])[
+            (data["rating"] * data["food"]).apply(
+            lambda x: x > 0)].mean()
+        service_rating = (data["rating"] * data["service"])[
+            (data["rating"] * data["service"]).apply(
+            lambda x: x > 0)].mean()
+        price_rating = (data["rating"] * data["price"])[
+            (data["rating"] * data["price"]).apply(
+            lambda x: x > 0)].mean()
         ambiance_rating = (data["rating"] * data["ambiance"])[
             (data["rating"] * data["ambiance"]).apply(
             lambda x: x > 0)].mean()
 
         ind_rating_data = [overall_rating,
-                           # food_rating,
-                           # service_rating,
-                           # price_rating,
+                           food_rating,
+                           service_rating,
+                           price_rating,
                            ambiance_rating]
-
-        # print(request.form["submit_button"])
-        # if request.form["submit_button"] == "Food":
-        #     print("food")
-        #     data = data[data["food"].apply(lambda x: x == 1)]
-
-        # if request.form["submit_button"] == "Service":
-        #     data = data[data["service"].apply(lambda x: x == 1)]
-
-        # if request.form["submit_button"] == "Price":
-        #     data = data[data["price"].apply(lambda x: x == 1)]
-
-        # if request.form["submit_button"] == "Ambiance":
-        #     data = data[data["ambiance"].apply(lambda x: x == 1)]
-
 
     else:
         tmp_url = ""
@@ -104,7 +99,7 @@ def demo():
 
     return render_template(
         "demo.html",
-        title="Insight Demo 2 - MockUp",
+        title="Insight Demo 3 - MockUp",
         tmp_url=tmp_url,
         data=data,
         ind_rating_data=ind_rating_data)
