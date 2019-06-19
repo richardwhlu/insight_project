@@ -297,8 +297,10 @@ def normalize(col):
     """
     tmp = []
     for row in col:
-        tmp.append((row - np.mean(col)) / np.std(col))
-
+        try:
+            tmp.append((row - np.mean(col)) / np.std(col))
+        except:
+            tmp.append(row - np.mean(col))
 
     return tmp
 
