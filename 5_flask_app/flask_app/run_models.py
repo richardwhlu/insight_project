@@ -377,35 +377,42 @@ def produce_feature_matrix(data):
     tmp_data["index"] = range(0, tmp_data.shape[0])
     tmp_data = tmp_data[["index", column_name]]
 
-    df_split = np.array_split(tmp_data, 14)
+    # df_split = np.array_split(tmp_data, 14)
+
+    # start0 = time.time()
+    # pool = multiprocessing.Pool(multiprocessing.cpu_count())
+    # preprocessed_df = pd.concat(pool.map(process_rows, df_split))
+    # pool.close()
+    # pool.join()
+    # end0 = time.time()
+
+    # print("Preprocessing Stem & Join (P): {}".format(end0 - start0))
+
+    # start00 = time.time()
+    # pool = multiprocessing.Pool(multiprocessing.cpu_count())
+    # preprocessed_df2 = pd.concat(pool.map(process_rows2, df_split))
+    # pool.close()
+    # pool.join()
+    # end00 = time.time()
+
+    # print("Preprocessing No Stem (P): {}".format(end00 - start00))
+
+    # start000 = time.time()
+    # pool = multiprocessing.Pool(multiprocessing.cpu_count())
+    # preprocessed_df3 = pd.concat(pool.map(process_rows3, df_split))
+    # pool.close()
+    # pool.join()
+    # end000 = time.time()
+
+    # print("Preprocessing No Stem & Punct (P): {}".format(end000 - start000))
 
     start0 = time.time()
-    pool = multiprocessing.Pool(multiprocessing.cpu_count())
-    preprocessed_df = pd.concat(pool.map(process_rows, df_split))
-    pool.close()
-    pool.join()
+    preprocessed_df = process_rows(tmp_data)
+    preprocessed_df2 = process_rows2(tmp_data)
+    preprocessed_df3 = process_rows3(tmp_data)
     end0 = time.time()
 
-    print("Preprocessing Stem & Join (P): {}".format(end0 - start0))
-
-    start00 = time.time()
-    pool = multiprocessing.Pool(multiprocessing.cpu_count())
-    preprocessed_df2 = pd.concat(pool.map(process_rows2, df_split))
-    pool.close()
-    pool.join()
-    end00 = time.time()
-
-    print("Preprocessing No Stem (P): {}".format(end00 - start00))
-
-    start000 = time.time()
-    pool = multiprocessing.Pool(multiprocessing.cpu_count())
-    preprocessed_df3 = pd.concat(pool.map(process_rows3, df_split))
-    pool.close()
-    pool.join()
-    end000 = time.time()
-
-    print("Preprocessing No Stem & Punct (P): {}".format(end000 - start000))
-
+    print("Preprocessing (P): {}".format(end0 - start0))
 
     if preprocessed_df["index"].tolist() == list(
         range(preprocessed_df.shape[0])) and (preprocessed_df2["index"
