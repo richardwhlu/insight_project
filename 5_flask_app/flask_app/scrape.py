@@ -80,11 +80,12 @@ def extract_from_page(soup):
     return int_review_ratings, review_texts
 
 
-def scrape_url(url):
+def scrape_url(url, num_reviews):
     """Scrape the webpage input for yelp comments
 
     Args:
         url - base url of yelp page
+        num_reviews - X most recent reviews to scrape
 
     Returns:
         df of comments and ratings
@@ -93,7 +94,7 @@ def scrape_url(url):
     full_ratings = []
     full_review_texts = []
 
-    for i in range(0, 200, 20):
+    for i in range(0, int(num_reviews), 20):
         tmp_url = url + "?start={}".format(i)
         urls_to_load.append(tmp_url) 
 
