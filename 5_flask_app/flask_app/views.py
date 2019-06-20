@@ -38,22 +38,22 @@ def demo():
         feature_matrix = run_models.produce_feature_matrix(data[["text"]])
 
         food_model = pickle.load(
-            open("flask_app/static/models/rf_food_700iterations_athreshold_100_1initial.pickle", "rb"))
+            open("flask_app/static/models/rf_food_4iterations_athreshold_5000_200.pickle", "rb"))
 
         food_pred = food_model.predict_proba(feature_matrix.iloc[:, 1:].fillna(0))[:, 1]
 
         service_model = pickle.load(
-            open("flask_app/static/models/rf_service_700iterations_athreshold_100_1initial.pickle", "rb"))
+            open("flask_app/static/models/rf_service_4iterations_athreshold_5000_200.pickle", "rb"))
 
         service_pred = service_model.predict_proba(feature_matrix.iloc[:, 1:].fillna(0))[:, 1]
 
         price_model = pickle.load(
-            open("flask_app/static/models/rf_price_700iterations_athreshold_100_1initial.pickle", "rb"))
+            open("flask_app/static/models/rf_price_4iterations_athreshold_5000_200.pickle", "rb"))
 
         price_pred = price_model.predict_proba(feature_matrix.iloc[:, 1:].fillna(0))[:, 1]
 
         ambiance_model = pickle.load(
-            open("flask_app/static/models/rf_ambiance_700iterations_athreshold_100_1initial.pickle", "rb"))
+            open("flask_app/static/models/rf_ambiance_4iterations_athreshold_5000_200.pickle", "rb"))
 
         ambiance_pred = ambiance_model.predict_proba(feature_matrix.iloc[:, 1:].fillna(0))[:, 1]
 
