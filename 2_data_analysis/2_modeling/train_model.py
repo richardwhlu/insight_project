@@ -315,20 +315,22 @@ def pseudolabel_data(feature_matrix_o, target_o, target_string_o, clf,
     num_1 = target_o.sum()
 
     if threshold == "adaptive":
-        # ranked_indices = np.argsort(np.apply_along_axis(min, 1, pred_proba))
+        ranked_indices = np.argsort(np.apply_along_axis(min, 1, pred_proba))
         # the logic behind this is that if you choose the most confident ones
         # it will essentially reinforce the features and separation that exists
         # but if you look at the ones that are hard to classify,
         # then perhaps the model can "learn" from the boundaries
         # and if it performs better on the validation, then it can learn
         # new features that would better predict the outcome
-        ranked_indices = np.argsort(np.apply_along_axis(lambda x: abs(x[0]-x[1]),
-            1, pred_proba))
+
+        # other extreme didn't work...so try something in the middle?
+        # ranked_indices = np.argsort(np.apply_along_axis(lambda x: abs(x[0]-x[1]),
+            # 1, pred_proba))
         ranked_pred_proba = pred_proba[ranked_indices]
         counter = 0
 
         for index, row in list(
-            zip(ranked_indices, ranked_pred_proba)):
+            zip(ranked_indices, ranked_pred_proba))[500:]:
 
             if tmp_df["review_id"].iloc[index] not in handlabeled_set:
 
@@ -490,22 +492,22 @@ def select_random_reviews(random_seed, num_reviews):
 # RUN AND SAVE MODELS
 # =========================================================================== #
 
-# clf_ambiance = train_pseudolabel_model(feature_matrix, target, "ambiance",
-#     iterations=5, step=5000, num_samples=200)
-# with open("../../4_models/rf_ambiance_5iterations_athreshold_5000_200.pickle", "wb") as f:
-#     pickle.dump(clf_ambiance, f)
+clf_ambiance = train_pseudolabel_model(feature_matrix, target, "ambiance",
+    iterations=4, step=5000, num_samples=200)
+with open("../../4_models/rf_ambiance_4iterations_athreshold_5000_200.pickle", "wb") as f:
+    pickle.dump(clf_ambiance, f)
 
 clf_price = train_pseudolabel_model(feature_matrix, target, "price",
-    iterations=5, step=5000, num_samples=200)
-with open("../../4_models/rf_price_5iterations_athreshold_5000_200.pickle", "wb") as f:
+    iterations=4, step=5000, num_samples=200)
+with open("../../4_models/rf_price_4iterations_athreshold_5000_200.pickle", "wb") as f:
     pickle.dump(clf_price, f)
 
 clf_service = train_pseudolabel_model(feature_matrix, target, "service",
-    iterations=5, step=5000, num_samples=200)
-with open("../../4_models/rf_service_5iterations_athreshold_5000_200.pickle", "wb") as f:
+    iterations=4, step=5000, num_samples=200)
+with open("../../4_models/rf_service_4iterations_athreshold_5000_200.pickle", "wb") as f:
     pickle.dump(clf_service, f)
 
 clf_food = train_pseudolabel_model(feature_matrix, target, "food",
-    iterations=5, step=5000, num_samples=200)
-with open("../../4_models/rf_food_5iterations_athreshold_5000_200.pickle", "wb") as f:
+    iterations=4, step=5000, num_samples=200)
+with open("../../4_models/rf_food_4iterations_athreshold_5000_200.pickle", "wb") as f:
     pickle.dump(clf_food, f)
