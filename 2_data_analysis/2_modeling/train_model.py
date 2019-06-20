@@ -334,9 +334,6 @@ def pseudolabel_data(feature_matrix_o, target_o, target_string_o, clf,
 
             if tmp_df["review_id"].iloc[index] not in handlabeled_set:
 
-                if counter == 0:
-                    logging.info("First row added: {}".format(row))
-
                 num_0_plus = len([x for x in confident_list_y if x == 0])
                 num_1_plus = len([x for x in confident_list_y if x == 1])
 
@@ -360,7 +357,7 @@ def pseudolabel_data(feature_matrix_o, target_o, target_string_o, clf,
                     counter += 1
 
                 if counter >= num_to_add:
-                    logging.info("Last row added: {}".format(row))
+                    logging.info("Row added: {}".format(row))
                     break
 
     else:
