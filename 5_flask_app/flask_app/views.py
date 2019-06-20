@@ -31,8 +31,9 @@ def demo():
     """
     if request.method == "POST":
         tmp_url = request.form["url"]
+        num_reviews = request.form["num_reviews"]
 
-        data = scrape_url(tmp_url)
+        data = scrape_url(tmp_url, num_reviews)
 
         feature_matrix = run_models.produce_feature_matrix(data[["text"]])
 
@@ -93,6 +94,7 @@ def demo():
 
     else:
         tmp_url = ""
+        num_reviews = 0
         data = pd.DataFrame()
         ind_rating_data = []
 
@@ -101,6 +103,7 @@ def demo():
         "demo.html",
         title="Insight Demo 3 - MockUp",
         tmp_url=tmp_url,
+        num_reviews=num_reviews,
         data=data,
         ind_rating_data=ind_rating_data)
 
