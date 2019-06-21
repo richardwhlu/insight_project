@@ -33,6 +33,9 @@ exec(open("iterative_stratification.py").read())
 handlabeled = ujson.load(open(
     "../../0_data/4_handlabeled_data/already_handlabeled_review_ids.json",
     "r"))
+# handlabeled = ujson.load(open(
+#     "../../0_data/4_handlabeled_data/already_handlabeled_review_ids_extended.json",
+#     "r"))
 
 handlabeled_set = set(handlabeled["labeled_ids"])
 
@@ -99,36 +102,36 @@ def train_pseudolabel_model(feature_matrix, target, target_string, iterations=0,
         test_size=0.25, # 0.25 * 0.8 = 0.2
         random_state=10191994)
 
-    with open("../../0_data/5_train_validation_test/X_train_{}_1050.pickle".format(
+    with open("../../0_data/5_train_validation_test/X_train_{}_1150.pickle".format(
         target_string), "wb") as f:
         pickle.dump(X_train, f)
-    with open("../../0_data/5_train_validation_test/X_validation_{}_1050.pickle".format(
+    with open("../../0_data/5_train_validation_test/X_validation_{}_1150.pickle".format(
         target_string), "wb") as f:
         pickle.dump(X_validation, f)
-    with open("../../0_data/5_train_validation_test/X_test_{}_1050.pickle".format(
+    with open("../../0_data/5_train_validation_test/X_test_{}_1150.pickle".format(
         target_string), "wb") as f:
         pickle.dump(X_test, f)
-    with open("../../0_data/5_train_validation_test/y_train_{}_1050.pickle".format(
+    with open("../../0_data/5_train_validation_test/y_train_{}_1150.pickle".format(
         target_string), "wb") as f:
         pickle.dump(y_train, f)
-    with open("../../0_data/5_train_validation_test/y_validation_{}_1050.pickle".format(
+    with open("../../0_data/5_train_validation_test/y_validation_{}_1150.pickle".format(
         target_string), "wb") as f:
         pickle.dump(y_validation, f)
-    with open("../../0_data/5_train_validation_test/y_test_{}_1050.pickle".format(
+    with open("../../0_data/5_train_validation_test/y_test_{}_1150.pickle".format(
         target_string), "wb") as f:
         pickle.dump(y_test, f)
 
-    X_train = pickle.load(open("../../0_data/5_train_validation_test/X_train_{}_1050.pickle".format(
+    X_train = pickle.load(open("../../0_data/5_train_validation_test/X_train_{}_1150.pickle".format(
         target_string), "rb"))
-    X_validation = pickle.load(open("../../0_data/5_train_validation_test/X_validation_{}_1050.pickle".format(
+    X_validation = pickle.load(open("../../0_data/5_train_validation_test/X_validation_{}_1150.pickle".format(
         target_string), "rb"))
-    X_test = pickle.load(open("../../0_data/5_train_validation_test/X_test_{}_1050.pickle".format(
+    X_test = pickle.load(open("../../0_data/5_train_validation_test/X_test_{}_1150.pickle".format(
         target_string), "rb"))
-    y_train = pickle.load(open("../../0_data/5_train_validation_test/y_train_{}_1050.pickle".format(
+    y_train = pickle.load(open("../../0_data/5_train_validation_test/y_train_{}_1150.pickle".format(
         target_string), "rb"))
-    y_validation = pickle.load(open("../../0_data/5_train_validation_test/y_validation_{}_1050.pickle".format(
+    y_validation = pickle.load(open("../../0_data/5_train_validation_test/y_validation_{}_1150.pickle".format(
         target_string), "rb"))
-    y_test = pickle.load(open("../../0_data/5_train_validation_test/y_test_{}_1050.pickle".format(
+    y_test = pickle.load(open("../../0_data/5_train_validation_test/y_test_{}_1150.pickle".format(
         target_string), "rb"))
 
     logging.info("Starting {}".format(target_string))
