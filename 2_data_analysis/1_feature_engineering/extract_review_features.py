@@ -68,6 +68,8 @@ input_data_folder = "../../0_data/4_handlabeled_data"
 
 data = pd.read_csv(os.path.join(input_data_folder,
     "handlabeled_reviews.csv"))
+# data = pd.read_csv(os.path.join(input_data_folder,
+#     "handlabeled_reviews_extended.csv"))
 
 data["text_formatted"] = data["text"].apply(ast.literal_eval)
 

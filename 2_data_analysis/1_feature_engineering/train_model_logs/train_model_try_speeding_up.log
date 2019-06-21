@@ -1,0 +1,1612 @@
+19-Jun-19 09:49:25 - Start script
+19-Jun-19 09:51:48 - Start script
+19-Jun-19 09:53:57 - Train test split saved
+19-Jun-19 09:54:00 - Initial model trained
+19-Jun-19 09:57:29 - Start script
+19-Jun-19 09:59:34 - Train test split saved
+19-Jun-19 09:59:38 - Initial model trained
+19-Jun-19 09:59:38 - Step size: 5000; Samples selected: 50; Iterations: 20
+19-Jun-19 09:59:38 - Size of train set: 630
+19-Jun-19 09:59:38 - Number of 0: 375
+19-Jun-19 09:59:38 - Number of 1: 255
+19-Jun-19 09:59:38 - Initial score: 0.7904761904761904
+19-Jun-19 09:59:38 - Initial conf_matrix: [[102  23]
+ [ 21  64]]
+19-Jun-19 10:07:50 - First row added: [0.49971156 0.50028844]
+19-Jun-19 10:07:50 - Last row added: [0.49971156 0.50028844]
+19-Jun-19 10:07:53 - Size of train set: 631
+19-Jun-19 10:07:53 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:07:53 - Number of 1: 0    256
+dtype: int64
+19-Jun-19 10:07:53 - Updated score: 0.8
+19-Jun-19 10:07:53 - Updated conf_matrix: [[103  22]
+ [ 20  65]]
+
+
+19-Jun-19 10:07:54 - First row added: [0.49994891 0.50005109]
+19-Jun-19 10:07:54 - Last row added: [0.49994891 0.50005109]
+19-Jun-19 10:07:57 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:07:57 - First row added: [0.49952948 0.50047052]
+19-Jun-19 10:07:57 - Last row added: [0.49952948 0.50047052]
+19-Jun-19 10:08:01 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:08:01 - First row added: [0.50097974 0.49902026]
+19-Jun-19 10:08:01 - First row added: [0.50115111 0.49884889]
+19-Jun-19 10:08:01 - First row added: [0.49879827 0.50120173]
+19-Jun-19 10:08:01 - Last row added: [0.49879827 0.50120173]
+19-Jun-19 10:08:04 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:08:05 - First row added: [0.50097974 0.49902026]
+19-Jun-19 10:08:05 - First row added: [0.50115111 0.49884889]
+19-Jun-19 10:08:05 - First row added: [0.50121635 0.49878365]
+19-Jun-19 10:08:05 - First row added: [0.49864866 0.50135134]
+19-Jun-19 10:08:05 - Last row added: [0.49864866 0.50135134]
+19-Jun-19 10:08:09 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:08:10 - First row added: [0.50097974 0.49902026]
+19-Jun-19 10:08:10 - First row added: [0.50115111 0.49884889]
+19-Jun-19 10:08:10 - First row added: [0.50121635 0.49878365]
+19-Jun-19 10:08:10 - First row added: [0.50136904 0.49863096]
+19-Jun-19 10:08:10 - First row added: [0.50166415 0.49833585]
+19-Jun-19 10:08:10 - First row added: [0.50218522 0.49781478]
+19-Jun-19 10:08:10 - First row added: [0.4975291 0.5024709]
+19-Jun-19 10:08:10 - Last row added: [0.4975291 0.5024709]
+19-Jun-19 10:08:13 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:08:13 - First row added: [0.50097974 0.49902026]
+19-Jun-19 10:08:13 - First row added: [0.50115111 0.49884889]
+19-Jun-19 10:08:13 - First row added: [0.50121635 0.49878365]
+19-Jun-19 10:08:13 - First row added: [0.50136904 0.49863096]
+19-Jun-19 10:08:13 - First row added: [0.50166415 0.49833585]
+19-Jun-19 10:08:13 - First row added: [0.50218522 0.49781478]
+19-Jun-19 10:08:13 - First row added: [0.50251601 0.49748399]
+19-Jun-19 10:08:13 - First row added: [0.4973659 0.5026341]
+19-Jun-19 10:08:13 - Last row added: [0.4973659 0.5026341]
+19-Jun-19 10:08:17 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:08:18 - First row added: [0.50097974 0.49902026]
+19-Jun-19 10:08:18 - First row added: [0.50115111 0.49884889]
+19-Jun-19 10:08:18 - First row added: [0.50121635 0.49878365]
+19-Jun-19 10:08:18 - First row added: [0.50136904 0.49863096]
+19-Jun-19 10:08:18 - First row added: [0.50166415 0.49833585]
+19-Jun-19 10:08:18 - First row added: [0.50218522 0.49781478]
+19-Jun-19 10:08:18 - First row added: [0.50251601 0.49748399]
+19-Jun-19 10:08:18 - First row added: [0.50288993 0.49711007]
+19-Jun-19 10:08:18 - First row added: [0.5030679 0.4969321]
+19-Jun-19 10:08:18 - First row added: [0.50376299 0.49623701]
+19-Jun-19 10:08:18 - First row added: [0.50376682 0.49623318]
+19-Jun-19 10:08:18 - First row added: [0.50385166 0.49614834]
+19-Jun-19 10:08:18 - First row added: [0.49595016 0.50404984]
+19-Jun-19 10:08:18 - Last row added: [0.49595016 0.50404984]
+19-Jun-19 10:08:21 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:08:22 - First row added: [0.50097974 0.49902026]
+19-Jun-19 10:08:22 - First row added: [0.50115111 0.49884889]
+19-Jun-19 10:08:22 - First row added: [0.50121635 0.49878365]
+19-Jun-19 10:08:22 - First row added: [0.50136904 0.49863096]
+19-Jun-19 10:08:22 - First row added: [0.50166415 0.49833585]
+19-Jun-19 10:08:22 - First row added: [0.50218522 0.49781478]
+19-Jun-19 10:08:22 - First row added: [0.50251601 0.49748399]
+19-Jun-19 10:08:22 - First row added: [0.50288993 0.49711007]
+19-Jun-19 10:08:22 - First row added: [0.5030679 0.4969321]
+19-Jun-19 10:08:22 - First row added: [0.50376299 0.49623701]
+19-Jun-19 10:08:22 - First row added: [0.50376682 0.49623318]
+19-Jun-19 10:08:22 - First row added: [0.50385166 0.49614834]
+19-Jun-19 10:08:22 - First row added: [0.49577341 0.50422659]
+19-Jun-19 10:08:22 - Last row added: [0.49577341 0.50422659]
+19-Jun-19 10:08:26 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:08:26 - First row added: [0.50097974 0.49902026]
+19-Jun-19 10:08:26 - First row added: [0.50115111 0.49884889]
+19-Jun-19 10:08:26 - First row added: [0.50121635 0.49878365]
+19-Jun-19 10:08:26 - First row added: [0.50136904 0.49863096]
+19-Jun-19 10:08:26 - First row added: [0.50166415 0.49833585]
+19-Jun-19 10:08:26 - First row added: [0.50218522 0.49781478]
+19-Jun-19 10:08:26 - First row added: [0.50251601 0.49748399]
+19-Jun-19 10:08:26 - First row added: [0.50288993 0.49711007]
+19-Jun-19 10:08:26 - First row added: [0.5030679 0.4969321]
+19-Jun-19 10:08:26 - First row added: [0.50376299 0.49623701]
+19-Jun-19 10:08:26 - First row added: [0.50376682 0.49623318]
+19-Jun-19 10:08:26 - First row added: [0.50385166 0.49614834]
+19-Jun-19 10:08:26 - First row added: [0.49555759 0.50444241]
+19-Jun-19 10:08:26 - Last row added: [0.49555759 0.50444241]
+19-Jun-19 10:08:30 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:08:30 - First row added: [0.50097974 0.49902026]
+19-Jun-19 10:08:30 - First row added: [0.50115111 0.49884889]
+19-Jun-19 10:08:30 - First row added: [0.50121635 0.49878365]
+19-Jun-19 10:08:30 - First row added: [0.50136904 0.49863096]
+19-Jun-19 10:08:30 - First row added: [0.50166415 0.49833585]
+19-Jun-19 10:08:30 - First row added: [0.50218522 0.49781478]
+19-Jun-19 10:08:30 - First row added: [0.50251601 0.49748399]
+19-Jun-19 10:08:30 - First row added: [0.50288993 0.49711007]
+19-Jun-19 10:08:30 - First row added: [0.5030679 0.4969321]
+19-Jun-19 10:08:30 - First row added: [0.50376299 0.49623701]
+19-Jun-19 10:08:30 - First row added: [0.50376682 0.49623318]
+19-Jun-19 10:08:30 - First row added: [0.50385166 0.49614834]
+19-Jun-19 10:08:30 - First row added: [0.50502095 0.49497905]
+19-Jun-19 10:08:30 - First row added: [0.49491368 0.50508632]
+19-Jun-19 10:08:30 - Last row added: [0.49491368 0.50508632]
+19-Jun-19 10:08:34 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:08:34 - First row added: [0.50097974 0.49902026]
+19-Jun-19 10:08:34 - First row added: [0.50115111 0.49884889]
+19-Jun-19 10:08:34 - First row added: [0.50121635 0.49878365]
+19-Jun-19 10:08:34 - First row added: [0.50136904 0.49863096]
+19-Jun-19 10:08:34 - First row added: [0.50166415 0.49833585]
+19-Jun-19 10:08:34 - First row added: [0.50218522 0.49781478]
+19-Jun-19 10:08:34 - First row added: [0.50251601 0.49748399]
+19-Jun-19 10:08:34 - First row added: [0.50288993 0.49711007]
+19-Jun-19 10:08:34 - First row added: [0.5030679 0.4969321]
+19-Jun-19 10:08:34 - First row added: [0.50376299 0.49623701]
+19-Jun-19 10:08:34 - First row added: [0.50376682 0.49623318]
+19-Jun-19 10:08:34 - First row added: [0.50385166 0.49614834]
+19-Jun-19 10:08:34 - First row added: [0.50502095 0.49497905]
+19-Jun-19 10:08:34 - First row added: [0.49482187 0.50517813]
+19-Jun-19 10:08:34 - Last row added: [0.49482187 0.50517813]
+19-Jun-19 10:08:38 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:08:38 - First row added: [0.50097974 0.49902026]
+19-Jun-19 10:08:38 - First row added: [0.50115111 0.49884889]
+19-Jun-19 10:08:38 - First row added: [0.50121635 0.49878365]
+19-Jun-19 10:08:38 - First row added: [0.50136904 0.49863096]
+19-Jun-19 10:08:38 - First row added: [0.50166415 0.49833585]
+19-Jun-19 10:08:38 - First row added: [0.50218522 0.49781478]
+19-Jun-19 10:08:38 - First row added: [0.50251601 0.49748399]
+19-Jun-19 10:08:38 - First row added: [0.50288993 0.49711007]
+19-Jun-19 10:08:38 - First row added: [0.5030679 0.4969321]
+19-Jun-19 10:08:38 - First row added: [0.50376299 0.49623701]
+19-Jun-19 10:08:38 - First row added: [0.50376682 0.49623318]
+19-Jun-19 10:08:38 - First row added: [0.50385166 0.49614834]
+19-Jun-19 10:08:38 - First row added: [0.50502095 0.49497905]
+19-Jun-19 10:08:38 - First row added: [0.4940642 0.5059358]
+19-Jun-19 10:08:38 - Last row added: [0.4940642 0.5059358]
+19-Jun-19 10:08:42 - Size of train set: 632
+19-Jun-19 10:08:42 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:08:42 - Number of 1: 0    257
+dtype: int64
+19-Jun-19 10:08:42 - Updated score: 0.8
+19-Jun-19 10:08:42 - Updated conf_matrix: [[102  23]
+ [ 19  66]]
+
+
+19-Jun-19 10:08:43 - First row added: [0.49971856 0.50028144]
+19-Jun-19 10:08:43 - Last row added: [0.49971856 0.50028144]
+19-Jun-19 10:08:46 - Size of train set: 633
+19-Jun-19 10:08:46 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:08:46 - Number of 1: 0    258
+dtype: int64
+19-Jun-19 10:08:46 - Updated score: 0.8
+19-Jun-19 10:08:46 - Updated conf_matrix: [[102  23]
+ [ 19  66]]
+
+
+19-Jun-19 10:08:47 - First row added: [0.50004755 0.49995245]
+19-Jun-19 10:08:47 - First row added: [0.49982897 0.50017103]
+19-Jun-19 10:08:47 - Last row added: [0.49982897 0.50017103]
+19-Jun-19 10:08:50 - Size of train set: 634
+19-Jun-19 10:08:50 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:08:50 - Number of 1: 0    259
+dtype: int64
+19-Jun-19 10:08:50 - Updated score: 0.8
+19-Jun-19 10:08:50 - Updated conf_matrix: [[102  23]
+ [ 19  66]]
+
+
+19-Jun-19 10:08:51 - First row added: [0.50025824 0.49974176]
+19-Jun-19 10:08:51 - First row added: [0.49972735 0.50027265]
+19-Jun-19 10:08:51 - Last row added: [0.49972735 0.50027265]
+19-Jun-19 10:08:55 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:08:55 - First row added: [0.50025824 0.49974176]
+19-Jun-19 10:08:55 - First row added: [0.49948426 0.50051574]
+19-Jun-19 10:08:55 - Last row added: [0.49948426 0.50051574]
+19-Jun-19 10:08:59 - Size of train set: 635
+19-Jun-19 10:08:59 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:08:59 - Number of 1: 0    260
+dtype: int64
+19-Jun-19 10:08:59 - Updated score: 0.8
+19-Jun-19 10:08:59 - Updated conf_matrix: [[102  23]
+ [ 19  66]]
+
+
+19-Jun-19 10:08:59 - First row added: [0.5005593 0.4994407]
+19-Jun-19 10:08:59 - First row added: [0.49878958 0.50121042]
+19-Jun-19 10:08:59 - Last row added: [0.49878958 0.50121042]
+19-Jun-19 10:09:03 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:09:03 - First row added: [0.5005593 0.4994407]
+19-Jun-19 10:09:03 - First row added: [0.50183454 0.49816546]
+19-Jun-19 10:09:03 - First row added: [0.50211789 0.49788211]
+19-Jun-19 10:09:03 - First row added: [0.50245878 0.49754122]
+19-Jun-19 10:09:03 - First row added: [0.49737531 0.50262469]
+19-Jun-19 10:09:04 - Last row added: [0.49737531 0.50262469]
+19-Jun-19 10:09:07 - Size of train set: 636
+19-Jun-19 10:09:07 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:09:07 - Number of 1: 0    261
+dtype: int64
+19-Jun-19 10:09:07 - Updated score: 0.8
+19-Jun-19 10:09:07 - Updated conf_matrix: [[102  23]
+ [ 19  66]]
+
+
+19-Jun-19 10:09:08 - First row added: [0.49927303 0.50072697]
+19-Jun-19 10:09:08 - Last row added: [0.49927303 0.50072697]
+19-Jun-19 10:09:12 - Size of train set: 637
+19-Jun-19 10:09:12 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:09:12 - Number of 1: 0    262
+dtype: int64
+19-Jun-19 10:09:12 - Updated score: 0.8
+19-Jun-19 10:09:12 - Updated conf_matrix: [[101  24]
+ [ 18  67]]
+
+
+19-Jun-19 10:09:12 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:12 - First row added: [0.49975585 0.50024415]
+19-Jun-19 10:09:12 - Last row added: [0.49975585 0.50024415]
+19-Jun-19 10:09:16 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:09:17 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:17 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:09:17 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:09:17 - First row added: [0.49875069 0.50124931]
+19-Jun-19 10:09:17 - Last row added: [0.49875069 0.50124931]
+19-Jun-19 10:09:20 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:09:21 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:21 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:09:21 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:09:21 - First row added: [0.498744 0.501256]
+19-Jun-19 10:09:21 - Last row added: [0.498744 0.501256]
+19-Jun-19 10:09:24 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:09:25 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:25 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:09:25 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:09:25 - First row added: [0.50139912 0.49860088]
+19-Jun-19 10:09:25 - First row added: [0.49851219 0.50148781]
+19-Jun-19 10:09:25 - Last row added: [0.49851219 0.50148781]
+19-Jun-19 10:09:28 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:09:29 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:29 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:09:29 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:09:29 - First row added: [0.50139912 0.49860088]
+19-Jun-19 10:09:29 - First row added: [0.50183439 0.49816561]
+19-Jun-19 10:09:29 - First row added: [0.49758539 0.50241461]
+19-Jun-19 10:09:29 - Last row added: [0.49758539 0.50241461]
+19-Jun-19 10:09:32 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:09:33 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:33 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:09:33 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:09:33 - First row added: [0.50139912 0.49860088]
+19-Jun-19 10:09:33 - First row added: [0.50183439 0.49816561]
+19-Jun-19 10:09:33 - First row added: [0.50348447 0.49651553]
+19-Jun-19 10:09:33 - First row added: [0.4961685 0.5038315]
+19-Jun-19 10:09:33 - Last row added: [0.4961685 0.5038315]
+19-Jun-19 10:09:37 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:09:37 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:37 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:09:37 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:09:37 - First row added: [0.50139912 0.49860088]
+19-Jun-19 10:09:37 - First row added: [0.50183439 0.49816561]
+19-Jun-19 10:09:37 - First row added: [0.50348447 0.49651553]
+19-Jun-19 10:09:37 - First row added: [0.50385156 0.49614844]
+19-Jun-19 10:09:37 - First row added: [0.50396295 0.49603705]
+19-Jun-19 10:09:37 - First row added: [0.49591539 0.50408461]
+19-Jun-19 10:09:37 - Last row added: [0.49591539 0.50408461]
+19-Jun-19 10:09:40 - Not improved: 0.7857142857142857
+
+
+19-Jun-19 10:09:41 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:41 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:09:41 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:09:41 - First row added: [0.50139912 0.49860088]
+19-Jun-19 10:09:41 - First row added: [0.50183439 0.49816561]
+19-Jun-19 10:09:41 - First row added: [0.50348447 0.49651553]
+19-Jun-19 10:09:41 - First row added: [0.50385156 0.49614844]
+19-Jun-19 10:09:41 - First row added: [0.50396295 0.49603705]
+19-Jun-19 10:09:41 - First row added: [0.49432519 0.50567481]
+19-Jun-19 10:09:41 - Last row added: [0.49432519 0.50567481]
+19-Jun-19 10:09:45 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:09:45 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:45 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:09:45 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:09:45 - First row added: [0.50139912 0.49860088]
+19-Jun-19 10:09:45 - First row added: [0.50183439 0.49816561]
+19-Jun-19 10:09:45 - First row added: [0.50348447 0.49651553]
+19-Jun-19 10:09:45 - First row added: [0.50385156 0.49614844]
+19-Jun-19 10:09:45 - First row added: [0.50396295 0.49603705]
+19-Jun-19 10:09:45 - First row added: [0.50573736 0.49426264]
+19-Jun-19 10:09:45 - First row added: [0.50580102 0.49419898]
+19-Jun-19 10:09:45 - First row added: [0.50581222 0.49418778]
+19-Jun-19 10:09:45 - First row added: [0.49366261 0.50633739]
+19-Jun-19 10:09:45 - Last row added: [0.49366261 0.50633739]
+19-Jun-19 10:09:49 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:09:50 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:50 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:09:50 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:09:50 - First row added: [0.50139912 0.49860088]
+19-Jun-19 10:09:50 - First row added: [0.50183439 0.49816561]
+19-Jun-19 10:09:50 - First row added: [0.50348447 0.49651553]
+19-Jun-19 10:09:50 - First row added: [0.50385156 0.49614844]
+19-Jun-19 10:09:50 - First row added: [0.50396295 0.49603705]
+19-Jun-19 10:09:50 - First row added: [0.50573736 0.49426264]
+19-Jun-19 10:09:50 - First row added: [0.50580102 0.49419898]
+19-Jun-19 10:09:50 - First row added: [0.50581222 0.49418778]
+19-Jun-19 10:09:50 - First row added: [0.50711841 0.49288159]
+19-Jun-19 10:09:50 - First row added: [0.49205766 0.50794234]
+19-Jun-19 10:09:50 - Last row added: [0.49205766 0.50794234]
+19-Jun-19 10:09:53 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:09:54 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:54 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:09:54 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:09:54 - First row added: [0.50139912 0.49860088]
+19-Jun-19 10:09:54 - First row added: [0.50183439 0.49816561]
+19-Jun-19 10:09:54 - First row added: [0.50348447 0.49651553]
+19-Jun-19 10:09:54 - First row added: [0.50385156 0.49614844]
+19-Jun-19 10:09:54 - First row added: [0.50396295 0.49603705]
+19-Jun-19 10:09:54 - First row added: [0.50573736 0.49426264]
+19-Jun-19 10:09:54 - First row added: [0.50580102 0.49419898]
+19-Jun-19 10:09:54 - First row added: [0.50581222 0.49418778]
+19-Jun-19 10:09:54 - First row added: [0.50711841 0.49288159]
+19-Jun-19 10:09:54 - First row added: [0.4919335 0.5080665]
+19-Jun-19 10:09:54 - Last row added: [0.4919335 0.5080665]
+19-Jun-19 10:09:58 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:09:59 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:09:59 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:09:59 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:09:59 - First row added: [0.50139912 0.49860088]
+19-Jun-19 10:09:59 - First row added: [0.50183439 0.49816561]
+19-Jun-19 10:09:59 - First row added: [0.50348447 0.49651553]
+19-Jun-19 10:09:59 - First row added: [0.50385156 0.49614844]
+19-Jun-19 10:09:59 - First row added: [0.50396295 0.49603705]
+19-Jun-19 10:09:59 - First row added: [0.50573736 0.49426264]
+19-Jun-19 10:09:59 - First row added: [0.50580102 0.49419898]
+19-Jun-19 10:09:59 - First row added: [0.50581222 0.49418778]
+19-Jun-19 10:09:59 - First row added: [0.50711841 0.49288159]
+19-Jun-19 10:09:59 - First row added: [0.50808457 0.49191543]
+19-Jun-19 10:09:59 - First row added: [0.5083468 0.4916532]
+19-Jun-19 10:09:59 - First row added: [0.50860935 0.49139065]
+19-Jun-19 10:09:59 - First row added: [0.49095632 0.50904368]
+19-Jun-19 10:09:59 - Last row added: [0.49095632 0.50904368]
+19-Jun-19 10:10:02 - Not improved: 0.7857142857142857
+
+
+19-Jun-19 10:10:03 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:10:03 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:10:03 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:10:03 - First row added: [0.50139912 0.49860088]
+19-Jun-19 10:10:03 - First row added: [0.50183439 0.49816561]
+19-Jun-19 10:10:03 - First row added: [0.50348447 0.49651553]
+19-Jun-19 10:10:03 - First row added: [0.50385156 0.49614844]
+19-Jun-19 10:10:03 - First row added: [0.50396295 0.49603705]
+19-Jun-19 10:10:03 - First row added: [0.50573736 0.49426264]
+19-Jun-19 10:10:03 - First row added: [0.50580102 0.49419898]
+19-Jun-19 10:10:03 - First row added: [0.50581222 0.49418778]
+19-Jun-19 10:10:03 - First row added: [0.50711841 0.49288159]
+19-Jun-19 10:10:03 - First row added: [0.50808457 0.49191543]
+19-Jun-19 10:10:03 - First row added: [0.5083468 0.4916532]
+19-Jun-19 10:10:03 - First row added: [0.50860935 0.49139065]
+19-Jun-19 10:10:03 - First row added: [0.50943214 0.49056786]
+19-Jun-19 10:10:03 - First row added: [0.50954486 0.49045514]
+19-Jun-19 10:10:03 - First row added: [0.48950699 0.51049301]
+19-Jun-19 10:10:03 - Last row added: [0.48950699 0.51049301]
+19-Jun-19 10:10:06 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:10:07 - First row added: [0.50018823 0.49981177]
+19-Jun-19 10:10:07 - First row added: [0.50076897 0.49923103]
+19-Jun-19 10:10:07 - First row added: [0.50084484 0.49915516]
+19-Jun-19 10:10:07 - First row added: [0.50139912 0.49860088]
+19-Jun-19 10:10:07 - First row added: [0.50183439 0.49816561]
+19-Jun-19 10:10:07 - First row added: [0.50348447 0.49651553]
+19-Jun-19 10:10:07 - First row added: [0.50385156 0.49614844]
+19-Jun-19 10:10:07 - First row added: [0.50396295 0.49603705]
+19-Jun-19 10:10:07 - First row added: [0.50573736 0.49426264]
+19-Jun-19 10:10:07 - First row added: [0.50580102 0.49419898]
+19-Jun-19 10:10:07 - First row added: [0.50581222 0.49418778]
+19-Jun-19 10:10:07 - First row added: [0.50711841 0.49288159]
+19-Jun-19 10:10:07 - First row added: [0.50808457 0.49191543]
+19-Jun-19 10:10:07 - First row added: [0.5083468 0.4916532]
+19-Jun-19 10:10:07 - First row added: [0.50860935 0.49139065]
+19-Jun-19 10:10:07 - First row added: [0.50943214 0.49056786]
+19-Jun-19 10:10:07 - First row added: [0.50954486 0.49045514]
+19-Jun-19 10:10:07 - First row added: [0.51069369 0.48930631]
+19-Jun-19 10:10:07 - First row added: [0.48926159 0.51073841]
+19-Jun-19 10:10:07 - Last row added: [0.48926159 0.51073841]
+19-Jun-19 10:10:11 - Size of train set: 638
+19-Jun-19 10:10:11 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:10:11 - Number of 1: 0    263
+dtype: int64
+19-Jun-19 10:10:11 - Updated score: 0.8
+19-Jun-19 10:10:11 - Updated conf_matrix: [[101  24]
+ [ 18  67]]
+
+
+19-Jun-19 10:10:12 - First row added: [0.5003726 0.4996274]
+19-Jun-19 10:10:12 - First row added: [0.49917551 0.50082449]
+19-Jun-19 10:10:12 - Last row added: [0.49917551 0.50082449]
+19-Jun-19 10:10:15 - Size of train set: 639
+19-Jun-19 10:10:15 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:10:15 - Number of 1: 0    264
+dtype: int64
+19-Jun-19 10:10:15 - Updated score: 0.8047619047619048
+19-Jun-19 10:10:15 - Updated conf_matrix: [[101  24]
+ [ 17  68]]
+
+
+19-Jun-19 10:10:16 - First row added: [0.49977059 0.50022941]
+19-Jun-19 10:10:16 - Last row added: [0.49977059 0.50022941]
+19-Jun-19 10:10:19 - Not improved: 0.8
+
+
+19-Jun-19 10:10:20 - First row added: [0.49964432 0.50035568]
+19-Jun-19 10:10:20 - Last row added: [0.49964432 0.50035568]
+19-Jun-19 10:10:24 - Not improved: 0.8
+
+
+19-Jun-19 10:10:24 - First row added: [0.50077601 0.49922399]
+19-Jun-19 10:10:24 - First row added: [0.49862972 0.50137028]
+19-Jun-19 10:10:24 - Last row added: [0.49862972 0.50137028]
+19-Jun-19 10:10:28 - Size of train set: 640
+19-Jun-19 10:10:28 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:10:28 - Number of 1: 0    265
+dtype: int64
+19-Jun-19 10:10:28 - Updated score: 0.8047619047619048
+19-Jun-19 10:10:28 - Updated conf_matrix: [[101  24]
+ [ 17  68]]
+
+
+19-Jun-19 10:10:29 - First row added: [0.49988072 0.50011928]
+19-Jun-19 10:10:29 - Last row added: [0.49988072 0.50011928]
+19-Jun-19 10:10:32 - Not improved: 0.8
+
+
+19-Jun-19 10:10:33 - First row added: [0.49930054 0.50069946]
+19-Jun-19 10:10:33 - Last row added: [0.49930054 0.50069946]
+19-Jun-19 10:10:36 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:10:37 - First row added: [0.50092559 0.49907441]
+19-Jun-19 10:10:37 - First row added: [0.50127235 0.49872765]
+19-Jun-19 10:10:37 - First row added: [0.50161379 0.49838621]
+19-Jun-19 10:10:37 - First row added: [0.49828399 0.50171601]
+19-Jun-19 10:10:37 - Last row added: [0.49828399 0.50171601]
+19-Jun-19 10:10:41 - Size of train set: 641
+19-Jun-19 10:10:41 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:10:41 - Number of 1: 0    266
+dtype: int64
+19-Jun-19 10:10:41 - Updated score: 0.8047619047619048
+19-Jun-19 10:10:41 - Updated conf_matrix: [[101  24]
+ [ 17  68]]
+
+
+19-Jun-19 10:10:41 - First row added: [0.500191 0.499809]
+19-Jun-19 10:10:41 - First row added: [0.49928378 0.50071622]
+19-Jun-19 10:10:41 - Last row added: [0.49928378 0.50071622]
+19-Jun-19 10:10:45 - Not improved: 0.8
+
+
+19-Jun-19 10:10:45 - First row added: [0.500191 0.499809]
+19-Jun-19 10:10:45 - First row added: [0.49885781 0.50114219]
+19-Jun-19 10:10:45 - Last row added: [0.49885781 0.50114219]
+19-Jun-19 10:10:49 - Size of train set: 642
+19-Jun-19 10:10:49 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:10:49 - Number of 1: 0    267
+dtype: int64
+19-Jun-19 10:10:49 - Updated score: 0.8047619047619048
+19-Jun-19 10:10:49 - Updated conf_matrix: [[101  24]
+ [ 17  68]]
+
+
+19-Jun-19 10:10:49 - First row added: [0.5002987 0.4997013]
+19-Jun-19 10:10:49 - First row added: [0.49961959 0.50038041]
+19-Jun-19 10:10:49 - Last row added: [0.49961959 0.50038041]
+19-Jun-19 10:10:53 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:10:53 - First row added: [0.5002987 0.4997013]
+19-Jun-19 10:10:53 - First row added: [0.49919279 0.50080721]
+19-Jun-19 10:10:53 - Last row added: [0.49919279 0.50080721]
+19-Jun-19 10:10:57 - Not improved: 0.7857142857142857
+
+
+19-Jun-19 10:10:58 - First row added: [0.5002987 0.4997013]
+19-Jun-19 10:10:58 - First row added: [0.50103784 0.49896216]
+19-Jun-19 10:10:58 - First row added: [0.50113743 0.49886257]
+19-Jun-19 10:10:58 - First row added: [0.50147655 0.49852345]
+19-Jun-19 10:10:58 - First row added: [0.4977692 0.5022308]
+19-Jun-19 10:10:58 - Last row added: [0.4977692 0.5022308]
+19-Jun-19 10:11:01 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:11:02 - First row added: [0.5002987 0.4997013]
+19-Jun-19 10:11:02 - First row added: [0.50103784 0.49896216]
+19-Jun-19 10:11:02 - First row added: [0.50113743 0.49886257]
+19-Jun-19 10:11:02 - First row added: [0.50147655 0.49852345]
+19-Jun-19 10:11:02 - First row added: [0.50279418 0.49720582]
+19-Jun-19 10:11:02 - First row added: [0.49713948 0.50286052]
+19-Jun-19 10:11:02 - Last row added: [0.49713948 0.50286052]
+19-Jun-19 10:11:05 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:11:06 - First row added: [0.5002987 0.4997013]
+19-Jun-19 10:11:06 - First row added: [0.50103784 0.49896216]
+19-Jun-19 10:11:06 - First row added: [0.50113743 0.49886257]
+19-Jun-19 10:11:06 - First row added: [0.50147655 0.49852345]
+19-Jun-19 10:11:06 - First row added: [0.50279418 0.49720582]
+19-Jun-19 10:11:06 - First row added: [0.50325186 0.49674814]
+19-Jun-19 10:11:06 - First row added: [0.49656167 0.50343833]
+19-Jun-19 10:11:06 - Last row added: [0.49656167 0.50343833]
+19-Jun-19 10:11:10 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:11:10 - First row added: [0.5002987 0.4997013]
+19-Jun-19 10:11:10 - First row added: [0.50103784 0.49896216]
+19-Jun-19 10:11:10 - First row added: [0.50113743 0.49886257]
+19-Jun-19 10:11:10 - First row added: [0.50147655 0.49852345]
+19-Jun-19 10:11:10 - First row added: [0.50279418 0.49720582]
+19-Jun-19 10:11:10 - First row added: [0.50325186 0.49674814]
+19-Jun-19 10:11:10 - First row added: [0.50360097 0.49639903]
+19-Jun-19 10:11:10 - First row added: [0.49579737 0.50420263]
+19-Jun-19 10:11:10 - Last row added: [0.49579737 0.50420263]
+19-Jun-19 10:11:14 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:11:14 - First row added: [0.5002987 0.4997013]
+19-Jun-19 10:11:14 - First row added: [0.50103784 0.49896216]
+19-Jun-19 10:11:14 - First row added: [0.50113743 0.49886257]
+19-Jun-19 10:11:14 - First row added: [0.50147655 0.49852345]
+19-Jun-19 10:11:14 - First row added: [0.50279418 0.49720582]
+19-Jun-19 10:11:14 - First row added: [0.50325186 0.49674814]
+19-Jun-19 10:11:14 - First row added: [0.50360097 0.49639903]
+19-Jun-19 10:11:14 - First row added: [0.49506825 0.50493175]
+19-Jun-19 10:11:14 - Last row added: [0.49506825 0.50493175]
+19-Jun-19 10:11:18 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:11:18 - Pseudolabel 1 finished
+19-Jun-19 10:22:25 - First row added: [0.50006583 0.49993417]
+19-Jun-19 10:22:25 - First row added: [0.50035771 0.49964229]
+19-Jun-19 10:22:25 - First row added: [0.49924023 0.50075977]
+19-Jun-19 10:22:25 - Last row added: [0.49924023 0.50075977]
+19-Jun-19 10:22:29 - Not improved: 0.7857142857142857
+
+
+19-Jun-19 10:22:29 - First row added: [0.50006583 0.49993417]
+19-Jun-19 10:22:29 - First row added: [0.50035771 0.49964229]
+19-Jun-19 10:22:29 - First row added: [0.49903915 0.50096085]
+19-Jun-19 10:22:29 - Last row added: [0.49903915 0.50096085]
+19-Jun-19 10:22:33 - Not improved: 0.7857142857142857
+
+
+19-Jun-19 10:22:33 - First row added: [0.50006583 0.49993417]
+19-Jun-19 10:22:33 - First row added: [0.50035771 0.49964229]
+19-Jun-19 10:22:33 - First row added: [0.50121418 0.49878582]
+19-Jun-19 10:22:33 - First row added: [0.49861068 0.50138932]
+19-Jun-19 10:22:33 - Last row added: [0.49861068 0.50138932]
+19-Jun-19 10:22:37 - Not improved: 0.7857142857142857
+
+
+19-Jun-19 10:22:38 - First row added: [0.50006583 0.49993417]
+19-Jun-19 10:22:38 - First row added: [0.50035771 0.49964229]
+19-Jun-19 10:22:38 - First row added: [0.50121418 0.49878582]
+19-Jun-19 10:22:38 - First row added: [0.50149803 0.49850197]
+19-Jun-19 10:22:38 - First row added: [0.49828442 0.50171558]
+19-Jun-19 10:22:38 - Last row added: [0.49828442 0.50171558]
+19-Jun-19 10:22:41 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:22:42 - First row added: [0.50006583 0.49993417]
+19-Jun-19 10:22:42 - First row added: [0.50035771 0.49964229]
+19-Jun-19 10:22:42 - First row added: [0.50121418 0.49878582]
+19-Jun-19 10:22:42 - First row added: [0.50149803 0.49850197]
+19-Jun-19 10:22:42 - First row added: [0.49808916 0.50191084]
+19-Jun-19 10:22:42 - Last row added: [0.49808916 0.50191084]
+19-Jun-19 10:22:45 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:22:46 - First row added: [0.50006583 0.49993417]
+19-Jun-19 10:22:46 - First row added: [0.50035771 0.49964229]
+19-Jun-19 10:22:46 - First row added: [0.50121418 0.49878582]
+19-Jun-19 10:22:46 - First row added: [0.50149803 0.49850197]
+19-Jun-19 10:22:46 - First row added: [0.49803939 0.50196061]
+19-Jun-19 10:22:46 - Last row added: [0.49803939 0.50196061]
+19-Jun-19 10:22:49 - Not improved: 0.7857142857142857
+
+
+19-Jun-19 10:22:50 - First row added: [0.50006583 0.49993417]
+19-Jun-19 10:22:50 - First row added: [0.50035771 0.49964229]
+19-Jun-19 10:22:50 - First row added: [0.50121418 0.49878582]
+19-Jun-19 10:22:50 - First row added: [0.50149803 0.49850197]
+19-Jun-19 10:22:50 - First row added: [0.49800536 0.50199464]
+19-Jun-19 10:22:50 - Last row added: [0.49800536 0.50199464]
+19-Jun-19 10:22:53 - Size of train set: 643
+19-Jun-19 10:22:53 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:22:53 - Number of 1: 0    268
+dtype: int64
+19-Jun-19 10:22:53 - Updated score: 0.8047619047619048
+19-Jun-19 10:22:53 - Updated conf_matrix: [[101  24]
+ [ 17  68]]
+
+
+19-Jun-19 10:22:54 - First row added: [0.49994084 0.50005916]
+19-Jun-19 10:22:54 - Last row added: [0.49994084 0.50005916]
+19-Jun-19 10:22:58 - Size of train set: 644
+19-Jun-19 10:22:58 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:22:58 - Number of 1: 0    269
+dtype: int64
+19-Jun-19 10:22:58 - Updated score: 0.8047619047619048
+19-Jun-19 10:22:58 - Updated conf_matrix: [[101  24]
+ [ 17  68]]
+
+
+19-Jun-19 10:22:58 - First row added: [0.50002196 0.49997804]
+19-Jun-19 10:22:58 - First row added: [0.50023569 0.49976431]
+19-Jun-19 10:22:58 - First row added: [0.50040329 0.49959671]
+19-Jun-19 10:22:58 - First row added: [0.49959639 0.50040361]
+19-Jun-19 10:22:58 - Last row added: [0.49959639 0.50040361]
+19-Jun-19 10:23:02 - Not improved: 0.8
+
+
+19-Jun-19 10:23:02 - First row added: [0.50002196 0.49997804]
+19-Jun-19 10:23:02 - First row added: [0.50023569 0.49976431]
+19-Jun-19 10:23:02 - First row added: [0.50040329 0.49959671]
+19-Jun-19 10:23:02 - First row added: [0.50048237 0.49951763]
+19-Jun-19 10:23:02 - First row added: [0.50048561 0.49951439]
+19-Jun-19 10:23:02 - First row added: [0.50073958 0.49926042]
+19-Jun-19 10:23:02 - First row added: [0.49890288 0.50109712]
+19-Jun-19 10:23:02 - Last row added: [0.49890288 0.50109712]
+19-Jun-19 10:23:06 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:23:06 - First row added: [0.50002196 0.49997804]
+19-Jun-19 10:23:06 - First row added: [0.50023569 0.49976431]
+19-Jun-19 10:23:06 - First row added: [0.50040329 0.49959671]
+19-Jun-19 10:23:06 - First row added: [0.50048237 0.49951763]
+19-Jun-19 10:23:06 - First row added: [0.50048561 0.49951439]
+19-Jun-19 10:23:06 - First row added: [0.50073958 0.49926042]
+19-Jun-19 10:23:06 - First row added: [0.50129442 0.49870558]
+19-Jun-19 10:23:06 - First row added: [0.50138527 0.49861473]
+19-Jun-19 10:23:06 - First row added: [0.50143368 0.49856632]
+19-Jun-19 10:23:06 - First row added: [0.50233384 0.49766616]
+19-Jun-19 10:23:06 - First row added: [0.502492 0.497508]
+19-Jun-19 10:23:06 - First row added: [0.49746358 0.50253642]
+19-Jun-19 10:23:06 - Last row added: [0.49746358 0.50253642]
+19-Jun-19 10:23:10 - Not improved: 0.8
+
+
+19-Jun-19 10:23:11 - First row added: [0.50002196 0.49997804]
+19-Jun-19 10:23:11 - First row added: [0.50023569 0.49976431]
+19-Jun-19 10:23:11 - First row added: [0.50040329 0.49959671]
+19-Jun-19 10:23:11 - First row added: [0.50048237 0.49951763]
+19-Jun-19 10:23:11 - First row added: [0.50048561 0.49951439]
+19-Jun-19 10:23:11 - First row added: [0.50073958 0.49926042]
+19-Jun-19 10:23:11 - First row added: [0.50129442 0.49870558]
+19-Jun-19 10:23:11 - First row added: [0.50138527 0.49861473]
+19-Jun-19 10:23:11 - First row added: [0.50143368 0.49856632]
+19-Jun-19 10:23:11 - First row added: [0.50233384 0.49766616]
+19-Jun-19 10:23:11 - First row added: [0.502492 0.497508]
+19-Jun-19 10:23:11 - First row added: [0.49717553 0.50282447]
+19-Jun-19 10:23:11 - Last row added: [0.49717553 0.50282447]
+19-Jun-19 10:23:15 - Size of train set: 645
+19-Jun-19 10:23:15 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:23:15 - Number of 1: 0    270
+dtype: int64
+19-Jun-19 10:23:15 - Updated score: 0.8047619047619048
+19-Jun-19 10:23:15 - Updated conf_matrix: [[101  24]
+ [ 17  68]]
+
+
+19-Jun-19 10:23:15 - First row added: [0.49957311 0.50042689]
+19-Jun-19 10:23:15 - Last row added: [0.49957311 0.50042689]
+19-Jun-19 10:23:19 - Size of train set: 646
+19-Jun-19 10:23:19 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:23:19 - Number of 1: 0    271
+dtype: int64
+19-Jun-19 10:23:19 - Updated score: 0.8047619047619048
+19-Jun-19 10:23:19 - Updated conf_matrix: [[101  24]
+ [ 17  68]]
+
+
+19-Jun-19 10:23:19 - First row added: [0.49974451 0.50025549]
+19-Jun-19 10:23:19 - Last row added: [0.49974451 0.50025549]
+19-Jun-19 10:23:23 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:23:24 - First row added: [0.50037397 0.49962603]
+19-Jun-19 10:23:24 - First row added: [0.50061517 0.49938483]
+19-Jun-19 10:23:24 - First row added: [0.50142978 0.49857022]
+19-Jun-19 10:23:24 - First row added: [0.49856093 0.50143907]
+19-Jun-19 10:23:24 - Last row added: [0.49856093 0.50143907]
+19-Jun-19 10:23:27 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:23:27 - First row added: [0.50037397 0.49962603]
+19-Jun-19 10:23:27 - First row added: [0.50061517 0.49938483]
+19-Jun-19 10:23:27 - First row added: [0.50142978 0.49857022]
+19-Jun-19 10:23:27 - First row added: [0.49818378 0.50181622]
+19-Jun-19 10:23:27 - Last row added: [0.49818378 0.50181622]
+19-Jun-19 10:23:31 - Size of train set: 647
+19-Jun-19 10:23:31 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:23:31 - Number of 1: 0    272
+dtype: int64
+19-Jun-19 10:23:31 - Updated score: 0.8047619047619048
+19-Jun-19 10:23:31 - Updated conf_matrix: [[101  24]
+ [ 17  68]]
+
+
+19-Jun-19 10:23:32 - First row added: [0.50028052 0.49971948]
+19-Jun-19 10:23:32 - First row added: [0.49965969 0.50034031]
+19-Jun-19 10:23:32 - Last row added: [0.49965969 0.50034031]
+19-Jun-19 10:23:35 - Not improved: 0.7904761904761904
+
+
+19-Jun-19 10:23:36 - First row added: [0.50028052 0.49971948]
+19-Jun-19 10:23:36 - First row added: [0.49945672 0.50054328]
+19-Jun-19 10:23:36 - Last row added: [0.49945672 0.50054328]
+19-Jun-19 10:23:39 - Not improved: 0.8
+
+
+19-Jun-19 10:23:40 - First row added: [0.50028052 0.49971948]
+19-Jun-19 10:23:40 - First row added: [0.50087789 0.49912211]
+19-Jun-19 10:23:40 - First row added: [0.50098286 0.49901714]
+19-Jun-19 10:23:40 - First row added: [0.49856214 0.50143786]
+19-Jun-19 10:23:40 - Last row added: [0.49856214 0.50143786]
+19-Jun-19 10:23:44 - Size of train set: 648
+19-Jun-19 10:23:44 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:23:44 - Number of 1: 0    273
+dtype: int64
+19-Jun-19 10:23:44 - Updated score: 0.8047619047619048
+19-Jun-19 10:23:44 - Updated conf_matrix: [[101  24]
+ [ 17  68]]
+
+
+19-Jun-19 10:23:44 - First row added: [0.50008203 0.49991797]
+19-Jun-19 10:23:44 - First row added: [0.49987554 0.50012446]
+19-Jun-19 10:23:44 - Last row added: [0.49987554 0.50012446]
+19-Jun-19 10:23:48 - Size of train set: 649
+19-Jun-19 10:23:48 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:23:48 - Number of 1: 0    274
+dtype: int64
+19-Jun-19 10:23:48 - Updated score: 0.8047619047619048
+19-Jun-19 10:23:48 - Updated conf_matrix: [[101  24]
+ [ 17  68]]
+
+
+19-Jun-19 10:23:49 - First row added: [0.50002748 0.49997252]
+19-Jun-19 10:23:49 - First row added: [0.50032161 0.49967839]
+19-Jun-19 10:23:49 - First row added: [0.49967413 0.50032587]
+19-Jun-19 10:23:49 - Last row added: [0.49967413 0.50032587]
+19-Jun-19 10:23:54 - Size of train set: 650
+19-Jun-19 10:23:54 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:23:54 - Number of 1: 0    275
+dtype: int64
+19-Jun-19 10:23:54 - Updated score: 0.8095238095238095
+19-Jun-19 10:23:54 - Updated conf_matrix: [[101  24]
+ [ 16  69]]
+
+
+19-Jun-19 10:23:54 - First row added: [0.50042658 0.49957342]
+19-Jun-19 10:23:54 - First row added: [0.49950197 0.50049803]
+19-Jun-19 10:23:54 - Last row added: [0.49950197 0.50049803]
+19-Jun-19 10:23:57 - Size of train set: 651
+19-Jun-19 10:23:57 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:23:57 - Number of 1: 0    276
+dtype: int64
+19-Jun-19 10:23:57 - Updated score: 0.8095238095238095
+19-Jun-19 10:23:57 - Updated conf_matrix: [[101  24]
+ [ 16  69]]
+
+
+19-Jun-19 10:23:58 - First row added: [0.49974303 0.50025697]
+19-Jun-19 10:23:58 - Last row added: [0.49974303 0.50025697]
+19-Jun-19 10:24:01 - Size of train set: 652
+19-Jun-19 10:24:01 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:01 - Number of 1: 0    277
+dtype: int64
+19-Jun-19 10:24:01 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:01 - Updated conf_matrix: [[101  24]
+ [ 16  69]]
+
+
+19-Jun-19 10:24:02 - First row added: [0.50014439 0.49985561]
+19-Jun-19 10:24:02 - First row added: [0.49978504 0.50021496]
+19-Jun-19 10:24:02 - Last row added: [0.49978504 0.50021496]
+19-Jun-19 10:24:06 - Size of train set: 653
+19-Jun-19 10:24:06 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:06 - Number of 1: 0    278
+dtype: int64
+19-Jun-19 10:24:06 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:06 - Updated conf_matrix: [[101  24]
+ [ 16  69]]
+
+
+19-Jun-19 10:24:06 - First row added: [0.49995319 0.50004681]
+19-Jun-19 10:24:06 - Last row added: [0.49995319 0.50004681]
+19-Jun-19 10:24:10 - Size of train set: 654
+19-Jun-19 10:24:10 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:10 - Number of 1: 0    279
+dtype: int64
+19-Jun-19 10:24:10 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:10 - Updated conf_matrix: [[101  24]
+ [ 16  69]]
+
+
+19-Jun-19 10:24:10 - First row added: [0.50026292 0.49973708]
+19-Jun-19 10:24:10 - First row added: [0.50028898 0.49971102]
+19-Jun-19 10:24:10 - First row added: [0.50056815 0.49943185]
+19-Jun-19 10:24:10 - First row added: [0.49935635 0.50064365]
+19-Jun-19 10:24:10 - Last row added: [0.49935635 0.50064365]
+19-Jun-19 10:24:14 - Size of train set: 655
+19-Jun-19 10:24:14 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:14 - Number of 1: 0    280
+dtype: int64
+19-Jun-19 10:24:14 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:14 - Updated conf_matrix: [[101  24]
+ [ 16  69]]
+
+
+19-Jun-19 10:24:15 - First row added: [0.49991414 0.50008586]
+19-Jun-19 10:24:15 - Last row added: [0.49991414 0.50008586]
+19-Jun-19 10:24:18 - Size of train set: 656
+19-Jun-19 10:24:18 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:18 - Number of 1: 0    281
+dtype: int64
+19-Jun-19 10:24:18 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:18 - Updated conf_matrix: [[101  24]
+ [ 16  69]]
+
+
+19-Jun-19 10:24:19 - First row added: [0.49948096 0.50051904]
+19-Jun-19 10:24:19 - Last row added: [0.49948096 0.50051904]
+19-Jun-19 10:24:23 - Size of train set: 657
+19-Jun-19 10:24:23 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:23 - Number of 1: 0    282
+dtype: int64
+19-Jun-19 10:24:23 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:23 - Updated conf_matrix: [[101  24]
+ [ 16  69]]
+
+
+19-Jun-19 10:24:23 - First row added: [0.49978687 0.50021313]
+19-Jun-19 10:24:23 - Last row added: [0.49978687 0.50021313]
+19-Jun-19 10:24:27 - Size of train set: 658
+19-Jun-19 10:24:27 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:27 - Number of 1: 0    283
+dtype: int64
+19-Jun-19 10:24:27 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:27 - Updated conf_matrix: [[101  24]
+ [ 16  69]]
+
+
+19-Jun-19 10:24:27 - First row added: [0.49993527 0.50006473]
+19-Jun-19 10:24:27 - Last row added: [0.49993527 0.50006473]
+19-Jun-19 10:24:31 - Size of train set: 659
+19-Jun-19 10:24:31 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:31 - Number of 1: 0    284
+dtype: int64
+19-Jun-19 10:24:31 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:31 - Updated conf_matrix: [[101  24]
+ [ 16  69]]
+
+
+19-Jun-19 10:24:32 - First row added: [0.49998903 0.50001097]
+19-Jun-19 10:24:32 - Last row added: [0.49998903 0.50001097]
+19-Jun-19 10:24:36 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:24:36 - First row added: [0.50002828 0.49997172]
+19-Jun-19 10:24:36 - First row added: [0.50036617 0.49963383]
+19-Jun-19 10:24:36 - First row added: [0.49962535 0.50037465]
+19-Jun-19 10:24:36 - Last row added: [0.49962535 0.50037465]
+19-Jun-19 10:24:40 - Size of train set: 660
+19-Jun-19 10:24:40 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:40 - Number of 1: 0    285
+dtype: int64
+19-Jun-19 10:24:40 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:40 - Updated conf_matrix: [[102  23]
+ [ 17  68]]
+
+
+19-Jun-19 10:24:41 - First row added: [0.50010073 0.49989927]
+19-Jun-19 10:24:41 - First row added: [0.49989905 0.50010095]
+19-Jun-19 10:24:41 - Last row added: [0.49989905 0.50010095]
+19-Jun-19 10:24:44 - Size of train set: 661
+19-Jun-19 10:24:44 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:44 - Number of 1: 0    286
+dtype: int64
+19-Jun-19 10:24:44 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:44 - Updated conf_matrix: [[102  23]
+ [ 17  68]]
+
+
+19-Jun-19 10:24:45 - First row added: [0.50001234 0.49998766]
+19-Jun-19 10:24:45 - First row added: [0.50007341 0.49992659]
+19-Jun-19 10:24:45 - First row added: [0.50007998 0.49992002]
+19-Jun-19 10:24:45 - First row added: [0.50013003 0.49986997]
+19-Jun-19 10:24:45 - First row added: [0.49986821 0.50013179]
+19-Jun-19 10:24:45 - Last row added: [0.49986821 0.50013179]
+19-Jun-19 10:24:49 - Size of train set: 662
+19-Jun-19 10:24:49 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:49 - Number of 1: 0    287
+dtype: int64
+19-Jun-19 10:24:49 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:49 - Updated conf_matrix: [[102  23]
+ [ 17  68]]
+
+
+19-Jun-19 10:24:49 - First row added: [0.50065213 0.49934787]
+19-Jun-19 10:24:49 - First row added: [0.49880536 0.50119464]
+19-Jun-19 10:24:49 - Last row added: [0.49880536 0.50119464]
+19-Jun-19 10:24:53 - Size of train set: 663
+19-Jun-19 10:24:53 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:24:53 - Number of 1: 0    288
+dtype: int64
+19-Jun-19 10:24:53 - Updated score: 0.8095238095238095
+19-Jun-19 10:24:53 - Updated conf_matrix: [[102  23]
+ [ 17  68]]
+
+
+19-Jun-19 10:24:53 - First row added: [0.46172478 0.53827522]
+19-Jun-19 10:24:54 - Last row added: [0.46172478 0.53827522]
+19-Jun-19 10:24:57 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:24:58 - First row added: [0.45805315 0.54194685]
+19-Jun-19 10:24:58 - Last row added: [0.45805315 0.54194685]
+19-Jun-19 10:25:02 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:25:03 - First row added: [0.45767834 0.54232166]
+19-Jun-19 10:25:03 - Last row added: [0.45767834 0.54232166]
+19-Jun-19 10:25:07 - Size of train set: 664
+19-Jun-19 10:25:07 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:25:07 - Number of 1: 0    289
+dtype: int64
+19-Jun-19 10:25:07 - Updated score: 0.8095238095238095
+19-Jun-19 10:25:07 - Updated conf_matrix: [[102  23]
+ [ 17  68]]
+
+
+19-Jun-19 10:25:08 - First row added: [0.40043046 0.59956954]
+19-Jun-19 10:25:08 - Last row added: [0.40043046 0.59956954]
+19-Jun-19 10:25:11 - Not improved: 0.8
+
+
+19-Jun-19 10:25:12 - First row added: [0.39887325 0.60112675]
+19-Jun-19 10:25:12 - Last row added: [0.39887325 0.60112675]
+19-Jun-19 10:25:16 - Not improved: 0.8
+
+
+19-Jun-19 10:25:16 - First row added: [0.39688375 0.60311625]
+19-Jun-19 10:25:16 - Last row added: [0.39688375 0.60311625]
+19-Jun-19 10:25:20 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:25:21 - First row added: [0.3945099 0.6054901]
+19-Jun-19 10:25:21 - Last row added: [0.3945099 0.6054901]
+19-Jun-19 10:25:25 - Not improved: 0.8
+
+
+19-Jun-19 10:25:25 - First row added: [0.39389073 0.60610927]
+19-Jun-19 10:25:25 - Last row added: [0.39389073 0.60610927]
+19-Jun-19 10:25:29 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:25:30 - First row added: [0.39266724 0.60733276]
+19-Jun-19 10:25:30 - Last row added: [0.39266724 0.60733276]
+19-Jun-19 10:25:33 - Not improved: 0.8
+
+
+19-Jun-19 10:25:34 - First row added: [0.39215712 0.60784288]
+19-Jun-19 10:25:34 - Last row added: [0.39215712 0.60784288]
+19-Jun-19 10:25:38 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:25:38 - First row added: [0.38993485 0.61006515]
+19-Jun-19 10:25:38 - Last row added: [0.38993485 0.61006515]
+19-Jun-19 10:25:42 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:25:42 - First row added: [0.38931159 0.61068841]
+19-Jun-19 10:25:42 - Last row added: [0.38931159 0.61068841]
+19-Jun-19 10:25:46 - Not improved: 0.8
+
+
+19-Jun-19 10:25:47 - First row added: [0.3875914 0.6124086]
+19-Jun-19 10:25:47 - Last row added: [0.3875914 0.6124086]
+19-Jun-19 10:25:51 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:25:51 - First row added: [0.3875341 0.6124659]
+19-Jun-19 10:25:51 - Last row added: [0.3875341 0.6124659]
+19-Jun-19 10:25:55 - Not improved: 0.8
+
+
+19-Jun-19 10:25:56 - First row added: [0.38704411 0.61295589]
+19-Jun-19 10:25:56 - Last row added: [0.38704411 0.61295589]
+19-Jun-19 10:26:00 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:26:00 - Pseudolabel 2 finished
+19-Jun-19 10:36:49 - First row added: [0.50007497 0.49992503]
+19-Jun-19 10:36:49 - First row added: [0.50007527 0.49992473]
+19-Jun-19 10:36:49 - First row added: [0.49991147 0.50008853]
+19-Jun-19 10:36:49 - Last row added: [0.49991147 0.50008853]
+19-Jun-19 10:36:53 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:36:53 - First row added: [0.50007497 0.49992503]
+19-Jun-19 10:36:53 - First row added: [0.50007527 0.49992473]
+19-Jun-19 10:36:53 - First row added: [0.50009079 0.49990921]
+19-Jun-19 10:36:53 - First row added: [0.49989139 0.50010861]
+19-Jun-19 10:36:53 - Last row added: [0.49989139 0.50010861]
+19-Jun-19 10:36:56 - Size of train set: 665
+19-Jun-19 10:36:56 - Number of 0: 0    375
+dtype: int64
+19-Jun-19 10:36:56 - Number of 1: 0    290
+dtype: int64
+19-Jun-19 10:36:56 - Updated score: 0.8095238095238095
+19-Jun-19 10:36:56 - Updated conf_matrix: [[103  22]
+ [ 18  67]]
+
+
+19-Jun-19 10:36:57 - First row added: [0.43723032 0.56276968]
+19-Jun-19 10:36:57 - Last row added: [0.43723032 0.56276968]
+19-Jun-19 10:37:01 - Not improved: 0.8
+
+
+19-Jun-19 10:37:01 - First row added: [0.43340599 0.56659401]
+19-Jun-19 10:37:01 - Last row added: [0.43340599 0.56659401]
+19-Jun-19 10:37:05 - Not improved: 0.8
+
+
+19-Jun-19 10:37:06 - First row added: [0.43201609 0.56798391]
+19-Jun-19 10:37:06 - Last row added: [0.43201609 0.56798391]
+19-Jun-19 10:37:11 - Not improved: 0.8
+
+
+19-Jun-19 10:37:11 - First row added: [0.43120182 0.56879818]
+19-Jun-19 10:37:11 - Last row added: [0.43120182 0.56879818]
+19-Jun-19 10:37:15 - Not improved: 0.8
+
+
+19-Jun-19 10:37:15 - First row added: [0.43075281 0.56924719]
+19-Jun-19 10:37:15 - Last row added: [0.43075281 0.56924719]
+19-Jun-19 10:37:19 - Not improved: 0.8
+
+
+19-Jun-19 10:37:20 - First row added: [0.42845591 0.57154409]
+19-Jun-19 10:37:20 - Last row added: [0.42845591 0.57154409]
+19-Jun-19 10:37:23 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:37:24 - First row added: [0.42797063 0.57202937]
+19-Jun-19 10:37:24 - Last row added: [0.42797063 0.57202937]
+19-Jun-19 10:37:28 - Not improved: 0.8
+
+
+19-Jun-19 10:37:28 - First row added: [0.42783205 0.57216795]
+19-Jun-19 10:37:28 - Last row added: [0.42783205 0.57216795]
+19-Jun-19 10:37:32 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:37:33 - First row added: [0.42580464 0.57419536]
+19-Jun-19 10:37:33 - Last row added: [0.42580464 0.57419536]
+19-Jun-19 10:37:37 - Not improved: 0.8
+
+
+19-Jun-19 10:37:38 - First row added: [0.42509321 0.57490679]
+19-Jun-19 10:37:38 - Last row added: [0.42509321 0.57490679]
+19-Jun-19 10:37:41 - Not improved: 0.7952380952380952
+
+
+19-Jun-19 10:37:42 - First row added: [0.42482586 0.57517414]
+19-Jun-19 10:37:42 - Last row added: [0.42482586 0.57517414]
+19-Jun-19 10:37:46 - Not improved: 0.8
+
+
+19-Jun-19 10:37:46 - First row added: [0.42475251 0.57524749]
+19-Jun-19 10:37:46 - Last row added: [0.42475251 0.57524749]
+19-Jun-19 10:37:50 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:37:51 - First row added: [0.42464356 0.57535644]
+19-Jun-19 10:37:51 - Last row added: [0.42464356 0.57535644]
+19-Jun-19 10:37:55 - Not improved: 0.8
+
+
+19-Jun-19 10:37:55 - First row added: [0.42372981 0.57627019]
+19-Jun-19 10:37:55 - Last row added: [0.42372981 0.57627019]
+19-Jun-19 10:37:59 - Not improved: 0.8
+
+
+19-Jun-19 10:38:00 - First row added: [0.42370336 0.57629664]
+19-Jun-19 10:38:00 - Last row added: [0.42370336 0.57629664]
+19-Jun-19 10:38:04 - Not improved: 0.8
+
+
+19-Jun-19 10:38:04 - First row added: [0.42333678 0.57666322]
+19-Jun-19 10:38:04 - Last row added: [0.42333678 0.57666322]
+19-Jun-19 10:38:08 - Not improved: 0.8
+
+
+19-Jun-19 10:38:08 - First row added: [0.42246159 0.57753841]
+19-Jun-19 10:38:08 - Last row added: [0.42246159 0.57753841]
+19-Jun-19 10:38:12 - Not improved: 0.8
+
+
+19-Jun-19 10:38:13 - First row added: [0.42209585 0.57790415]
+19-Jun-19 10:38:13 - Last row added: [0.42209585 0.57790415]
+19-Jun-19 10:38:17 - Not improved: 0.8
+
+
+19-Jun-19 10:38:17 - First row added: [0.42192464 0.57807536]
+19-Jun-19 10:38:17 - Last row added: [0.42192464 0.57807536]
+19-Jun-19 10:38:21 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:38:21 - First row added: [0.42166084 0.57833916]
+19-Jun-19 10:38:21 - Last row added: [0.42166084 0.57833916]
+19-Jun-19 10:38:25 - Not improved: 0.8
+
+
+19-Jun-19 10:38:26 - First row added: [0.42157801 0.57842199]
+19-Jun-19 10:38:26 - Last row added: [0.42157801 0.57842199]
+19-Jun-19 10:38:29 - Not improved: 0.8
+
+
+19-Jun-19 10:38:30 - First row added: [0.41907105 0.58092895]
+19-Jun-19 10:38:30 - Last row added: [0.41907105 0.58092895]
+19-Jun-19 10:38:34 - Not improved: 0.8
+
+
+19-Jun-19 10:38:34 - First row added: [0.418603 0.581397]
+19-Jun-19 10:38:34 - Last row added: [0.418603 0.581397]
+19-Jun-19 10:38:38 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:38:38 - First row added: [0.41854054 0.58145946]
+19-Jun-19 10:38:38 - Last row added: [0.41854054 0.58145946]
+19-Jun-19 10:38:42 - Not improved: 0.8
+
+
+19-Jun-19 10:38:43 - First row added: [0.41773678 0.58226322]
+19-Jun-19 10:38:43 - Last row added: [0.41773678 0.58226322]
+19-Jun-19 10:38:47 - Not improved: 0.8
+
+
+19-Jun-19 10:38:47 - First row added: [0.41764247 0.58235753]
+19-Jun-19 10:38:47 - Last row added: [0.41764247 0.58235753]
+19-Jun-19 10:38:51 - Not improved: 0.8
+
+
+19-Jun-19 10:38:52 - First row added: [0.41758567 0.58241433]
+19-Jun-19 10:38:52 - Last row added: [0.41758567 0.58241433]
+19-Jun-19 10:38:55 - Not improved: 0.8
+
+
+19-Jun-19 10:38:56 - First row added: [0.41740412 0.58259588]
+19-Jun-19 10:38:56 - Last row added: [0.41740412 0.58259588]
+19-Jun-19 10:39:00 - Not improved: 0.8
+
+
+19-Jun-19 10:39:00 - First row added: [0.41701968 0.58298032]
+19-Jun-19 10:39:00 - Last row added: [0.41701968 0.58298032]
+19-Jun-19 10:39:04 - Not improved: 0.8
+
+
+19-Jun-19 10:39:05 - First row added: [0.4170042 0.5829958]
+19-Jun-19 10:39:05 - Last row added: [0.4170042 0.5829958]
+19-Jun-19 10:39:08 - Not improved: 0.8
+
+
+19-Jun-19 10:39:09 - First row added: [0.41639941 0.58360059]
+19-Jun-19 10:39:09 - Last row added: [0.41639941 0.58360059]
+19-Jun-19 10:39:12 - Not improved: 0.8
+
+
+19-Jun-19 10:39:13 - First row added: [0.41580492 0.58419508]
+19-Jun-19 10:39:13 - Last row added: [0.41580492 0.58419508]
+19-Jun-19 10:39:17 - Not improved: 0.8
+
+
+19-Jun-19 10:39:18 - First row added: [0.41575081 0.58424919]
+19-Jun-19 10:39:18 - Last row added: [0.41575081 0.58424919]
+19-Jun-19 10:39:21 - Not improved: 0.8
+
+
+19-Jun-19 10:39:22 - First row added: [0.41533038 0.58466962]
+19-Jun-19 10:39:22 - Last row added: [0.41533038 0.58466962]
+19-Jun-19 10:39:25 - Not improved: 0.8
+
+
+19-Jun-19 10:39:26 - First row added: [0.4150094 0.5849906]
+19-Jun-19 10:39:26 - Last row added: [0.4150094 0.5849906]
+19-Jun-19 10:39:30 - Not improved: 0.8
+
+
+19-Jun-19 10:39:31 - First row added: [0.41492608 0.58507392]
+19-Jun-19 10:39:31 - Last row added: [0.41492608 0.58507392]
+19-Jun-19 10:39:34 - Not improved: 0.8
+
+
+19-Jun-19 10:39:35 - First row added: [0.41407654 0.58592346]
+19-Jun-19 10:39:35 - Last row added: [0.41407654 0.58592346]
+19-Jun-19 10:39:39 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:39:40 - First row added: [0.41358293 0.58641707]
+19-Jun-19 10:39:40 - Last row added: [0.41358293 0.58641707]
+19-Jun-19 10:39:44 - Not improved: 0.8
+
+
+19-Jun-19 10:39:44 - First row added: [0.41316049 0.58683951]
+19-Jun-19 10:39:44 - Last row added: [0.41316049 0.58683951]
+19-Jun-19 10:39:48 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:39:48 - First row added: [0.41305191 0.58694809]
+19-Jun-19 10:39:48 - Last row added: [0.41305191 0.58694809]
+19-Jun-19 10:39:52 - Not improved: 0.8
+
+
+19-Jun-19 10:39:53 - First row added: [0.4129582 0.5870418]
+19-Jun-19 10:39:53 - Last row added: [0.4129582 0.5870418]
+19-Jun-19 10:39:57 - Not improved: 0.8
+
+
+19-Jun-19 10:39:57 - First row added: [0.41295574 0.58704426]
+19-Jun-19 10:39:57 - Last row added: [0.41295574 0.58704426]
+19-Jun-19 10:40:01 - Not improved: 0.8
+
+
+19-Jun-19 10:40:02 - First row added: [0.41284025 0.58715975]
+19-Jun-19 10:40:02 - Last row added: [0.41284025 0.58715975]
+19-Jun-19 10:40:05 - Not improved: 0.8
+
+
+19-Jun-19 10:40:06 - First row added: [0.41273692 0.58726308]
+19-Jun-19 10:40:06 - Last row added: [0.41273692 0.58726308]
+19-Jun-19 10:40:10 - Not improved: 0.8
+
+
+19-Jun-19 10:40:11 - First row added: [0.41272971 0.58727029]
+19-Jun-19 10:40:11 - Last row added: [0.41272971 0.58727029]
+19-Jun-19 10:40:14 - Not improved: 0.8
+
+
+19-Jun-19 10:40:15 - First row added: [0.41257482 0.58742518]
+19-Jun-19 10:40:15 - Last row added: [0.41257482 0.58742518]
+19-Jun-19 10:40:19 - Not improved: 0.8
+
+
+19-Jun-19 10:40:20 - First row added: [0.41220645 0.58779355]
+19-Jun-19 10:40:20 - Last row added: [0.41220645 0.58779355]
+19-Jun-19 10:40:23 - Not improved: 0.8
+
+
+19-Jun-19 10:40:24 - First row added: [0.41160466 0.58839534]
+19-Jun-19 10:40:24 - Last row added: [0.41160466 0.58839534]
+19-Jun-19 10:40:28 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:40:28 - Pseudolabel 3 finished
+19-Jun-19 10:51:26 - First row added: [0.45818673 0.54181327]
+19-Jun-19 10:51:26 - Last row added: [0.45818673 0.54181327]
+19-Jun-19 10:51:29 - Not improved: 0.8
+
+
+19-Jun-19 10:51:30 - First row added: [0.4580411 0.5419589]
+19-Jun-19 10:51:30 - Last row added: [0.4580411 0.5419589]
+19-Jun-19 10:51:33 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:51:34 - First row added: [0.45271829 0.54728171]
+19-Jun-19 10:51:34 - Last row added: [0.45271829 0.54728171]
+19-Jun-19 10:51:37 - Not improved: 0.8
+
+
+19-Jun-19 10:51:38 - First row added: [0.45108213 0.54891787]
+19-Jun-19 10:51:38 - Last row added: [0.45108213 0.54891787]
+19-Jun-19 10:51:42 - Not improved: 0.8
+
+
+19-Jun-19 10:51:42 - First row added: [0.45087562 0.54912438]
+19-Jun-19 10:51:42 - Last row added: [0.45087562 0.54912438]
+19-Jun-19 10:51:46 - Not improved: 0.8
+
+
+19-Jun-19 10:51:47 - First row added: [0.45000828 0.54999172]
+19-Jun-19 10:51:47 - Last row added: [0.45000828 0.54999172]
+19-Jun-19 10:51:51 - Not improved: 0.8
+
+
+19-Jun-19 10:51:51 - First row added: [0.44972563 0.55027437]
+19-Jun-19 10:51:51 - Last row added: [0.44972563 0.55027437]
+19-Jun-19 10:51:55 - Not improved: 0.8
+
+
+19-Jun-19 10:51:56 - First row added: [0.44866566 0.55133434]
+19-Jun-19 10:51:56 - Last row added: [0.44866566 0.55133434]
+19-Jun-19 10:51:59 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:52:00 - First row added: [0.44814306 0.55185694]
+19-Jun-19 10:52:00 - Last row added: [0.44814306 0.55185694]
+19-Jun-19 10:52:04 - Not improved: 0.8
+
+
+19-Jun-19 10:52:04 - First row added: [0.44802071 0.55197929]
+19-Jun-19 10:52:04 - Last row added: [0.44802071 0.55197929]
+19-Jun-19 10:52:09 - Not improved: 0.8
+
+
+19-Jun-19 10:52:09 - First row added: [0.44758663 0.55241337]
+19-Jun-19 10:52:09 - Last row added: [0.44758663 0.55241337]
+19-Jun-19 10:52:13 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:52:13 - First row added: [0.44752102 0.55247898]
+19-Jun-19 10:52:13 - Last row added: [0.44752102 0.55247898]
+19-Jun-19 10:52:16 - Not improved: 0.8
+
+
+19-Jun-19 10:52:17 - First row added: [0.44679882 0.55320118]
+19-Jun-19 10:52:17 - Last row added: [0.44679882 0.55320118]
+19-Jun-19 10:52:20 - Not improved: 0.8
+
+
+19-Jun-19 10:52:21 - First row added: [0.44673684 0.55326316]
+19-Jun-19 10:52:21 - Last row added: [0.44673684 0.55326316]
+19-Jun-19 10:52:25 - Not improved: 0.8
+
+
+19-Jun-19 10:52:25 - First row added: [0.44579615 0.55420385]
+19-Jun-19 10:52:25 - Last row added: [0.44579615 0.55420385]
+19-Jun-19 10:52:29 - Not improved: 0.8
+
+
+19-Jun-19 10:52:29 - First row added: [0.44506207 0.55493793]
+19-Jun-19 10:52:29 - Last row added: [0.44506207 0.55493793]
+19-Jun-19 10:52:33 - Not improved: 0.8
+
+
+19-Jun-19 10:52:34 - First row added: [0.44484736 0.55515264]
+19-Jun-19 10:52:34 - Last row added: [0.44484736 0.55515264]
+19-Jun-19 10:52:37 - Not improved: 0.8
+
+
+19-Jun-19 10:52:38 - First row added: [0.44481944 0.55518056]
+19-Jun-19 10:52:38 - Last row added: [0.44481944 0.55518056]
+19-Jun-19 10:52:42 - Not improved: 0.8
+
+
+19-Jun-19 10:52:43 - First row added: [0.44475691 0.55524309]
+19-Jun-19 10:52:43 - Last row added: [0.44475691 0.55524309]
+19-Jun-19 10:52:46 - Not improved: 0.8
+
+
+19-Jun-19 10:52:47 - First row added: [0.44461152 0.55538848]
+19-Jun-19 10:52:47 - Last row added: [0.44461152 0.55538848]
+19-Jun-19 10:52:50 - Not improved: 0.8
+
+
+19-Jun-19 10:52:51 - First row added: [0.44434429 0.55565571]
+19-Jun-19 10:52:51 - Last row added: [0.44434429 0.55565571]
+19-Jun-19 10:52:55 - Not improved: 0.8
+
+
+19-Jun-19 10:52:55 - First row added: [0.44415764 0.55584236]
+19-Jun-19 10:52:55 - Last row added: [0.44415764 0.55584236]
+19-Jun-19 10:52:59 - Not improved: 0.8
+
+
+19-Jun-19 10:53:00 - First row added: [0.44413427 0.55586573]
+19-Jun-19 10:53:00 - Last row added: [0.44413427 0.55586573]
+19-Jun-19 10:53:04 - Not improved: 0.8
+
+
+19-Jun-19 10:53:04 - First row added: [0.44411692 0.55588308]
+19-Jun-19 10:53:04 - Last row added: [0.44411692 0.55588308]
+19-Jun-19 10:53:08 - Not improved: 0.8
+
+
+19-Jun-19 10:53:08 - First row added: [0.44411678 0.55588322]
+19-Jun-19 10:53:08 - Last row added: [0.44411678 0.55588322]
+19-Jun-19 10:53:12 - Not improved: 0.8
+
+
+19-Jun-19 10:53:13 - First row added: [0.44409576 0.55590424]
+19-Jun-19 10:53:13 - Last row added: [0.44409576 0.55590424]
+19-Jun-19 10:53:16 - Not improved: 0.8
+
+
+19-Jun-19 10:53:17 - First row added: [0.44397316 0.55602684]
+19-Jun-19 10:53:17 - Last row added: [0.44397316 0.55602684]
+19-Jun-19 10:53:21 - Not improved: 0.8
+
+
+19-Jun-19 10:53:21 - First row added: [0.44394479 0.55605521]
+19-Jun-19 10:53:21 - Last row added: [0.44394479 0.55605521]
+19-Jun-19 10:53:25 - Not improved: 0.8
+
+
+19-Jun-19 10:53:26 - First row added: [0.44393174 0.55606826]
+19-Jun-19 10:53:26 - Last row added: [0.44393174 0.55606826]
+19-Jun-19 10:53:30 - Not improved: 0.8
+
+
+19-Jun-19 10:53:30 - First row added: [0.44390055 0.55609945]
+19-Jun-19 10:53:30 - Last row added: [0.44390055 0.55609945]
+19-Jun-19 10:53:34 - Not improved: 0.8
+
+
+19-Jun-19 10:53:34 - First row added: [0.44389002 0.55610998]
+19-Jun-19 10:53:34 - Last row added: [0.44389002 0.55610998]
+19-Jun-19 10:53:38 - Not improved: 0.8
+
+
+19-Jun-19 10:53:39 - First row added: [0.44387304 0.55612696]
+19-Jun-19 10:53:39 - Last row added: [0.44387304 0.55612696]
+19-Jun-19 10:53:43 - Not improved: 0.8
+
+
+19-Jun-19 10:53:43 - First row added: [0.44385083 0.55614917]
+19-Jun-19 10:53:43 - Last row added: [0.44385083 0.55614917]
+19-Jun-19 10:53:47 - Not improved: 0.8
+
+
+19-Jun-19 10:53:47 - First row added: [0.44377487 0.55622513]
+19-Jun-19 10:53:47 - Last row added: [0.44377487 0.55622513]
+19-Jun-19 10:53:51 - Not improved: 0.8
+
+
+19-Jun-19 10:53:52 - First row added: [0.4437254 0.5562746]
+19-Jun-19 10:53:52 - Last row added: [0.4437254 0.5562746]
+19-Jun-19 10:53:56 - Not improved: 0.8
+
+
+19-Jun-19 10:53:56 - First row added: [0.4437011 0.5562989]
+19-Jun-19 10:53:56 - Last row added: [0.4437011 0.5562989]
+19-Jun-19 10:54:00 - Not improved: 0.8
+
+
+19-Jun-19 10:54:00 - First row added: [0.44360991 0.55639009]
+19-Jun-19 10:54:00 - Last row added: [0.44360991 0.55639009]
+19-Jun-19 10:54:04 - Not improved: 0.8
+
+
+19-Jun-19 10:54:05 - First row added: [0.44359047 0.55640953]
+19-Jun-19 10:54:05 - Last row added: [0.44359047 0.55640953]
+19-Jun-19 10:54:08 - Not improved: 0.8
+
+
+19-Jun-19 10:54:09 - First row added: [0.44353719 0.55646281]
+19-Jun-19 10:54:09 - Last row added: [0.44353719 0.55646281]
+19-Jun-19 10:54:13 - Not improved: 0.8
+
+
+19-Jun-19 10:54:13 - First row added: [0.44351059 0.55648941]
+19-Jun-19 10:54:13 - Last row added: [0.44351059 0.55648941]
+19-Jun-19 10:54:17 - Not improved: 0.8
+
+
+19-Jun-19 10:54:18 - First row added: [0.44343938 0.55656062]
+19-Jun-19 10:54:18 - Last row added: [0.44343938 0.55656062]
+19-Jun-19 10:54:22 - Not improved: 0.8
+
+
+19-Jun-19 10:54:22 - First row added: [0.44343288 0.55656712]
+19-Jun-19 10:54:22 - Last row added: [0.44343288 0.55656712]
+19-Jun-19 10:54:26 - Not improved: 0.8
+
+
+19-Jun-19 10:54:27 - First row added: [0.44342478 0.55657522]
+19-Jun-19 10:54:27 - Last row added: [0.44342478 0.55657522]
+19-Jun-19 10:54:30 - Not improved: 0.8
+
+
+19-Jun-19 10:54:31 - First row added: [0.4434223 0.5565777]
+19-Jun-19 10:54:31 - Last row added: [0.4434223 0.5565777]
+19-Jun-19 10:54:35 - Not improved: 0.8047619047619048
+
+
+19-Jun-19 10:54:35 - First row added: [0.44331122 0.55668878]
+19-Jun-19 10:54:35 - Last row added: [0.44331122 0.55668878]
+19-Jun-19 10:54:39 - Not improved: 0.8
+
+
+19-Jun-19 10:54:39 - First row added: [0.4432726 0.5567274]
+19-Jun-19 10:54:39 - Last row added: [0.4432726 0.5567274]
+19-Jun-19 10:54:43 - Not improved: 0.8
+
+
+19-Jun-19 10:54:44 - First row added: [0.44325322 0.55674678]
+19-Jun-19 10:54:44 - Last row added: [0.44325322 0.55674678]
+19-Jun-19 10:54:47 - Not improved: 0.8
+
+
+19-Jun-19 10:54:48 - First row added: [0.44323151 0.55676849]
+19-Jun-19 10:54:48 - Last row added: [0.44323151 0.55676849]
+19-Jun-19 10:54:52 - Not improved: 0.8
+
+
+19-Jun-19 10:54:52 - First row added: [0.4431921 0.5568079]
+19-Jun-19 10:54:52 - Last row added: [0.4431921 0.5568079]
+19-Jun-19 10:54:56 - Not improved: 0.8
+
+
+19-Jun-19 10:54:57 - First row added: [0.44318984 0.55681016]
+19-Jun-19 10:54:57 - Last row added: [0.44318984 0.55681016]
+19-Jun-19 10:55:01 - Not improved: 0.8
+
+
+19-Jun-19 10:55:01 - Pseudolabel 4 finished
+19-Jun-19 11:12:08 - Start script
