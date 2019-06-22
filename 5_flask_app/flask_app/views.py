@@ -101,7 +101,7 @@ def demo():
 
     return render_template(
         "demo.html",
-        title="Insight Demo 3 - MockUp",
+        title="Insight Demo",
         tmp_url=tmp_url,
         num_reviews=num_reviews,
         data=data,
