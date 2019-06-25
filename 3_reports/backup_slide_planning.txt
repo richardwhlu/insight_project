@@ -1,0 +1,35 @@
+Data Processing
+	Random Selection
+		- size of data
+		- pre-cleaning
+		- no consideration of restaurant effects 
+	Asymptotics
+		- 10K selection robustness
+		- 50K for models
+	Business Elite (Filtering?) versus Completely Random
+		- design choice for informational benefits
+		- some models
+	NLP Cleaning Procedures
+		- Stemming
+		- When punctuation in/out
+
+Modeling Design Choices
+	Topic Modeling
+		- LDA, NMF, LSA
+	Number of High-Level Categories
+		- LDA topics ("heatmap")
+	Other Models
+	Feature Engineering
+	Pseudo-Labeling Procedure
+		Approaches and empirical results
+		# 
+		Changes in feature importances
+	Evaluation Metrics
+
+Future Directions
+	Additional Business Value
+		Other use cases
+	Additional Features
+		Feature #1 - Better Aggregated Values
+		Feature #2 - Highlighting of text and features
+		Feature #3 - Analytics
