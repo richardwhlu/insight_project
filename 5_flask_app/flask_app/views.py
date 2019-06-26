@@ -55,6 +55,14 @@ def index():
 
     return render_template("index.html")
 
+@app.route("/slides", methods=["GET"])
+def slides():
+    """Slides
+    """
+    return render_template(
+        "slides.html",
+        title="Insight Slides")
+
 
 @app.route("/demo", methods=["POST", "GET"])
 def demo():
