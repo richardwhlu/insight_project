@@ -30,7 +30,11 @@ def demo():
     """MVP for Demo
     """
     if request.method == "POST":
-        tmp_url = request.form["url"]
+        try:
+            tmp_url = request.form["url"].split("?osq")[0]
+        except:
+            tmp_url = request.form["url"]
+            
         num_reviews = request.form["num_reviews"]
 
         data = scrape_url(tmp_url, num_reviews)
