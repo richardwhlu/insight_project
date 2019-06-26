@@ -10,6 +10,7 @@ from gensim.models import Word2Vec
 import os
 import pandas as pd
 import pickle
+import smtplib
 
 from flask import render_template, request
 from flask_app import app, run_models
@@ -22,6 +23,36 @@ from flask_app.scrape import scrape_url
 @app.route("/", methods=["POST", "GET"])
 @app.route("/index", methods=["POST", "GET"])
 def index():
+    """Personal Website
+    """
+    if request.method == "POST":
+        TO = "richard.wh.lu@gmail.com"
+        SUBJECT = "[Personal Website] " + request.form["Subject"]
+        TEXT = request.form["Body"] + "\n\n" + request.form["Name"]
+
+        # Gmail Sign In
+        gmail_sender = 'richard.wh.lu@gmail.com'
+        gmail_passwd = 'password'
+
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.ehlo()
+        server.starttls()
+        server.login(gmail_sender, gmail_passwd)
+
+        BODY = '\r\n'.join(['To: %s' % TO,
+                            'From: %s' % gmail_sender,
+                            'Reply-to: %s' % request.form["Email"],
+                            'Subject: %s' % SUBJECT,
+                            '', TEXT])
+
+        try:
+            server.sendmail(gmail_sender, [TO], BODY)
+            print ('email sent')
+        except:
+            print ('error sending mail')
+
+        server.quit()
+
     return render_template("index.html")
 
 
