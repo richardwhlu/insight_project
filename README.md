@@ -1,6 +1,7 @@
 # Insight Project 2019B
 
 Demo: http://richardwhlu.com/demo
+
 Slides: http://richardwhlu.com/slides
 
 ## Overview
