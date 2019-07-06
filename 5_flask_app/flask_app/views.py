@@ -64,6 +64,15 @@ def slides():
         title="Insight Slides")
 
 
+@app.route("/presentation", methods=["GET"])
+def presentation():
+    """Youtube Presentation
+    """
+    return render_template(
+        "presentation.html",
+        title="Insight presentation")
+
+
 @app.route("/demo", methods=["POST", "GET"])
 def demo():
     """MVP for Demo
